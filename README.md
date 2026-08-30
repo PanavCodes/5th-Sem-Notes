@@ -1,6 +1,6 @@
-# 📚 3rd-Sem-Notes
+# 📚 5th-Sem-Notes
 
-> A centralized collection of notes, study material, numericals, and exam-preparation resources for **3rd Semester**.
+> A centralized collection of notes, study material, numericals, and exam-preparation resources for **5th Semester**.
 
 This repository is maintained as a personal academic knowledge base, organized subject-wise so that notes and preparation material can be accessed quickly throughout the semester.
 
@@ -9,7 +9,7 @@ This repository is maintained as a personal academic knowledge base, organized s
 ## 📂 Repository Structure
 
 ```text
-3rd-Sem-Notes/
+5th-Sem-Notes/
 │
 ├── 5G/
 │   └── UNIT-1/
@@ -49,7 +49,7 @@ This repository is maintained as a personal academic knowledge base, organized s
 
 ## 🎯 Purpose
 
-The goal of this repository is to keep all **3rd-semester academic resources in one place**.
+The goal of this repository is to keep all **5th-semester academic resources in one place**.
 
 It is intended to make it easier to:
 
