@@ -1,0 +1,17 @@
+Act as an exam strategist for NMIMS ARVR (702COI002).
+Based on the uploaded Unit 4 slides and Answer Key, provide comprehensive study notes for Unit 4: Building AR and VR Experiences.
+Include:
+1. Creating AR Applications via AR Foundation: AR Session, XR Origin, AR Camera, AR Camera Background, Passthrough video
+2. Environmental Understanding & Spatial Mapping: Plane Detection (Horizontal & Vertical), Point Cloud generation, Raycasting against physical surfaces (`ARRaycastManager`), Anchor persistence
+3. VR Environment Design: Human ergonomics, physical boundaries, Guardian/Chaperone systems, scale and visual comfort
+4. VR UI & Navigation: World-Space Canvas vs Screen-Space Canvas, Diegetic vs Non-diegetic UI, Ray Interactors, Direct Interactors, Teleportation vs Continuous Locomotion
+5. VR Optimization Techniques: Frustum culling, Occlusion culling, Draw call batching (Static & Dynamic), Texture atlasing, Level of Detail (LOD)
+6. Exam Scaffolding:
+   - 10M: Q4(b) Design a gesture-controlled menu inside a VR game:
+     * Concept blocks: Gesture Recognition Block, Spatial Anchor/Canvas Block, Selection/Raycast Block [5M]
+     * Data flow: Sensor feed -> Landmark extractor -> Gesture state machine -> UI event dispatcher with architecture diagram [5M]
+   - 20M: Q6 Gesture-Controlled VR Obstacle Avoidance Game:
+     * Gesture mapping to player movement: Left/Right tilt, duck/crouch, jump [8M]
+     * Environment interaction with obstacles: Procedural obstacle spawning, 3D colliders, trigger volumes, physics particles [7M]
+     * Scoring logic and user feedback: Score multipliers, spatial audio chimes, World-Space Game Over UI with restart logic [5M]
+Output directly in structured Markdown.

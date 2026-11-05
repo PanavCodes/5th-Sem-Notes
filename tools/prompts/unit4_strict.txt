@@ -1,0 +1,19 @@
+Act as an exam professor for NMIMS ARVR (702COI002).
+CRITICAL: Do NOT say "I have generated" or give conversational confirmations. Output the actual study notes Markdown document starting directly with the title.
+
+# Comprehensive Study Notes — Unit 4: Building AR and VR Experiences
+Write out the complete text covering:
+1. Creating AR Applications via AR Foundation: AR Session, XR Origin / AR Session Origin, AR Camera, AR Camera Background, Camera Subsystem, Live Passthrough video
+2. Environmental Understanding & Spatial Mapping: Plane Detection (Horizontal & Vertical, `ARPlaneManager`), Point Cloud generation (`ARPointCloudManager`), Raycasting against real-world planes (`ARRaycastManager`), Anchor persistence (`ARAnchorManager`)
+3. Designing VR Environments: Spatial hierarchy, Environmental scale, Ergonomics and human factors, Physical boundaries (Meta Quest Guardian / SteamVR Chaperone), Motion comfort
+4. VR UI and Navigation Systems: World-Space Canvas vs Screen-Space Canvas, Diegetic vs Non-diegetic UI elements, Curved spatial menus, XR Interaction Toolkit (Ray Interactor, Direct Interactor, Socket Interactor), Locomotion (Teleportation, Snap Turn, Continuous Movement)
+5. Performance Optimization for VR: Frustum Culling, Occlusion Culling, Draw call batching (Static vs Dynamic), Texture Atlasing, Level of Detail (LOD) groups
+6. Exam Questions & Model Answers:
+   - [10 Marks] Q4(b): How would you design a gesture-controlled menu inside a VR game? Explain conceptual blocks and data flow:
+     * Conceptual Blocks: Gesture Recognition Block, Spatial Anchor/Canvas Block, Raycast/Selection Block [5M]
+     * Data Flow: Sensor input -> Landmark extraction -> Gesture classification state machine -> World-space UI event dispatch with ASCII architecture diagram [5M]
+   - [20 Marks] Q6: VR Game Scenario: Conceptualize a gesture-controlled VR obstacle-avoidance game. Explain how gesture data from MediaPipe controls player motion, environment interaction, and scoring:
+     * Component 1: Gesture mapping to movement (Dodge left/right, duck, jump mapped to player velocity with C# script) [8M]
+     * Component 2: Environment interaction with obstacles (Procedural obstacle generation, 3D colliders, trigger volumes, collision detection, physics particle feedback) [7M]
+     * Component 3: Scoring logic and user feedback (Score calculation, combo multiplier, spatial audio feedback, World-Space HUD Game Over UI, restart mechanism) [5M]
+Write out every section with full technical detail, C# code blocks, and ASCII diagrams.

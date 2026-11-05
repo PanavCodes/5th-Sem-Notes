@@ -1,0 +1,26 @@
+Act as an exam professor for NMIMS ARVR (702COI002).
+CRITICAL: Do NOT say "I have generated" or give conversational confirmations. Output the actual study notes Markdown document starting directly with the title.
+
+# Comprehensive Study Notes — Unit 5: Deployment and Distribution
+Write out the complete text covering:
+1. Spatial Audio in AR/VR: Head-Related Transfer Functions (HRTF), Interaural Time Difference (ITD), Interaural Level Difference (ILD), 3D sound positioning, Acoustic occlusion, Obstruction, Reverb zones, Doppler effect
+2. Visual Realism: Lighting, Shaders, and Materials:
+   * Forward Rendering vs Deferred Rendering in XR
+   * Universal Render Pipeline (URP) configurations
+   * Shaders: Unlit vs Simple Lit vs Complex Lit (PBR - Physically Based Rendering)
+   * Lighting techniques: Realtime lights vs Baked Lightmaps, Light Probes, Reflection Probes
+   * Performance trade-offs: GPU fill-rate, draw call overhead, battery and thermal throttling
+3. Platform Considerations & Standalone Applications: Standalone mobile VR (Meta Quest Android APK) vs PCVR tethered, Mobile AR (Android APK vs iOS IPA)
+4. App Store Submission & Distribution: Meta Quest Store & App Lab technical submission requirements, Google Play Console AR requirements, Content review guidelines, Comfort rating classifications
+5. Profiling and Performance Testing: OVR Metrics Tool (HUD display), Unity Profiler (CPU/GPU frame time analysis, GC Alloc), Frame Debugger, Draw calls, Memory bandwidth
+6. User Comfort and Safety Guidelines: Cybersickness & vection mitigation, Field-of-View vignetting/tunneling, Snap turn vs Smooth turn, Guardian boundaries, Ergonomic session pacing
+7. Exam Questions & Model Answers:
+   - [10 Marks] Q3(b): Explain how Lighting, Shaders, and Materials contribute to realism in VR. Discuss performance trade-offs:
+     * Lighting techniques: Baked lightmaps, light probes, reflection probes [4M]
+     * Shader/Material roles: PBR materials, URP shaders, texture compression (ASTC) [3M]
+     * Performance trade-offs: GPU fill-rate, draw call overhead, thermal constraints [3M]
+   - [20 Marks] Q7: Describe the deployment process of a VR application using Unity and Meta Quest. Explain build targets, device profiling, testing, and user safety optimization:
+     * Component 1: Build target configuration and Android export (Unity Build Settings, Android SDK/NDK/JDK, Min API Level 29+, Vulkan API, IL2CPP, ARM64 architecture, Meta XR Plugin config) [6M]
+     * Component 2: Device profiling and performance testing (OVR Metrics Tool, Unity Profiler, 72/90 FPS target enforcement, thermal throttling analysis) [6M]
+     * Component 3: User comfort and safety guidelines (Vignetting during motion, Guardian boundary integration, ergonomic session duration, safety disclaimers) [8M]
+Write out every section with full technical detail, comparison tables, and ASCII diagrams.

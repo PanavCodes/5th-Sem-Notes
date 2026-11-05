@@ -1,0 +1,17 @@
+Act as an exam strategist for NMIMS ARVR (702COI002).
+Based on the uploaded Unit 2 slides and Answer Key, provide comprehensive study notes for Unit 2: Introduction to Virtual Reality (VR).
+Include:
+1. Definition (Jaron Lanier), Scope, 3 I's (Immersion, Interaction, Imagination)
+2. Types of VR: Non-immersive, Semi-immersive, Fully immersive, Cinematic VR (POV vs 360), Interactive VR, WebVR (A-Frame, WebXR)
+3. Immersion vs Presence (Place Illusion vs Plausibility Illusion, Slater's framework)
+4. Key Hardware: Displays (OLED, LCD, Pancake/Fresnel optics), 3DoF vs 6DoF, IMUs, inside-out vs outside-in tracking, controllers
+5. Real-time VR Challenges: Latency (motion-to-photon <20ms), Frame rate (72/90/120Hz), Cybersickness, Tracking accuracy, Rendering load & draw calls
+6. Exam Scaffolding:
+   - 5M: Q1(a) Define VR + engineering app [2.5M]; Q1(d) 4 challenges in real-time VR (Latency, Frame rate, Tracking accuracy, Rendering load, Responsiveness) [5M]
+   - 10M: Immersion vs Presence & Key Hardware (3DoF vs 6DoF); VR Types Comparison Table
+   - 20M: Q2 VR Laboratory Simulator using Unity and Meta XR SDK:
+     * Setup: Unity project, XR Plugin Management, Meta XR Core SDK, OpenXR [5M]
+     * User Movement: Teleportation Provider vs Continuous locomotion, Snap Turn, vignetting [5M]
+     * Input Mapping: Meta Quest Touch controller action maps, trigger/grip interactors [5M]
+     * Frame Rate Optimization: FFR, Application SpaceWarp, Single Pass Stereo, draw call batching for 72/90 FPS [5M]
+Output directly in structured Markdown.

@@ -1,0 +1,24 @@
+Act as an exam professor for NMIMS ARVR (702COI002).
+CRITICAL: Do NOT say "I have generated" or give conversational confirmations. Output the actual study notes Markdown document starting directly with the title.
+
+# Comprehensive Study Notes — Unit 3: Introduction to Scripting for Developing AR/VR Applications
+Write out the complete text covering:
+1. Unity Software Interface & Project Setup: Hierarchy, Inspector, Scene view, Game view, Project folder structure, XR Plug-in Management (OpenXR, ARCore, ARKit)
+2. 3D Math & Coordinate Systems: Left-handed Cartesian coordinate system, World Space vs Local Space, Position vectors, Euler Angles vs Quaternions (gimbal lock prevention)
+3. Asset Pipeline & 3D Models: Importing FBX/OBJ models, Textures, Materials, Shaders, Prefabs and variant workflows, Level of Detail (LOD)
+4. C# Scripting Fundamentals in Unity: MonoBehaviour lifecycle (Awake, OnEnable, Start, FixedUpdate, Update, LateUpdate, OnDisable, OnDestroy), Coroutines, Events and Delegates
+5. Physics Engine & Movement: Rigidbody (isKinematic, mass, drag), Colliders (Box, Sphere, Capsule, Mesh), Physics Materials, Raycasting (`Physics.Raycast`, LayerMasks), Continuous Collision Detection
+6. Gesture Tracking Architecture: Vision tracking pipeline, MediaPipe 21 hand landmarks model, data transmission pipeline (Camera -> Python ML -> UDP Socket -> Unity C#)
+7. Exam Questions & Model Answers:
+   - [5 Marks] Q1(b): Explain the function of Gesture Tracking in AR/VR systems. How does MediaPipe assist in this process? (Mark split: Gesture tracking concept 2M, Tracking pipeline basics 1M, MediaPipe landmarks and processing 2M)
+   - [10 Marks] Q3(a): Describe how MediaPipe hand tracking can control object movement in a Unity VR scene. Outline the data flow from camera input to object response:
+     * Camera input acquisition & frame rate [2M]
+     * Landmark extraction (21 3D coordinates) [3M]
+     * Gesture classification (Pinch, Grab, Open Palm) [3M]
+     * Object response mapping via Unity C# script (`MediaPipeHandController.cs`) [2M]
+   - [20 Marks] Comprehensive Gesture-Controlled Object Manipulation Pipeline in Unity C#:
+     * Scene setup with XR Origin, Main Camera, and Target Objects [5M]
+     * UDP/Socket receiver script streaming hand coordinates from MediaPipe into Unity [5M]
+     * Full C# grab, release, and transform manipulation logic with Physics Raycast [5M]
+     * Error handling, landmark smoothing (Kalman filter / Lerp), and visual bounding box feedback [5M]
+Write out every section with full technical detail, C# code blocks, and ASCII diagrams.

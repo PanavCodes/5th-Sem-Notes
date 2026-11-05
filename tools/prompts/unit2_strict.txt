@@ -1,0 +1,20 @@
+Act as an exam professor for NMIMS ARVR (702COI002).
+CRITICAL: Do NOT say "I have generated" or give conversational confirmations. Output the actual study notes Markdown document starting directly with the title.
+
+# Comprehensive Study Notes — Unit 2: Introduction to Virtual Reality (VR)
+Write out the complete text covering:
+1. Definition (Jaron Lanier), Scope, 3 I's (Immersion, Interaction, Imagination)
+2. Types of VR: Non-immersive, Semi-immersive, Fully immersive, Cinematic VR (POV vs 360), Interactive VR, WebVR (A-Frame, WebXR)
+3. Immersion vs Presence (Place Illusion vs Plausibility Illusion, Mel Slater)
+4. Key Hardware: Displays (OLED, LCD, Pancake/Fresnel optics), 3DoF vs 6DoF tracking, IMUs, inside-out vs outside-in tracking, controllers
+5. Real-time VR Challenges: Latency (motion-to-photon <20ms), Frame rate (72/90/120Hz), Cybersickness, Tracking accuracy, Rendering load & draw calls
+6. Exam Questions & Model Answers:
+   - [5 Marks] Q1(a): Define VR + engineering application (Mark split: Def 1M, App 1.5M)
+   - [5 Marks] Q1(d): List any four challenges in achieving real-time performance in VR (Latency, Frame rate, Tracking accuracy, Rendering load, Responsiveness - 1 mark each)
+   - [10 Marks]: Immersion vs Presence & Key Hardware Architecture (3DoF vs 6DoF)
+   - [20 Marks] Q2: VR Laboratory Simulator using Unity and Meta XR SDK:
+     * Component 1: Environment setup (project creation, XR Plug-in, Meta XR SDK) [5M]
+     * Component 2: User movement logic (Teleportation Provider vs Continuous locomotion, Snap Turn) [5M]
+     * Component 3: Input mapping (Meta Quest Touch controller action maps, trigger/grip) [5M]
+     * Component 4: Frame rate optimization (FFR, Application SpaceWarp, Single Pass Stereo, draw call batching for 72/90 FPS) [5M]
+Write out every section with full technical detail and ASCII diagrams.

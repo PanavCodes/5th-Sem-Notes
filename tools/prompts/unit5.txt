@@ -1,0 +1,19 @@
+Act as an exam strategist for NMIMS ARVR (702COI002).
+Based on the uploaded Unit 5 slides and Answer Key, provide comprehensive study notes for Unit 5: Deployment and Distribution.
+Include:
+1. Spatial Audio in AR/VR: HRTF (Head-Related Transfer Functions), Interaural Time Difference (ITD), Interaural Level Difference (ILD), 3D audio spatialization, Doppler effect, Acoustic occlusion & reverb
+2. Visual Realism: Lighting, Shaders, and Materials: Forward vs Deferred rendering, Universal Render Pipeline (URP), Mobile shaders (Unlit, Simple Lit vs Complex Lit), Baked lightmaps, Light probes, Reflection probes
+3. Platform Considerations & Standalone Applications: Meta Quest Android standalone vs PCVR tethered, Mobile AR (Android APK vs iOS IPA)
+4. App Store Submission & Distribution: Meta Quest Store & App Lab requirements, Google Play Console AR requirements, Technical review guidelines, Comfort ratings
+5. Profiling & Performance Testing: OVR Metrics Tool, Unity Profiler (CPU/GPU frame time), Frame Debugger, Draw calls, Memory bandwidth, Thermal throttling
+6. User Comfort & Safety Guidelines: Cybersickness & vection mitigation, Field-of-view tunneling/vignetting, Snap turn vs Smooth turn, Guardian boundaries, Safety warnings
+7. Exam Scaffolding:
+   - 10M: Q3(b) Contribution of Lighting, Shaders, and Materials to realism in VR & performance trade-offs:
+     * Lighting techniques: Baked lightmaps, light probes, reflection probes [4M]
+     * Shader & Material roles: PBR materials, URP shaders, texture compression (ASTC) [3M]
+     * Performance trade-offs: GPU fill-rate, draw call overhead, battery/thermal constraints [3M]
+   - 20M: Q7 VR Deployment to Meta Quest:
+     * Build target configuration & Android export: Android SDK/NDK, Vulkan API, Min API 29+, IL2CPP, ARM64 [6M]
+     * Profiling and performance testing: OVR Metrics Tool, Unity Profiler, 72/90 FPS enforcement [6M]
+     * User comfort & safety guidelines: Locomotion vignetting, boundary alerts, ergonomic session pacing [8M]
+Output directly in structured Markdown.

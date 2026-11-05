@@ -1,0 +1,22 @@
+Act as an exam strategist for NMIMS ARVR (702COI002).
+Based on the uploaded Unit 3 slides and Answer Key, provide comprehensive study notes for Unit 3: Introduction to Scripting for Developing AR/VR Applications.
+Include:
+1. Unity Software Interface: Project Setup, Hierarchy, Scene/Game views, Inspector, Asset management, XR Plugin Management
+2. 3D Math & Coordinate Systems: Left-handed coordinate system, World Space vs Local Space, Vectors, Quaternions vs Euler angles
+3. Asset Pipeline: 3D models (FBX/OBJ), Textures, Materials, Prefabs, LOD
+4. C# Scripting Fundamentals: MonoBehaviour lifecycle (Awake, OnEnable, Start, FixedUpdate, Update, LateUpdate, OnDisable), Coroutines, Events
+5. Physics Engine & Movement: Rigidbody, Colliders (Box, Sphere, Mesh), Physics Materials, Raycasting (`Physics.Raycast`), continuous collision detection
+6. Gesture Tracking: Concept, Tracking pipeline (Vision capture -> Landmark model -> Gesture classifier -> Action mapping), MediaPipe 21 hand landmarks
+7. Exam Scaffolding:
+   - 5M: Q1(b) Function of Gesture Tracking in AR/VR systems & role of MediaPipe (Gesture concept [2M], Tracking pipeline [1M], MediaPipe landmarks [2M])
+   - 10M: Q3(a) MediaPipe hand tracking for Unity VR control:
+     * Camera input & acquisition [2M]
+     * Landmark extraction (21 3D landmarks) [3M]
+     * Gesture classification (Pinch, Grab, Open Palm) [3M]
+     * Object response mapping in Unity C# script (`HandGestureController.cs`) [2M]
+   - 20M: Complete Gesture-Driven Interactive Object Manipulation Pipeline in Unity C#:
+     * Scene setup with XR Origin & Camera [5M]
+     * UDP/Socket receiver script connecting MediaPipe Python output to Unity [5M]
+     * Raycast grab/drop & physics manipulation logic with full C# code [5M]
+     * Visual feedback, bounding box highlights & error handling [5M]
+Output directly in structured Markdown.

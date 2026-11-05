@@ -1,0 +1,19 @@
+Act as an exam strategist for NMIMS ARVR (702COI002).
+Based on the uploaded Unit 6 slides and Answer Key, provide comprehensive study notes for Unit 6: Introduction to Mixed Reality (MR).
+Include:
+1. Conceptual & Technological Differences: AR vs VR vs MR, Milgram-Kishino Virtuality Continuum (Real Environment -> AR -> AV -> VR), Detailed Comparison Matrix
+2. Holograms & Spatial Displays: Physical optical holograms vs digital holograms, Spatial light modulators, Waveguide displays, Microsoft HoloLens 2, Apple Vision Pro
+3. Spatial Computing Core Concepts: Spatial Anchors, World-locking, Environment Meshing (real-time depth meshing), Physics interactions between real & virtual objects, Semantic understanding
+4. Multi-User Shared Experiences: Cloud spatial anchors (Azure Spatial Anchors), Co-located vs Remote multi-user coordination, Network synchronization of spatial state
+5. Need & Industrial Applications of Mixed Reality: Complex industrial assembly/digital twins, Tele-surgery & medical training, Remote expert assistance, Architecture & collaborative engineering
+6. Exam Scaffolding:
+   - 5M: Definition of Mixed Reality, Hologram principles, and Augmented Virtuality (AV) with examples
+   - 10M: Q4(a) Exhaustive Comparison of AR, VR, and MR with reference to:
+     * Immersion & Environmental Synthesis [3M]
+     * User Interaction Paradigm [3M]
+     * Tracking Needs & Spatial Hardware [4M]
+   - 20M: Enterprise Mixed Reality Architecture & Spatial Computing System:
+     * Spatial meshing, coordinate registration & physics occlusion [6M]
+     * Cloud Spatial Anchor synchronization for multi-user collaboration [7M]
+     * Interactive hand-tracking, voice commands, and remote digital twin telemetry [7M]
+Output directly in structured Markdown.

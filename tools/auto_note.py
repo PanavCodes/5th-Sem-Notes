@@ -82,8 +82,8 @@ SUBJECTS = {
 
 
 def clean_citations(text: str) -> str:
-    """Remove NotebookLM reference citations like [38], [244, 245]."""
-    return re.sub(r"[ \t]*\[\d+(?:[,\s]+\d+)*\]", "", text)
+    """Remove NotebookLM reference citations like [38], [244, 245], [2-4]."""
+    return re.sub(r"[ \t]*\[\d+(?:[,\s\-–]+\d+)*\]", "", text)
 
 
 def sanitize_markdown(content: str) -> str:
@@ -250,22 +250,42 @@ def get_notebook_id(subject_code: str) -> str:
     return None
 
 
+ARVR_TITLES = {
+    "1": "Introduction to Augmented Reality",
+    "2": "Introduction to Virtual Reality",
+    "3": "Scripting for AR-VR Applications",
+    "4": "Building AR and VR Experiences",
+    "5": "Deployment and Distribution",
+    "6": "Introduction to Mixed Reality",
+}
+
+
 def construct_prompt(subject_code: str, unit_num: str, doc_type: str, slide_path: Path = None, title: str = None) -> str:
     """Build the final optimized prompt to send to NotebookLM."""
     info = SUBJECTS[subject_code]
     subject_name = info["name"]
     domain = info["domain"]
-    unit_title = title or f"Unit {unit_num}"
+    
+    if subject_code == "ARVR" and not title:
+        unit_title = ARVR_TITLES.get(str(unit_num), f"Unit {unit_num}")
+    else:
+        unit_title = title or f"Unit {unit_num}"
+        
     slide_filename = slide_path.name if slide_path else f"Unit {unit_num} Slides"
+
+    slug_title = slugify(unit_title)
+    type_suffix = "study-notes" if doc_type == "notes" else "pyq-bank"
+    target_filename = f"{subject_code.lower()}-unit{unit_num}-{slug_title}-{type_suffix}.md"
+
+    # Check for calibrated prompt file
+    strict_prompt_file = REPO_ROOT / "tools" / "prompts" / f"unit{unit_num}_strict.txt"
+    if subject_code == "ARVR" and strict_prompt_file.exists():
+        return strict_prompt_file.read_text(encoding="utf-8"), target_filename
 
     slide_summary = ""
     if slide_path and slide_path.exists():
         slide_data = extract_slide_info(slide_path)
         slide_summary = summarize_slide_topics(slide_data)
-
-    slug_title = slugify(unit_title)
-    type_suffix = "study-notes" if doc_type == "notes" else "pyq-bank"
-    target_filename = f"{subject_code.lower()}-unit{unit_num}-{slug_title}-{type_suffix}.md"
 
     if doc_type == "notes":
         prompt = f"""Create a comprehensive study-notes Markdown file `{target_filename}` for **{subject_name} - Unit {unit_num}: {unit_title}** using the uploaded slides (`{slide_filename}`) as the PRIMARY and authoritative syllabus anchor, and textbooks strictly for 5-mark and 10-mark depth.
@@ -361,8 +381,10 @@ def ask_notebooklm(notebook_id: str, prompt_text: str) -> str:
         # Extract Answer body after "Answer:" marker
         if "Answer:" in output:
             answer = output.split("Answer:", 1)[1]
-            # Strip trailing "Resumed conversation:" or session markers
+            # Strip trailing "Resumed conversation:", next steps or session markers
             answer = re.sub(r"\nResumed conversation:.*$", "", answer, flags=re.DOTALL)
+            answer = re.sub(r"\n### Suggested Next Steps.*$", "", answer, flags=re.DOTALL)
+            answer = re.sub(r"\nNew conversation:.*$", "", answer, flags=re.DOTALL)
             return answer.strip()
         return output.strip()
     finally:
@@ -461,37 +483,41 @@ def main():
         return
     print(f"🔗 Connected to Notebook: {subject} ({notebook_id})")
 
-    # 2. Slide path
-    slide_path = Path(args.slide) if args.slide else None
-    if slide_path and not slide_path.exists():
-        print(f"Warning: Slide file not found at '{slide_path}'. Proceeding with unit syllabus prompt.")
-        slide_path = None
+    units = [str(i) for i in range(1, 7)] if args.unit.lower() == "all" else [args.unit]
 
-    # 3. Construct Prompt
-    prompt_text, filename = construct_prompt(subject, args.unit, args.type, slide_path, args.title)
-    print(f"📝 Prompt prepared for Unit {args.unit} ({args.type.upper()}).")
+    for unit_num in units:
+        print(f"\n--- Processing Unit {unit_num} ({args.type.upper()}) ---")
+        # 2. Slide path
+        slide_path = Path(args.slide) if args.slide else None
+        if slide_path and not slide_path.exists():
+            print(f"Warning: Slide file not found at '{slide_path}'. Proceeding with unit syllabus prompt.")
+            slide_path = None
 
-    # 4. Query NotebookLM
-    raw_markdown = ask_notebooklm(notebook_id, prompt_text)
-    if not raw_markdown or len(raw_markdown.strip()) < 100:
-        print("Error: Received empty or very short response from NotebookLM.")
-        return
+        # 3. Construct Prompt
+        prompt_text, filename = construct_prompt(subject, unit_num, args.type, slide_path, args.title)
+        print(f"📝 Prompt prepared for Unit {unit_num} ({args.type.upper()}).")
 
-    print(f"✅ Generated {len(raw_markdown.splitlines())} lines ({len(raw_markdown.split())} words) of content.")
+        # 4. Query NotebookLM
+        raw_markdown = ask_notebooklm(notebook_id, prompt_text)
+        if not raw_markdown or len(raw_markdown.strip()) < 100:
+            print(f"Error: Received empty or very short response from NotebookLM for Unit {unit_num}.")
+            continue
 
-    # 5. Sanitize and format markdown (citations, LaTeX, currencies, tables)
-    print("🧹 Sanitizing Markdown (citations, LaTeX brackets, currency signs, and table alignments)...")
-    cleaned_markdown = sanitize_markdown(raw_markdown)
+        print(f"✅ Generated {len(raw_markdown.splitlines())} lines ({len(raw_markdown.split())} words) of content.")
 
-    # 6. Save to Repo
-    unit_dir = find_or_create_unit_dir(subject, args.unit)
-    target_path = unit_dir / filename
-    target_path.write_text(cleaned_markdown.strip() + "\n", encoding="utf-8")
-    rel_path = target_path.relative_to(REPO_ROOT)
-    print(f"💾 File saved to: {rel_path.as_posix()}")
+        # 5. Sanitize and format markdown (citations, LaTeX, currencies, tables)
+        print("🧹 Sanitizing Markdown (citations, LaTeX brackets, currency signs, and table alignments)...")
+        cleaned_markdown = sanitize_markdown(raw_markdown)
 
-    # 7. Update README
-    update_readme(subject, args.unit, rel_path, args.type)
+        # 6. Save to Repo
+        unit_dir = find_or_create_unit_dir(subject, unit_num)
+        target_path = unit_dir / filename
+        target_path.write_text(cleaned_markdown.strip() + "\n", encoding="utf-8")
+        rel_path = target_path.relative_to(REPO_ROOT)
+        print(f"💾 File saved to: {rel_path.as_posix()}")
+
+        # 7. Update README
+        update_readme(subject, unit_num, rel_path, args.type)
 
     # 8. Push to GitHub
     if args.no_push:

@@ -1,0 +1,38 @@
+Act as an exam professor for NMIMS ARVR (702COI002).
+CRITICAL: Do NOT say "I have generated" or give conversational confirmations. Output the actual study notes Markdown document starting directly with the title.
+
+# Comprehensive Study Notes — Unit 6: Introduction to Mixed Reality
+Write out the complete text covering:
+1. Conceptual & Technological Foundations:
+   * Definitions of Mixed Reality (MR)
+   * Milgram & Kishino's Virtuality Continuum (Real Environment -> Augmented Reality -> Augmented Virtuality -> Virtual Reality)
+   * The Extended Reality (XR) Umbrella taxonomy
+2. Holograms & Spatial Displays:
+   * Physical optical holography vs digital computer-generated holograms
+   * Waveguide optics, Spatial Light Modulators, Light-field displays
+   * Hardware case studies: Microsoft HoloLens 2, Magic Leap 2, Apple Vision Pro spatial computing
+3. Spatial Computing Core Mechanisms:
+   * Spatial Anchors: Local vs Cloud Spatial Anchors (Azure Spatial Anchors), Coordinate frame persistence
+   * World-Locking vs Body-Locking vs Head-Locking
+   * Real-time Environment Meshing: Surface reconstruction, Physics occlusion, collision between real and virtual objects
+   * Semantic Scene Understanding: Spatial understanding, plane classification (floor, wall, ceiling, table)
+4. Multi-User Shared Experiences:
+   * Co-located vs Remote multi-user coordination
+   * Spatial coordinate alignment across multiple devices (shared QR/visual anchors, spatial anchor transfer)
+   * Real-time state synchronization via networking protocols (WebRTC, Photon, Normcore)
+5. Need & Industrial Applications of Mixed Reality:
+   * Aerospace & Automotive: Collaborative design, digital twin visualization, tele-maintenance
+   * Medicine: Holographic pre-surgical planning, 3D anatomical overlays in operating rooms
+   * Architecture & Construction: BIM 3D on-site spatial visualization
+   * Remote Expert Assistance: Real-time spatial annotations on physical machinery
+6. Exam Questions & Model Answers:
+   - [5 Marks]: Define Mixed Reality and Augmented Virtuality (AV) with one real-world engineering example of each [5M]
+   - [10 Marks] Q4(a): Compare AR, VR, and Mixed Reality environments with reference to user interaction and tracking needs:
+     * Immersion & Environmental Synthesis [3M]
+     * User Interaction Paradigm [3M]
+     * Tracking Needs & Spatial Hardware Architecture [4M]
+   - [20 Marks] Enterprise Mixed Reality Spatial Computing System Architecture:
+     * Component 1: Spatial meshing, coordinate registration, and physics occlusion [6M]
+     * Component 2: Cloud Spatial Anchor synchronization and multi-user state sharing [7M]
+     * Component 3: Mid-air gesture interaction, spatial audio, and industrial digital twin integration [7M]
+Write out every section with full technical detail, comparison tables, and ASCII diagrams.

@@ -1,0 +1,20 @@
+Act as an exam professor for NMIMS ARVR (702COI002).
+CRITICAL: Do NOT say "I have generated" or give conversational confirmations. Output the actual study notes Markdown document starting directly with the title.
+
+# Comprehensive Study Notes — Unit 1: Introduction to Augmented Reality (AR)
+Write out the complete text covering:
+1. Definition and Scope of AR: Azuma's 3 characteristics, Milgram-Kishino Virtuality Continuum, Extended Reality (XR) umbrella, Tom Caudell (Boeing)
+2. History of AR: 1968 Sutherland Sword of Damocles to 2017 IKEA Place and ARKit/ARCore
+3. Displays: Optical See-Through (OST) vs Video See-Through (VST), Spatial AR / Projection Mapping, Spatial Reality Displays, Multimodal interfaces
+4. Strong AR vs Weak AR: 6DOF SLAM vs 3DOF/GPS, environmental understanding, occlusion, concrete industry examples
+5. Engineering Applications: Aviation HUDs, Medicine/Surgery, Industrial Maintenance (Boeing wiring harness)
+6. Technical & Usability Challenges: Latency (<20ms), Tracking/Registration errors, FOV clipping, Safety & Privacy
+7. Exam Questions & Model Answers based on Official Answer Key:
+   - [5 Marks] Q1(a): Define AR and VR with one engineering application of each [AR def 1M, AR app 1.5M, VR def 1M, VR app 1.5M]
+   - [5 Marks] Q1(c): Differentiate between Strong AR and Weak AR with examples [Strong AR def 1.5M + app 1M, Weak AR def 1.5M + app 1M]
+   - [10 Marks] Q4(a): Compare AR, VR, and MR with reference to immersion, interaction model, and tracking needs [3M + 3M + 4M]
+   - [20 Marks] Q5: AR Vehicle Maintenance Assistant using Unity + AR Foundation:
+     * Component 1: Scene setup with physical alignment and tracking [6M]
+     * Component 2: Overlay logic: Object recognition and instructions with full C# script (`VehicleMaintenanceManager.cs`) [8M]
+     * Component 3: Controls, performance optimization & deployment strategy (Android export) [6M]
+Write out every section with full technical detail, C# code blocks, and ASCII diagrams.
