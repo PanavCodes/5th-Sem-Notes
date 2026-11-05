@@ -80,22 +80,13 @@ default risk.
 
 ##### 3. Multi-Variable Comparison: Revolving Credit vs. Instalment Credit
 
-| Parameter | Revolving Credit (Credit Cards) | Instalment Credit 
-(Auto/Consumer Loans) |
+| Parameter | Revolving Credit (Credit Cards) | Instalment Credit (Auto/Consumer Loans) |
 | :--- | :--- | :--- |
-| **Credit Structure** | Open-ended line of credit; reusable balance upon 
-repayment. | Closed-ended amortizing term loan. |
-| **Collateral Basis** | Typically unsecured (high credit risk). | Secured 
-against underlying asset (Hypothecation of vehicle/goods). |
-| **Interest Rate Structure** | Variable / Compounded daily/monthly on rollover
-($36\% - 42\%$ p.a.). | Fixed or Floating annualized rate ($8.5\% - 
-16\%$ p.a.). |
-| **Repayment Flexibility** | Minimum Amount Due ($\text{MAD} \approx 5\%$)
-or full balance. | Rigid, structured Equated Monthly Instalments 
-($\text{EMI}$). |
-| **Regulatory Risk Weight** | $125\%$ or higher risk weight under 
-Basel/RBI guidelines. | $75\% - 100\%$ depending on asset class and 
-loan-to-value. |
+| **Credit Structure** | Open-ended line of credit; reusable balance upon repayment. | Closed-ended amortizing term loan. |
+| **Collateral Basis** | Typically unsecured (high credit risk). | Secured against underlying asset (Hypothecation of vehicle/goods). |
+| **Interest Rate Structure** | Variable / Compounded daily/monthly on rollover ($36\% - 42\%$ p.a.). | Fixed or Floating annualized rate ($8.5\% - 16\%$ p.a.). |
+| **Repayment Flexibility** | Minimum Amount Due ($\text{MAD} \approx 5\%$) or full balance. | Rigid, structured Equated Monthly Instalments ($\text{EMI}$). |
+| **Regulatory Risk Weight** | $125\%$ or higher risk weight under Basel/RBI guidelines. | $75\% - 100\%$ depending on asset class and loan-to-value. |
 
 ##### 4. Structured Case Study: Household Consumption Smoothing & Default Shock
 
@@ -200,21 +191,11 @@ Where the Annual Percentage Rate (APR) compounds as:
 ##### 3. Exhaustive Multi-Variable Comparison: Stakeholder Benefits of Credit 
 Cards
 
-| Parameter | Benefits to Cardholders | Benefits to Merchants | Benefits to 
-Issuers / System |
+| Parameter | Benefits to Cardholders | Benefits to Merchants | Benefits to Issuers / System |
 | :--- | :--- | :--- | :--- |
-| **Financial / Liquidity** | Provides interest-free grace period ($20 - 
-50$ days) & short-term working capital. | Guarantees immediate payment; 
-eliminates credit default risk on retail customers. | Yields high net 
-interest margins (NIM) and fee revenues. |
-| **Convenience & Safety** | Cashless security, fraud protection, digital 
-record of expenses. | Speeds up checkout process; reduces cash handling and
-storage costs. | Accelerates digital transaction velocity across payment 
-rails. |
-| **Economic Incentive** | Reward points, cashback, airport lounge access, 
-purchase protection. | Drives higher basket sizes as consumers buy more on 
-credit. | Earns interchange fee ($1.5\% - 2.5\%$) on gross 
-transaction volume. |
+| **Financial / Liquidity** | Provides interest-free grace period ($20 - 50$ days) & short-term working capital. | Guarantees immediate payment; eliminates credit default risk on retail customers. | Yields high net interest margins (NIM) and fee revenues. |
+| **Convenience & Safety** | Cashless security, fraud protection, digital record of expenses. | Speeds up checkout process; reduces cash handling and storage costs. | Accelerates digital transaction velocity across payment rails. |
+| **Economic Incentive** | Reward points, cashback, airport lounge access, purchase protection. | Drives higher basket sizes as consumers buy more on credit. | Earns interchange fee ($1.5\% - 2.5\%$) on gross transaction volume. |
 
 ---
 
@@ -331,18 +312,11 @@ of the debt instrument.
 ##### 5. Multi-Variable Comparison: Advantages vs. Limitations of Credit 
 Ratings
 
-| Parameter | Advantages to Investors & Issuers | Limitations & Structural 
-Risks |
+| Parameter | Advantages to Investors & Issuers | Limitations & Structural Risks |
 | :--- | :--- | :--- |
-| **Information Asymmetry** | Reduces information gap between issuers and 
-retail/institutional investors. | Ratings are relative opinions, not 
-absolute guarantees of default immunity. |
-| **Capital Cost Impact** | High-rated issuers ($\text{AAA}$) raise capital
-at lower interest yields. | Conflict of interest due to "Issuer-Pays" 
-revenue model. |
-| **Regulatory Benchmark** | Serves as mandatory eligibility criteria for CPs, 
-debt issues, and bank capital. | Lagging indicators — rating downgrades
-often occur post financial distress. |
+| **Information Asymmetry** | Reduces information gap between issuers and retail/institutional investors. | Ratings are relative opinions, not absolute guarantees of default immunity. |
+| **Capital Cost Impact** | High-rated issuers ($\text{AAA}$) raise capital at lower interest yields. | Conflict of interest due to "Issuer-Pays" revenue model. |
+| **Regulatory Benchmark** | Serves as mandatory eligibility criteria for CPs, debt issues, and bank capital. | Lagging indicators — rating downgrades often occur post financial distress. |
 
 ---
 
@@ -528,14 +502,10 @@ shareholding via Reverse Book Building.
 
 | Parameter | Fixed-Rate Home Loan | Floating-Rate Home Loan |
 | :--- | :--- | :--- |
-| **Interest Rate Dynamics** | Unchanged across the entire loan tenure. | 
-Resets periodically based on benchmark link (EBLR/Repo). |
-| **Borrower Risk Exposure** | Insulated against interest rate hikes. | 
-Exposed to interest rate volatility risk. |
-| **Initial Yield Markup** | Priced $1.5\% - 2.5\%$ higher than floating 
-rates. | Priced lower at prevailing external market benchmarks. |
-| **Prepayment Penalty** | Penalty charged on premature closure. | Zero 
-prepayment penalty as per RBI guidelines. |
+| **Interest Rate Dynamics** | Unchanged across the entire loan tenure. | Resets periodically based on benchmark link (EBLR/Repo). |
+| **Borrower Risk Exposure** | Insulated against interest rate hikes. | Exposed to interest rate volatility risk. |
+| **Initial Yield Markup** | Priced $1.5\% - 2.5\%$ higher than floating rates. | Priced lower at prevailing external market benchmarks. |
+| **Prepayment Penalty** | Penalty charged on premature closure. | Zero prepayment penalty as per RBI guidelines. |
 
 ##### 4. Structured Case Study: Voluntary Delisting & Reverse Book Building
 
@@ -608,14 +578,10 @@ prices over 2 weeks prior to the relevant date.
 | Parameter | Public Issue (IPO / FPO) | Private Placement / QIP |
 | :--- | :--- | :--- |
 | **Target Investor Base** | General retail public + HNI + Institutional. | Select identified investors / QIBs ($\le 200$ rule). |
-| **Regulatory Lead Time** | Extensive ($6 - 9$ months for SEBI approval) 
-. | Rapid execution ($2 - 4$ weeks). |
-| **Issue Expenses** | High ($5\% - 8\%$ of total capital raised). | 
-Minimal administrative & underwriting costs. |
-| **Mandatory Disclosures** | Detailed DRHP / Red Herring Prospectus. | 
-Abbreviated Placement Document. |
-| **Dilution & Ownership** | Widespread retail ownership fragmentation. | 
-Concentrated institutional holding. |
+| **Regulatory Lead Time** | Extensive ($6 - 9$ months for SEBI approval) . | Rapid execution ($2 - 4$ weeks). |
+| **Issue Expenses** | High ($5\% - 8\%$ of total capital raised). | Minimal administrative & underwriting costs. |
+| **Mandatory Disclosures** | Detailed DRHP / Red Herring Prospectus. | Abbreviated Placement Document. |
+| **Dilution & Ownership** | Widespread retail ownership fragmentation. | Concentrated institutional holding. |
 
 ##### 4. Strategic Significance in Corporate Financial Management
 Private Placement and QIPs allow corporations to rapidly raise growth capital, 
@@ -693,13 +659,9 @@ company using a high proportion of debt secured by the target's cash flows.
 | Parameter | Venture Capital (VC) | Private Equity (PE) |
 | :--- | :--- | :--- |
 | **Investment Phase** | Early-stage, high-risk startups & emerging firms. | Established, mature companies requiring restructuring/expansion. |
-| **Stake Size** | Minority equity stake ($10\% - 30\%$). | 
-Majority control / Controlling buyout stake ($50\% - 100\%$). |
-| **Check Size & Valuation** | Smaller ticket sizes based on future market TAM 
-projections. | Large ticket sizes based on discounted cash flows (DCF)
-and EBITDA multiples. |
-| **SEBI AIF Classification** | **Category I AIF** (Venture Capital / Social 
-Venture). | **Category II AIF** (PE / Debt Funds). |
+| **Stake Size** | Minority equity stake ($10\% - 30\%$). | Majority control / Controlling buyout stake ($50\% - 100\%$). |
+| **Check Size & Valuation** | Smaller ticket sizes based on future market TAM projections. | Large ticket sizes based on discounted cash flows (DCF) and EBITDA multiples. |
+| **SEBI AIF Classification** | **Category I AIF** (Venture Capital / Social Venture). | **Category II AIF** (PE / Debt Funds). |
 | **Primary Exit Routes** | Strategic M&A, Secondary Sale to PE, IPO exit. | Strategic sale, Promoter buyback, Secondary LBO. |
 
 ##### 5. Structured Case Study: Aman Sanghavi's Financing Decision

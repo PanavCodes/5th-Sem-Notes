@@ -95,14 +95,9 @@ working-capital lockups, and reduces cascading supply-chain defaults.
 #### 4. Summary Matrix of Stakeholder Benefits
 | Stakeholder | Primary Benefits | Operational Impact |
 | :--- | :--- | :--- |
-| **Client (Seller)** | Prepayment of 80–90% invoice value; ledger outsourcing 
- | Eliminates liquidity constraints; lowers administrative overhead 
- |
-| **Debtor (Buyer)** | Simplified payment terms; extended credit window | 
-Avoids collateral lockup required for bank LCs or guarantees |
-| **Factor** | Earns discount charges (interest) and administrative service 
-fees | Yields fee-and-fund-based income secured by receivables 
-hypothecation |
+| **Client (Seller)** | Prepayment of 80–90% invoice value; ledger outsourcing | Eliminates liquidity constraints; lowers administrative overhead |
+| **Debtor (Buyer)** | Simplified payment terms; extended credit window | Avoids collateral lockup required for bank LCs or guarantees |
+| **Factor** | Earns discount charges (interest) and administrative service fees | Yields fee-and-fund-based income secured by receivables hypothecation |
 
 ---
 
@@ -204,17 +199,12 @@ country.
 ```
 
 #### 2. Comparative Matrix of Factoring Classifications
-| Factoring Type | Risk Bearer | Advance Timing | Notice to Debtor | Key 
-Application |
+| Factoring Type | Risk Bearer | Advance Timing | Notice to Debtor | Key Application |
 | :--- | :--- | :--- | :--- | :--- |
-| **Recourse** | Client / Seller | Upfront (80-90%) | 
-Mandatory | Standard MSME short-term financing |
-| **Non-Recourse** | Factor | Upfront (80-90%) | 
-Mandatory | Credit risk hedging for weak debtors |
-| **Maturity** | Depends on contract | Maturity date only | 
-Mandatory | Pure ledger administration outsourcing |
-| **International** | Import Factor | Upfront on export | 
-Disclosed to Importer | Cross-border trade on open account |
+| **Recourse** | Client / Seller | Upfront (80-90%) | Mandatory | Standard MSME short-term financing |
+| **Non-Recourse** | Factor | Upfront (80-90%) | Mandatory | Credit risk hedging for weak debtors |
+| **Maturity** | Depends on contract | Maturity date only | Mandatory | Pure ledger administration outsourcing |
+| **International** | Import Factor | Upfront on export | Disclosed to Importer | Cross-border trade on open account |
 
 ---
 
@@ -470,31 +460,16 @@ capital goods and turnkey projects.
 
 | Dimension | Factoring | Forfaiting |
 | :--- | :--- | :--- |
-| **1. Primary Tenor** | Short-term (30 to 180 days; max 6 months)
-| Medium- to Long-term (6 months to 7 years) |
-| **2. Recourse Status** | Can be **With Recourse** or **Without Recourse** 
- | Strictly **100% Without Recourse** |
-| **3. Underlying Trade** | Short-term goods, consumer items, trade services 
- | Capital equipment, heavy machinery, mega projects |
-| **4. Negotiable Instruments** | Based on open invoices, delivery challans, 
-and book debts | Based on **Avalised Bills of Exchange** or 
-**Promissory Notes** |
-| **5. Bank Guarantee / Avalisation** | Not required; depends on buyer credit 
-assessment | **Mandatory Avalisation** by importer's bank |
-| **6. Secondary Market Trading** | No secondary market; non-transferable 
-continuous debt | Active secondary market for trading avalised notes 
- |
-| **7. Prepayment / Advance %** | Partial advance (**80% to 90%**); balance on 
-maturity | **100% Full Prepayment** minus upfront discount 
- |
-| **8. Cost & Fee Bearer** | Discount and ledger fees usually paid by the 
-**Seller/Client** | All discount costs built into contract and borne by 
-**Importer** |
-| **9. Sales Ledger Admin** | **Comprehensive ledger maintenance** and debt 
-collection | Financing instrument only; **no sales ledger 
-management** |
-| **10. Geographic Scope** | Both Domestic and International (Two-Factor 
-System) | Exclusively **International Trade** transactions |
+| **1. Primary Tenor** | Short-term (30 to 180 days; max 6 months) | Medium- to Long-term (6 months to 7 years) |
+| **2. Recourse Status** | Can be **With Recourse** or **Without Recourse** | Strictly **100% Without Recourse** |
+| **3. Underlying Trade** | Short-term goods, consumer items, trade services | Capital equipment, heavy machinery, mega projects |
+| **4. Negotiable Instruments** | Based on open invoices, delivery challans, and book debts | Based on **Avalised Bills of Exchange** or **Promissory Notes** |
+| **5. Bank Guarantee / Avalisation** | Not required; depends on buyer credit assessment | **Mandatory Avalisation** by importer's bank |
+| **6. Secondary Market Trading** | No secondary market; non-transferable continuous debt | Active secondary market for trading avalised notes |
+| **7. Prepayment / Advance %** | Partial advance (**80% to 90%**); balance on maturity | **100% Full Prepayment** minus upfront discount |
+| **8. Cost & Fee Bearer** | Discount and ledger fees usually paid by the **Seller/Client** | All discount costs built into contract and borne by **Importer** |
+| **9. Sales Ledger Admin** | **Comprehensive ledger maintenance** and debt collection | Financing instrument only; **no sales ledger management** |
+| **10. Geographic Scope** | Both Domestic and International (Two-Factor System) | Exclusively **International Trade** transactions |
 
 `📊 Diagram Required: YES | Type: Structural Comparison | Source: Unit-9.pptx /
 Pathak Ch. 20`
@@ -518,19 +493,13 @@ Pathak Ch. 20`
 ### 1. Topic-Wise Frequency Table
 Ranked by frequency of appearance across past NMIMS exam papers (2022–2026):
 
-| Rank | Topic / Concept Area | Exam Appearances | Total Marks Tested | Primary
-Mark Weightings |
+| Rank | Topic / Concept Area | Exam Appearances | Total Marks Tested | Primary Mark Weightings |
 | :---: | :--- | :---: | :---: | :---: |
-| **1** | **Forfaiting Definition, Benefits & Mechanism** [8, 39-43] | 5 Papers
-| 45 Marks | 10M (x4), 5M (x1) |
-| **2** | **Factoring Functions, Mechanics & Advantages** [9, 15-17] | 4 Papers
-| 30 Marks | 10M (x2), 5M (x2) |
-| **3** | **Classifications & Types of Factoring** | 2 Papers | 20 
-Marks | 10M (x2) |
-| **4** | **Factoring vs. Forfaiting Distinction** | 1 Paper | 5 Marks | 5M
-(x1) |
-| **5** | **TReDS & Regulatory Norms (Act 2011 / RBI)** | Course 
-Syllabus Staple | -- | Applied / Case Studies |
+| **1** | **Forfaiting Definition, Benefits & Mechanism** [8, 39-43] | 5 Papers | 45 Marks | 10M (x4), 5M (x1) |
+| **2** | **Factoring Functions, Mechanics & Advantages** [9, 15-17] | 4 Papers | 30 Marks | 10M (x2), 5M (x2) |
+| **3** | **Classifications & Types of Factoring** | 2 Papers | 20 Marks | 10M (x2) |
+| **4** | **Factoring vs. Forfaiting Distinction** | 1 Paper | 5 Marks | 5M (x1) |
+| **5** | **TReDS & Regulatory Norms (Act 2011 / RBI)** | Course Syllabus Staple | -- | Applied / Case Studies |
 
 ---
 
@@ -564,21 +533,11 @@ financial system."
 
 | Priority Tier | Concept Group | Exam Stance & Preparation Strategy |
 | :--- | :--- | :--- |
-| 🔥 **Very Important** | **Forfaiting Mechanics & Benefits** | High-mark 
-staple (10M compulsory choice in almost every final exam). Prepare full 10-step
-workflow, mathematical discounting formula, and avalisation process. |
-| 🔥 **Very Important** | **Factoring Functions & Advantages** | Tested in 
-every cycle. Focus on 5 core functions of a factor, tripartite structure, and 
-risk mitigation. |
-| ⭐ **Important** | **Types of Factoring & International Factoring** | Focus 
-on Recourse vs Non-recourse dynamics and the Two-Factor system under FCI rules 
-. |
-| ⭐ **Important** | **Factoring vs. Forfaiting Distinction** | Guaranteed 
-candidate for 5M/10M distinction tables. Memorize 10-parameter comparison 
-matrix. |
-| 🟡 **Moderate Priority**| **TReDS & Factoring Regulation Act 2011** | Core 
-syllabus boundary topics. Essential for high-scoring case studies and 
-regulatory depth. |
+| 🔥 **Very Important** | **Forfaiting Mechanics & Benefits** | High-mark staple (10M compulsory choice in almost every final exam). Prepare full 10-step workflow, mathematical discounting formula, and avalisation process. |
+| 🔥 **Very Important** | **Factoring Functions & Advantages** | Tested in every cycle. Focus on 5 core functions of a factor, tripartite structure, and risk mitigation. |
+| ⭐ **Important** | **Types of Factoring & International Factoring** | Focus on Recourse vs Non-recourse dynamics and the Two-Factor system under FCI rules . |
+| ⭐ **Important** | **Factoring vs. Forfaiting Distinction** | Guaranteed candidate for 5M/10M distinction tables. Memorize 10-parameter comparison matrix. |
+| 🟡 **Moderate Priority**| **TReDS & Factoring Regulation Act 2011** | Core syllabus boundary topics. Essential for high-scoring case studies and regulatory depth. |
 
 ---
 
@@ -586,24 +545,16 @@ regulatory depth. |
 Verification table ensuring all relevant topics in `Unit-9.pptx` were tested 
 against past papers:
 
-| Unit-9.pptx Slide Topic | Covered in Syllabus? | Exam Paper Citation | Audit 
-Verification Status |
+| Unit-9.pptx Slide Topic | Covered in Syllabus? | Exam Paper Citation | Audit Verification Status |
 | :--- | :---: | :---: | :---: |
-| **Factoring: Concept & Tripartite Mechanics** | YES | Re-Exam 
-2024-25 Q5(b) | ✅ Fully Verified |
-| **Functions of a Factor** | YES | Final Exam 2025-26 Q1(b) | ✅
-Fully Verified |
-| **Recourse vs Non-Recourse Factoring** | YES | Re-Exam 2023-24 Q5(a)
- | ✅ Fully Verified |
-| **Domestic vs International Factoring (FCI)** | YES | Special 
-Re-Exam 2022-23 Q5(a) | ✅ Fully Verified |
+| **Factoring: Concept & Tripartite Mechanics** | YES | Re-Exam 2024-25 Q5(b) | ✅ Fully Verified |
+| **Functions of a Factor** | YES | Final Exam 2025-26 Q1(b) | ✅ Fully Verified |
+| **Recourse vs Non-Recourse Factoring** | YES | Re-Exam 2023-24 Q5(a) | ✅ Fully Verified |
+| **Domestic vs International Factoring (FCI)** | YES | Special Re-Exam 2022-23 Q5(a) | ✅ Fully Verified |
 | **TReDS Platform Mechanisms** | YES | Applied Syllabus Scope | ✅ Fully Verified |
-| **Forfaiting Concept, Avalisation & Tenor** | YES | Final Exam 
-2025-26 Q5(b) | ✅ Fully Verified |
-| **Forfaiting Discount Maths & Formulas** | YES | Final Exam 2024-25 
-Q5(b) | ✅ Fully Verified |
-| **Factoring vs Forfaiting Comparison** | YES | Re-Exam 2023-24 Q1(c)
- | ✅ Fully Verified |
+| **Forfaiting Concept, Avalisation & Tenor** | YES | Final Exam 2025-26 Q5(b) | ✅ Fully Verified |
+| **Forfaiting Discount Maths & Formulas** | YES | Final Exam 2024-25 Q5(b) | ✅ Fully Verified |
+| **Factoring vs Forfaiting Comparison** | YES | Re-Exam 2023-24 Q1(c) | ✅ Fully Verified |
 
 ---
 

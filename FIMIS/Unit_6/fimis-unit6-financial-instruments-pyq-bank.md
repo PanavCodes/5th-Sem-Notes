@@ -121,24 +121,14 @@ transaction (lending cash against G-Sec collateral).
 ```
 
 ##### 3. Multi-Variable Comparative Matrix: Money Market Instruments
-| Parameter | Treasury Bills (T-Bills) | Commercial Paper (CP) | Certificate of
-Deposit (CD) | Repurchase Agreements (Repos) |
+| Parameter | Treasury Bills (T-Bills) | Commercial Paper (CP) | Certificate of Deposit (CD) | Repurchase Agreements (Repos) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Issuer Category** | Reserve Bank of India (GoI) | Corporate / PDs / FIs
- | Commercial Banks / FIs | Banks, PDs, Corporates, RBI |
-| **Tenor / Maturity** | 91, 182, 364 Days | 7 Days to 1 Year [7-9] | 7 
-Days to 1 Year (Banks) | Overnight to 14 Days (LAF) |
-| **Minimum Denomination** | $\text{₹}25,000$ | $\text{₹}5,000,000$
-($\text{₹}5\text{ L}$) | $\text{₹}100,000$ ($\text{₹}1\text{ 
-L}$) | Typically $\text{₹}5\text{ Crores}$ (Interbank) |
-| **Credit Default Risk** | Zero (Sovereign Guarantee) | High / 
-Corporate Default Risk | Low Bank Default Risk | Very Low 
-(Collateralized) |
-| **Statutory Regulator** | RBI (*RBI Act, 1934*) | RBI / SEBI Directions 
- | RBI (*Banking Reg. Act, 1949*) | RBI Liquidity Framework |
-| **Yield / Pricing Mechanism**| Discount to Face Value | Discount to 
-Face Value | Discount to Face Value | Repo Rate Coupon / Haircut 
- |
+| **Issuer Category** | Reserve Bank of India (GoI) | Corporate / PDs / FIs | Commercial Banks / FIs | Banks, PDs, Corporates, RBI |
+| **Tenor / Maturity** | 91, 182, 364 Days | 7 Days to 1 Year [7-9] | 7 Days to 1 Year (Banks) | Overnight to 14 Days (LAF) |
+| **Minimum Denomination** | $\text{₹}25,000$ | $\text{₹}5,000,000$ ($\text{₹}5\text{ L}$) | $\text{₹}100,000$ ($\text{₹}1\text{ L}$) | Typically $\text{₹}5\text{ Crores}$ (Interbank) |
+| **Credit Default Risk** | Zero (Sovereign Guarantee) | High / Corporate Default Risk | Low Bank Default Risk | Very Low (Collateralized) |
+| **Statutory Regulator** | RBI (*RBI Act, 1934*) | RBI / SEBI Directions | RBI (*Banking Reg. Act, 1949*) | RBI Liquidity Framework |
+| **Yield / Pricing Mechanism**| Discount to Face Value | Discount to Face Value | Discount to Face Value | Repo Rate Coupon / Haircut |
 
 ##### 4. Structured Corporate Case Study: RBI Anti-Inflationary Liquidity 
 Absorption
@@ -244,23 +234,13 @@ Option Value ]
 ```
 
 ##### 3. Multi-Variable Comparison: Key Corporate Debt Structures
-| Parameter | Non-Convertible Debentures (NCD) | Fully Convertible Debentures 
-(FCD) | Deep Discount Bonds (DDB) | Floating Rate Bonds (FRB) |
+| Parameter | Non-Convertible Debentures (NCD) | Fully Convertible Debentures (FCD) | Deep Discount Bonds (DDB) | Floating Rate Bonds (FRB) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Equity Conversion** | Nil (100% Debt) | 100% Equity Conversion
-| Nil (100% Debt) | Nil (100% Debt) |
-| **Periodic Coupon** | Fixed Interest Semi-Annually/Annually | Fixed 
-Coupon until conversion date | Zero Periodic Coupon | Variable 
-(Reset against benchmark) |
-| **Capital Structure Impact**| Permanent Debt until redemption | 
-Shifts from Debt to Equity Capital | Accumulates Accrued Debt Interest 
- | Permanent Debt liability |
-| **Interest Rate Risk** | High Price Sensitivity | Moderate (Cushioned by
-Equity Option) | Extreme Price Sensitivity (Long Duration) | Low Duration / 
-Minimal Rate Risk |
-| **Target Investor Base**| Income-focused Debt Investors | Growth 
-Investors seeking downside protection | Long-term Provident Funds / Retail | 
-Institutional Investors during rate hikes |
+| **Equity Conversion** | Nil (100% Debt) | 100% Equity Conversion | Nil (100% Debt) | Nil (100% Debt) |
+| **Periodic Coupon** | Fixed Interest Semi-Annually/Annually | Fixed Coupon until conversion date | Zero Periodic Coupon | Variable (Reset against benchmark) |
+| **Capital Structure Impact**| Permanent Debt until redemption | Shifts from Debt to Equity Capital | Accumulates Accrued Debt Interest | Permanent Debt liability |
+| **Interest Rate Risk** | High Price Sensitivity | Moderate (Cushioned by Equity Option) | Extreme Price Sensitivity (Long Duration) | Low Duration / Minimal Rate Risk |
+| **Target Investor Base**| Income-focused Debt Investors | Growth Investors seeking downside protection | Long-term Provident Funds / Retail | Institutional Investors during rate hikes |
 
 ##### 4. Structured Corporate Case Study: Tata Motors Limited NCD & Convertible
 Debt Refinancing
@@ -342,26 +322,15 @@ Rights)
 ```
 
 ##### 3. Exhaustive Multi-Variable Comparison: Debt vs. Equity
-| Comparison Parameter | Debt Financing (Corporate Debt / Debentures) | Equity 
-Financing (Ordinary Equity Shares) |
+| Comparison Parameter | Debt Financing (Corporate Debt / Debentures) | Equity Financing (Ordinary Equity Shares) |
 | :--- | :--- | :--- |
-| **Legal Status & Ownership** | Creditor relationship; no corporate ownership 
-rights. | True ownership position in the enterprise. |
-| **Voting & Governance Control** | Zero voting rights; cannot vote on 
-management resolutions. | Full voting rights (1 share = 1 vote) under 
-Sec 47. |
-| **Return Structure** | Obligatory fixed interest payment (Coupon Rate). | Variable dividends based on board discretion + capital appreciation 
-. |
-| **Tax Treatment (Issuer)** | **Interest is tax-deductible** (reduces taxable 
-income). | **Dividends paid from post-tax earnings** (not 
-tax-deductible). |
-| **Liquidation Priority** | First priority on asset liquidation over 
-shareholders. | **Residual claimant**; last priority in liquidation 
-. |
+| **Legal Status & Ownership** | Creditor relationship; no corporate ownership rights. | True ownership position in the enterprise. |
+| **Voting & Governance Control** | Zero voting rights; cannot vote on management resolutions. | Full voting rights (1 share = 1 vote) under Sec 47. |
+| **Return Structure** | Obligatory fixed interest payment (Coupon Rate). | Variable dividends based on board discretion + capital appreciation . |
+| **Tax Treatment (Issuer)** | **Interest is tax-deductible** (reduces taxable income). | **Dividends paid from post-tax earnings** (not tax-deductible). |
+| **Liquidation Priority** | First priority on asset liquidation over shareholders. | **Residual claimant**; last priority in liquidation . |
 | **Maturity & Repayment** | Fixed maturity date (except perpetual debt). | Permanent capital; zero mandatory redemption date. |
-| **Financial Risk Profile** | Introduces financial leverage and bankruptcy 
-risk if unpaid. | Zero default risk; non-payment of dividend cannot 
-trigger insolvency. |
+| **Financial Risk Profile** | Introduces financial leverage and bankruptcy risk if unpaid. | Zero default risk; non-payment of dividend cannot trigger insolvency. |
 
 ##### 4. Structured Corporate Case Study: Reliance Industries Debt-Free 
 Transition
@@ -459,20 +428,12 @@ after a specified period.
 ```
 
 ##### 3. Strategic Analysis: Rights Issue as a "Double-Edged Sword"
-| Strategic Dimension | Benefits to Company & Shareholders | Disadvantages & 
-Operational Risks |
+| Strategic Dimension | Benefits to Company & Shareholders | Disadvantages & Operational Risks |
 | :--- | :--- | :--- |
-| **Capital Control & Ownership** | Prevents hostile takeover by preserving 
-relative voting control. | Risk of promoter stake dilution if 
-promoters fail to subscribe. |
-| **Cost of Capital** | Lower flotation costs compared to a full public issue 
-(IPO/FPO). | Shares sold at a mandatory discount to market price. |
-| **Balance Sheet Impact** | Raises non-debt equity capital, strengthening 
-Solvency Ratios. | Increases total share count, leading to potential **EPS
-Dilution**. |
-| **Market Signaling** | Signals management confidence if issue is fully 
-subscribed. | Market may perceive rights issue as financial distress 
-signal. |
+| **Capital Control & Ownership** | Prevents hostile takeover by preserving relative voting control. | Risk of promoter stake dilution if promoters fail to subscribe. |
+| **Cost of Capital** | Lower flotation costs compared to a full public issue (IPO/FPO). | Shares sold at a mandatory discount to market price. |
+| **Balance Sheet Impact** | Raises non-debt equity capital, strengthening Solvency Ratios. | Increases total share count, leading to potential **EPS Dilution**. |
+| **Market Signaling** | Signals management confidence if issue is fully subscribed. | Market may perceive rights issue as financial distress signal. |
 
 ##### 4. Structured Corporate Case Study: L&T Finance Holdings Rights Issue
 1. **Background & Entity**: L&T Finance Holdings (LTFH) announced a 
@@ -556,17 +517,11 @@ Price Mismatches) [22-24]
 ##### 3. Comparison: Plain Vanilla vs. Exotic Derivatives
 | Parameter | Plain Vanilla Derivatives | Exotic Derivatives |
 | :--- | :--- | :--- |
-| **Structural Complexity** | Standardized, transparent terms and linear/simple
-payoffs. | Highly complex terms, non-linear conditional payoffs 
-. |
-| **Trading Venue** | Exchange-Traded (NSE/BSE) or standard OTC [22-24]. | 
-Strictly Over-The-Counter (OTC) bespoke contracts. |
-| **Market Liquidity** | Extremely high liquidity; active secondary market 
-. | Low liquidity; highly illiquid; difficult to exit early. |
-| **Counterparty Risk** | Guaranteed by Clearing Corporation (NSCCL) via 
-Novation. | High bilateral counterparty default risk. |
-| **Target Participants** | Retail, Institutional Investors, Corporate Hedgers 
-. | Sophisticated Multinational Corporations, Hedge Funds. |
+| **Structural Complexity** | Standardized, transparent terms and linear/simple payoffs. | Highly complex terms, non-linear conditional payoffs . |
+| **Trading Venue** | Exchange-Traded (NSE/BSE) or standard OTC [22-24]. | Strictly Over-The-Counter (OTC) bespoke contracts. |
+| **Market Liquidity** | Extremely high liquidity; active secondary market . | Low liquidity; highly illiquid; difficult to exit early. |
+| **Counterparty Risk** | Guaranteed by Clearing Corporation (NSCCL) via Novation. | High bilateral counterparty default risk. |
+| **Target Participants** | Retail, Institutional Investors, Corporate Hedgers . | Sophisticated Multinational Corporations, Hedge Funds. |
 
 ##### 4. Structured Corporate Case Study: Indian IT Exporters Plain Vanilla 
 Forward Hedging
@@ -665,16 +620,11 @@ Upside)
 | Parameter | Futures Contracts | Options Contracts |
 | :--- | :--- | :--- |
 | **Contractual Obligation** | Binding obligation on both buyer and seller. | Right for buyer; binding obligation for seller. |
-| **Upfront Cost / Premium** | Zero premium; requires returnable Initial Margin
-. | Non-refundable **Option Premium** paid by buyer. |
-| **Risk Exposure (Buyer)** | **Unlimited Loss Potential** if market moves 
-adversely. | **Limited Loss** strictly equal to Option Premium paid. |
-| **Payoff Profile** | **Symmetric / Linear** (Equal profit/loss slope). |
-**Asymmetric / Non-linear** (Capped loss, open upside). |
-| **Daily Margin Settlement** | Mandatory **Daily Mark-to-Market (MTM)** cash 
-flow. | MTM required only for Option Writers/Sellers. |
-| **Hedging Outcome** | Locks in a fixed execution rate; eliminates upside gain
-. | Creates a price floor/cap while retaining favorable upside. |
+| **Upfront Cost / Premium** | Zero premium; requires returnable Initial Margin . | Non-refundable **Option Premium** paid by buyer. |
+| **Risk Exposure (Buyer)** | **Unlimited Loss Potential** if market moves adversely. | **Limited Loss** strictly equal to Option Premium paid. |
+| **Payoff Profile** | **Symmetric / Linear** (Equal profit/loss slope). | **Asymmetric / Non-linear** (Capped loss, open upside). |
+| **Daily Margin Settlement** | Mandatory **Daily Mark-to-Market (MTM)** cash flow. | MTM required only for Option Writers/Sellers. |
+| **Hedging Outcome** | Locks in a fixed execution rate; eliminates upside gain . | Creates a price floor/cap while retaining favorable upside. |
 
 ##### 4. Structured Corporate Case Study: Portfolio Downside Risk Protection
 1. **Background & Entity**: Equity Mutual Fund holds a $\text{₹}500\text{ 
@@ -767,22 +717,13 @@ and interest rate exposure into domestic currency liabilities ($INR$).
 ```
 
 ##### 3. Multi-Variable Comparison: Key Corporate Risk Hedging Instruments
-| Parameter | Forward Contracts | Financial Futures | Interest Rate Swaps (IRS)
-| Currency Swaps |
+| Parameter | Forward Contracts | Financial Futures | Interest Rate Swaps (IRS) | Currency Swaps |
 | :--- | :--- | :--- | :--- | :--- |
-| **Primary Risk Hedged** | Foreign Exchange / Commodity Risk | Equity
-Price / Interest Rate Risk | Interest Rate Volatility | FX 
-Exchange & Rate Risk |
-| **Trading Venue** | Over-The-Counter (OTC) | Exchange-Traded 
-(NSE/BSE) | Over-The-Counter (OTC) | Over-The-Counter (OTC) 
- |
-| **Notional Principal Exchange**| Full Principal settled at maturity 
-| No principal exchange; MTM margins | **Zero Principal Exchange** (Net 
-cash settlement) | **Principal Exchanged at Start & Maturity** |
+| **Primary Risk Hedged** | Foreign Exchange / Commodity Risk | Equity Price / Interest Rate Risk | Interest Rate Volatility | FX Exchange & Rate Risk |
+| **Trading Venue** | Over-The-Counter (OTC) | Exchange-Traded (NSE/BSE) | Over-The-Counter (OTC) | Over-The-Counter (OTC) |
+| **Notional Principal Exchange**| Full Principal settled at maturity | No principal exchange; MTM margins | **Zero Principal Exchange** (Net cash settlement) | **Principal Exchanged at Start & Maturity** |
 | **Customization Degree** | 100% Customized | Fully Standardized | Highly Customized | Highly Customized |
-| **Contract Tenor** | Short-Term ($<1\text{ Year}$) | 
-Short/Medium Term ($1–3\text{ Months}$) | Medium to Long Term 
-($1–10\text{ Years}$) | Long Term ($3–10\text{ Years}$) |
+| **Contract Tenor** | Short-Term ($<1\text{ Year}$) | Short/Medium Term ($1–3\text{ Months}$) | Medium to Long Term ($1–10\text{ Years}$) | Long Term ($3–10\text{ Years}$) |
 
 ##### 4. Structured Corporate Case Study: Indian Corporate ECB Currency Swap
 1. **Background & Entity**: Bharti Airtel raises $\$500\text{ Million}$ via 
@@ -808,53 +749,26 @@ risk.
 Ranked by frequency of appearance across past NMIMS examination papers 
 (2022–2026):
 
-| Rank | Topic / Concept Cluster | Exam Occurrences | Tested Weightages | 
-Relative Mindshare |
+| Rank | Topic / Concept Cluster | Exam Occurrences | Tested Weightages | Relative Mindshare |
 | :---: | :--- | :---: | :--- | :---: |
-| **1** | **Derivatives Architecture & Hedging Mechanics** (Futures, Options, 
-Swaps, Plain Vanilla vs. Exotic) | 6 Times | 10M, 10M, 
-10M, 10M, 10M, 2M | **32.5%** |
-| **2** | **Debt vs. Equity Capital Structure** (Roles, Risks, Implications for
-Issuers & Investors) [45-47] | 3 Times | 10M, 10M, 10M | **18.0%** |
-| **3** | **Capital Market Debt & Debenture Variants** (Convertible, NCDs, Deep
-Discount Bonds, Innovative Debt) | 3 Times | 10M, 10M, 10M | 
-**18.0%** |
-| **4** | **Money Market Debt Securities** (T-Bills, CP, CD, Call Money, 
-Liquidity Management) [29-31] | 3 Times | 10M, 10M, 5M | **15.0%** |
-| **5** | **Equity Share Capital & Corporate Initiatives** (Rights Issue, 
-Preference Shares, Dividends) | 2 Times | 10M, 5M | **9.0%** |
-| **6** | **Bond Yield Mechanics & Rating Requirements** | 1 Time | 5M
-| **7.5%** |
+| **1** | **Derivatives Architecture & Hedging Mechanics** (Futures, Options, Swaps, Plain Vanilla vs. Exotic) | 6 Times | 10M, 10M, 10M, 10M, 10M, 2M | **32.5%** |
+| **2** | **Debt vs. Equity Capital Structure** (Roles, Risks, Implications for Issuers & Investors) [45-47] | 3 Times | 10M, 10M, 10M | **18.0%** |
+| **3** | **Capital Market Debt & Debenture Variants** (Convertible, NCDs, Deep Discount Bonds, Innovative Debt) | 3 Times | 10M, 10M, 10M | **18.0%** |
+| **4** | **Money Market Debt Securities** (T-Bills, CP, CD, Call Money, Liquidity Management) [29-31] | 3 Times | 10M, 10M, 5M | **15.0%** |
+| **5** | **Equity Share Capital & Corporate Initiatives** (Rights Issue, Preference Shares, Dividends) | 2 Times | 10M, 5M | **9.0%** |
+| **6** | **Bond Yield Mechanics & Rating Requirements** | 1 Time | 5M | **7.5%** |
 
 ---
 
 ### 2. Concept Redundancy Map
 List of questions repeated across examination cycles with rephrased prompts:
 
-| Core Concept | Rephrased Question Variants Across Past Papers | Mapped Group 
-|
+| Core Concept | Rephrased Question Variants Across Past Papers | Mapped Group |
 | :--- | :--- | :---: |
-| **Derivatives as Hedging Tools** | • *"Derivatives are used as a hedging tool
-for protection against risk. Explain..."* (2023–24 TEE)<br>• *"Analyze the
-statement that 'derivatives are used as hedging instruments'..."* (2024–25 TEE)
-<br>• *"Analyze the concept of hedging and evaluate two specific hedging 
-instruments..."* (2023–24 Re-Exam) | **Group 7** |
-| **Futures vs. Options Structural Differences** | • *"Define derivatives... 
-compare and contrast futures and options contracts in terms of structure, 
-obligations, payoff, and risk."* (2025–26 TEE)<br>• *"Options is 
-better hedging instrument than future. Substantiate the above statement by 
-contrasting it with futures."* (2023–24 Re-Exam) | **Group 6** |
-| **Debt vs. Equity Sources of Finance** | • *"Differentiate between Debt and 
-Equity as sources of corporate finance..."* (2025–26 TEE)<br>• *"Define 
-debt and equity markets, and state their role in financial systems."* (2024–25 
-TEE)<br>• *"Different investors observe the differences in stock market 
-and debt market..."* (2023–24 TEE) | **Group 3** |
-| **Corporate Debenture & Innovative Debt Variants** | • *"The company is 
-planning to expand... Elaborate some of the debt instruments that are 
-popular..."* (2023–24 Re-Exam)<br>• *"Companies planning to expand... use 
-Forward contracts, Convertible Debentures and Deep Discount Debentures..."* 
-(2022–23 TEE)<br>• *"Explain the different types of debentures."* (2022–23
-Re-Exam) | **Group 2** |
+| **Derivatives as Hedging Tools** | • *"Derivatives are used as a hedging tool for protection against risk. Explain..."* (2023–24 TEE)<br>• *"Analyze the statement that 'derivatives are used as hedging instruments'..."* (2024–25 TEE) <br>• *"Analyze the concept of hedging and evaluate two specific hedging instruments..."* (2023–24 Re-Exam) | **Group 7** |
+| **Futures vs. Options Structural Differences** | • *"Define derivatives... compare and contrast futures and options contracts in terms of structure, obligations, payoff, and risk."* (2025–26 TEE)<br>• *"Options is better hedging instrument than future. Substantiate the above statement by contrasting it with futures."* (2023–24 Re-Exam) | **Group 6** |
+| **Debt vs. Equity Sources of Finance** | • *"Differentiate between Debt and Equity as sources of corporate finance..."* (2025–26 TEE)<br>• *"Define debt and equity markets, and state their role in financial systems."* (2024–25 TEE)<br>• *"Different investors observe the differences in stock market and debt market..."* (2023–24 TEE) | **Group 3** |
+| **Corporate Debenture & Innovative Debt Variants** | • *"The company is planning to expand... Elaborate some of the debt instruments that are popular..."* (2023–24 Re-Exam)<br>• *"Companies planning to expand... use Forward contracts, Convertible Debentures and Deep Discount Debentures..."* (2022–23 TEE)<br>• *"Explain the different types of debentures."* (2022–23 Re-Exam) | **Group 2** |
 
 ---
 
@@ -862,32 +776,12 @@ Re-Exam) | **Group 2** |
 
 | Priority Level | Concept Group | Key Exam Topics | Recommended Study Focus |
 | :---: | :--- | :--- | :--- |
-| 🔥 **Very Important**<br>*(Asked $\ge 3$ Times / 10M Staples)* | **Group 
-6 & Group 7**: Futures, Options & Swaps Hedging Mechanics | 
-Futures vs Options obligations, MTM settlement, Fixed-for-floating IRS, 
-Currency Swaps, Option Moneyness | Master comparison tables, LaTeX
-formulas, MTM mechanics, and 4-part corporate case studies. |
-| 🔥 **Very Important**<br>*(Asked $\ge 3$ Times / 10M Staples)* | **Group 
-3**: Debt vs. Equity Capital Structure [45-47] | Residual claims, voting 
-rights, tax deductibility of interest, WACC impact, solvency risk | 
-Memorize the 7-parameter comparison table and capital priority pyramid. |
-| 🔥 **Very Important**<br>*(Asked $\ge 3$ Times / 10M Staples)* | **Group 
-2**: Debentures & Capital Market Debt | FCDs, PCDs, NCDs, Deep 
-Discount Bonds, Floating Rate Bonds, Bond price-yield inverse rule
-| Focus on convertible debenture valuation components and zero-coupon pricing 
-mechanics. |
-| ⭐ **Important**<br>*(Asked 1–2 Times)* | **Group 1**: Money Market 
-Securities | T-Bills (91/182/364 day), CP rules, CD rules, Call money,
-Repos & Reverse Repos, LAF framework | Focus on T-Bill yield 
-formula, CP eligibility norms (A2 rating), and RBI VRRR liquidity tools. |
-| ⭐ **Important**<br>*(Asked 1–2 Times)* | **Group 4**: Equity & Shareholder 
-Value Initiatives | Preference share classes, Rights issue mechanics, 
-Sweat equity, Bonus shares, Share Buybacks | Understand the Rights 
-Issue execution workflow and pre-emptive dilution mechanics. |
-| 🟡 **Moderate Priority**<br>*(Peripheral Slide Concepts)* | **Group 5**: 
-Derivatives Taxonomy & Exotics | Definition of derivatives, underlying
-assets, Plain Vanilla vs. Exotic instruments | Learn definitions, 
-regulatory bodies (SEBI/RBI), and basic distinction parameters. |
+| 🔥 **Very Important**<br>*(Asked $\ge 3$ Times / 10M Staples)* | **Group 6 & Group 7**: Futures, Options & Swaps Hedging Mechanics | Futures vs Options obligations, MTM settlement, Fixed-for-floating IRS, Currency Swaps, Option Moneyness | Master comparison tables, LaTeX formulas, MTM mechanics, and 4-part corporate case studies. |
+| 🔥 **Very Important**<br>*(Asked $\ge 3$ Times / 10M Staples)* | **Group 3**: Debt vs. Equity Capital Structure [45-47] | Residual claims, voting rights, tax deductibility of interest, WACC impact, solvency risk | Memorize the 7-parameter comparison table and capital priority pyramid. |
+| 🔥 **Very Important**<br>*(Asked $\ge 3$ Times / 10M Staples)* | **Group 2**: Debentures & Capital Market Debt | FCDs, PCDs, NCDs, Deep Discount Bonds, Floating Rate Bonds, Bond price-yield inverse rule | Focus on convertible debenture valuation components and zero-coupon pricing mechanics. |
+| ⭐ **Important**<br>*(Asked 1–2 Times)* | **Group 1**: Money Market Securities | T-Bills (91/182/364 day), CP rules, CD rules, Call money, Repos & Reverse Repos, LAF framework | Focus on T-Bill yield formula, CP eligibility norms (A2 rating), and RBI VRRR liquidity tools. |
+| ⭐ **Important**<br>*(Asked 1–2 Times)* | **Group 4**: Equity & Shareholder Value Initiatives | Preference share classes, Rights issue mechanics, Sweat equity, Bonus shares, Share Buybacks | Understand the Rights Issue execution workflow and pre-emptive dilution mechanics. |
+| 🟡 **Moderate Priority**<br>*(Peripheral Slide Concepts)* | **Group 5**: Derivatives Taxonomy & Exotics | Definition of derivatives, underlying assets, Plain Vanilla vs. Exotic instruments | Learn definitions, regulatory bodies (SEBI/RBI), and basic distinction parameters. |
 
 ---
 
@@ -895,28 +789,16 @@ regulatory bodies (SEBI/RBI), and basic distinction parameters. |
 Verification audit confirming syllabus topics from 
 `Unit6_Financial_Instruments.pptx` against past examination papers:
 
-| Slide # | Slide Topic / Concept | Covered in Past Papers? | Mapped Question 
-Group | Audit Status |
+| Slide # | Slide Topic / Concept | Covered in Past Papers? | Mapped Question Group | Audit Status |
 | :---: | :--- | :---: | :---: | :---: |
-| **02** | Unit Overview: Equity, Debt, Derivatives Architecture | **YES**
-| Groups 1–7 | ✅ Fully Covered |
-| **03** | Treasury Bills & Dated Government Securities | **YES** | Group 
-1 | ✅ Fully Covered |
-| **04** | Debt Risk-Return Ceiling & Fixed Coupon Yields | **YES** | 
-Group 2 & Group 3 | ✅ Fully Covered |
-| **08** | Debt vs Equity Comparison & Liquidation Priority | **YES** | 
-Group 3 | ✅ Fully Covered |
-| **10** | Equity Shares, Preference Shares & Residual Claims | **YES** | 
-Group 4 | ✅ Fully Covered |
-| **11** | Derivatives Four Contract Families: Forwards, Futures, Options, 
-Swaps | **YES** | Group 5 & Group 7 | ✅ Fully Covered |
-| **13** | Futures vs. Options Obligations & Payoffs | **YES** | Group 6 |
-✅ Fully Covered |
-| **14** | Options Terminology, Moneyness & Premium | **YES** | Group 6 | 
-✅ Fully Covered |
-| **15** | Interest Rate Swaps & ECB Currency Swap Hedging | **YES** | 
-Group 7 | ✅ Fully Covered |
-| **16** | Plain Vanilla vs. Exotic Derivatives Classification | **YES** |
-Group 5 | ✅ Fully Covered |
-| **19** | Hedging Real Corporate Cases (Airlines, IT Exporters) | **YES**
-| Group 5 & Group 7 | ✅ Fully Covered |
+| **02** | Unit Overview: Equity, Debt, Derivatives Architecture | **YES** | Groups 1–7 | ✅ Fully Covered |
+| **03** | Treasury Bills & Dated Government Securities | **YES** | Group 1 | ✅ Fully Covered |
+| **04** | Debt Risk-Return Ceiling & Fixed Coupon Yields | **YES** | Group 2 & Group 3 | ✅ Fully Covered |
+| **08** | Debt vs Equity Comparison & Liquidation Priority | **YES** | Group 3 | ✅ Fully Covered |
+| **10** | Equity Shares, Preference Shares & Residual Claims | **YES** | Group 4 | ✅ Fully Covered |
+| **11** | Derivatives Four Contract Families: Forwards, Futures, Options, Swaps | **YES** | Group 5 & Group 7 | ✅ Fully Covered |
+| **13** | Futures vs. Options Obligations & Payoffs | **YES** | Group 6 | ✅ Fully Covered |
+| **14** | Options Terminology, Moneyness & Premium | **YES** | Group 6 | ✅ Fully Covered |
+| **15** | Interest Rate Swaps & ECB Currency Swap Hedging | **YES** | Group 7 | ✅ Fully Covered |
+| **16** | Plain Vanilla vs. Exotic Derivatives Classification | **YES** | Group 5 | ✅ Fully Covered |
+| **19** | Hedging Real Corporate Cases (Airlines, IT Exporters) | **YES** | Group 5 & Group 7 | ✅ Fully Covered |

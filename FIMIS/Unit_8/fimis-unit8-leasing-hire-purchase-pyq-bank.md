@@ -273,20 +273,13 @@ assignment of lease rentals.
 
 | Parameter | Operating Lease | Finance / Capital Lease |
 | :--- | :--- | :--- |
-| **Contract Tenor** | Short-term; significantly less than asset economic life 
-. | Long-term; covers major part of asset economic life.
-|
-| **Transfer of Risks & Rewards** | Retained by the lessor. | 
-Transferred substantially to the lessee. |
+| **Contract Tenor** | Short-term; significantly less than asset economic life . | Long-term; covers major part of asset economic life. |
+| **Transfer of Risks & Rewards** | Retained by the lessor. | Transferred substantially to the lessee. |
 | **Contract Cancellability** | Cancellable by lessee during lease term. | Strictly non-cancellable; early termination incurs heavy penalties. |
 | **Asset Maintenance & Insurance** | Borne and executed by the lessor. | Borne directly by the lessee. |
-| **Obsolescence Risk** | Borne by the lessor. | Borne by the 
-lessee. |
-| **Purchase Option at Expiry** | Generally no option to purchase. | 
-Option to purchase at nominal/bargain price. |
-| **Payout Structure** | Single lease does not recover total asset cost 
-(requires re-leasing). | Fully amortized; single lease recovers total cost
-plus interest. |
+| **Obsolescence Risk** | Borne by the lessor. | Borne by the lessee. |
+| **Purchase Option at Expiry** | Generally no option to purchase. | Option to purchase at nominal/bargain price. |
+| **Payout Structure** | Single lease does not recover total asset cost (requires re-leasing). | Fully amortized; single lease recovers total cost plus interest. |
 
 ---
 
@@ -805,29 +798,14 @@ Depreciation              │
 
 | Parameter / Dimension | Equipment Leasing | Hire Purchase (HP) |
 | :--- | :--- | :--- |
-| **1. Primary Governing Statute** | Indian Contract Act, 1872 (Bailment 
-provisions). | Sale of Goods Act, 1930 & Hire Purchase Acts. |
-| **2. Asset Ownership Transfer** | Remains permanently with the lessor (except
-finance lease with bargain purchase option). | Automatically 
-transfers to the hirer upon payment of the final instalment [52, 61-63, 65]. |
-| **3. Initial Down Payment** | Minimal to zero upfront down payment 
-($100\%$ financing). | Mandatory upfront down payment 
-($15\% - 25\%$ of cash price). |
-| **4. Tax Depreciation Claim** | Claimed exclusively by the **lessor** as 
-owner. | Claimed directly by the **hire purchaser** (hirer) from 
-Day 1. |
-| **5. Tax Shield Structure** | Single Tax Shield: Lessee deducts $100\%$ 
-of lease rentals as operating expense. | Double Tax Shield:
-Hirer deducts interest expenses and asset depreciation. |
-| **6. Maintenance & Repairs** | Borne by lessor (operating lease) or lessee 
-(finance lease). | Borne directly and exclusively by the hirer 
-. |
-| **7. Financial Statement Placement** | ROU Asset & Lease Liability on Balance
-Sheet under Ind AS 116. | Capitalized Asset & Long-Term Liability on 
-Hirer's Balance Sheet. |
-| **8. Default Consequence** | Asset returned; lessor sues for remaining 
-contractual rentals. | Vendor repossesses asset; past instalments 
-forfeited as rent. |
+| **1. Primary Governing Statute** | Indian Contract Act, 1872 (Bailment provisions). | Sale of Goods Act, 1930 & Hire Purchase Acts. |
+| **2. Asset Ownership Transfer** | Remains permanently with the lessor (except finance lease with bargain purchase option). | Automatically transfers to the hirer upon payment of the final instalment [52, 61-63, 65]. |
+| **3. Initial Down Payment** | Minimal to zero upfront down payment ($100\%$ financing). | Mandatory upfront down payment ($15\% - 25\%$ of cash price). |
+| **4. Tax Depreciation Claim** | Claimed exclusively by the **lessor** as owner. | Claimed directly by the **hire purchaser** (hirer) from Day 1. |
+| **5. Tax Shield Structure** | Single Tax Shield: Lessee deducts $100\%$ of lease rentals as operating expense. | Double Tax Shield: Hirer deducts interest expenses and asset depreciation. |
+| **6. Maintenance & Repairs** | Borne by lessor (operating lease) or lessee (finance lease). | Borne directly and exclusively by the hirer . |
+| **7. Financial Statement Placement** | ROU Asset & Lease Liability on Balance Sheet under Ind AS 116. | Capitalized Asset & Long-Term Liability on Hirer's Balance Sheet. |
+| **8. Default Consequence** | Asset returned; lessor sues for remaining contractual rentals. | Vendor repossesses asset; past instalments forfeited as rent. |
 
 ---
 
@@ -872,19 +850,11 @@ tax shield.
 
 | Rank | Topic / Sub-Theme | Exam Papers Appearing In | Cumulative Marks |
 | :---: | :--- | :--- | :---: |
-| **1** | **Leasing vs. Hire Purchase Comparative Analysis** | Final Exam 
-2025-26, ANS Exam 2025-26, Final Exam 2024-25, Re-Exam 2023-24 
-| **39 Marks** |
-| **2** | **Equipment Leasing Framework, Advantages & Disadvantages** | Final 
-Exam 2025-26, ANS Exam 2025-26, Re-Exam 2023-24, Final Exam 2024-25 [1-5, 7, 8,
-10] | **35 Marks** |
-| **3** | **Hire Purchase Concept, Tax Shields & Mathematics** | Final Exam 
-2023-24, Final Exam 2024-25, ANS Exam 2025-26 | **23 Marks** |
-| **4** | **Lease Evaluation, NAL Model & Lease vs. Buy Decisions** | Re-Exam 
-2023-24 (G0hoJON0Oc), Final Exam 2022-23 (MVB4aFdAdl) | **20 Marks** |
-| **5** | **Types of Leases (Operating, Finance, Crisis & Start-ups)** | 
-Re-Exam 2022-23 (YUzVWGnZ1X), Special Re-Exam 2022-23 (w8Kyx62H1c) | 
-**20 Marks** |
+| **1** | **Leasing vs. Hire Purchase Comparative Analysis** | Final Exam 2025-26, ANS Exam 2025-26, Final Exam 2024-25, Re-Exam 2023-24 | **39 Marks** |
+| **2** | **Equipment Leasing Framework, Advantages & Disadvantages** | Final Exam 2025-26, ANS Exam 2025-26, Re-Exam 2023-24, Final Exam 2024-25 [1-5, 7, 8, 10] | **35 Marks** |
+| **3** | **Hire Purchase Concept, Tax Shields & Mathematics** | Final Exam 2023-24, Final Exam 2024-25, ANS Exam 2025-26 | **23 Marks** |
+| **4** | **Lease Evaluation, NAL Model & Lease vs. Buy Decisions** | Re-Exam 2023-24 (G0hoJON0Oc), Final Exam 2022-23 (MVB4aFdAdl) | **20 Marks** |
+| **5** | **Types of Leases (Operating, Finance, Crisis & Start-ups)** | Re-Exam 2022-23 (YUzVWGnZ1X), Special Re-Exam 2022-23 (w8Kyx62H1c) | **20 Marks** |
 
 ---
 
@@ -935,27 +905,16 @@ Telecom Tower tenancy leasing.
 
 ### 4. Slide Coverage Audit against Past Exam Papers
 
-| Syllabus Topic in `Unit-8.pptx` | Slide Reference | Exam Paper Question 
-Mapping | Coverage Status |
+| Syllabus Topic in `Unit-8.pptx` | Slide Reference | Exam Paper Question Mapping | Coverage Status |
 | :--- | :---: | :--- | :---: |
-| **Meaning & Concept of Equipment Leasing** | Slide 2 | ANS 2025-26 Q3b, QP 
-2025-26 Q7b | **100% Covered** |
+| **Meaning & Concept of Equipment Leasing** | Slide 2 | ANS 2025-26 Q3b, QP 2025-26 Q7b | **100% Covered** |
 | **Operating Lease Framework & Examples** | Slide 4 | Re-Exam 2022-23 Q5b | **100% Covered** |
-| **Finance Lease Framework & Characteristics** | Slide 5 | Special Re-Exam 
-2022-23 Q6a | **100% Covered** |
-| **Sale and Leaseback Mechanisms** | Slide 6 | Covered in Group 2 & Case 
-Studies | **100% Covered** |
-| **Leveraged Lease Structure (3-Party)** | Slide 7 | Covered in Group 2 Model 
-Answer | **100% Covered** |
-| **Advantages & Disadvantages of Leasing** | Slides 8–9 | ANS 2025-26 Q3b, QP 
-2025-26 Q7b | **100% Covered** |
-| **Ind AS 116 Balance Sheet Accounting** | Slide 8 | Covered in Group 2 
-Accounting Section | **100% Covered** |
-| **Lease Evaluation & NAL Model** | Slide 10 | Re-Exam 2023-24 Q5b, Final 
-2022-23 Q6a [54-57] | **100% Covered** |
-| **Hire Purchase Concept & Characteristics** | Slide 11 | Final 2024-25 Q2b, 
-ANS 2025-26 Q1b | **100% Covered** |
-| **Mathematics of Hire Purchase & Formulas** | Slide 12 | Final 2023-24 Q3b 
- | **100% Covered** |
-| **Leasing vs. Hire Purchase Comparison** | Slide 13 | QP 2025-26 Q2b, Re-Exam
-2023-24 Q7b | **100% Covered** |
+| **Finance Lease Framework & Characteristics** | Slide 5 | Special Re-Exam 2022-23 Q6a | **100% Covered** |
+| **Sale and Leaseback Mechanisms** | Slide 6 | Covered in Group 2 & Case Studies | **100% Covered** |
+| **Leveraged Lease Structure (3-Party)** | Slide 7 | Covered in Group 2 Model Answer | **100% Covered** |
+| **Advantages & Disadvantages of Leasing** | Slides 8–9 | ANS 2025-26 Q3b, QP 2025-26 Q7b | **100% Covered** |
+| **Ind AS 116 Balance Sheet Accounting** | Slide 8 | Covered in Group 2 Accounting Section | **100% Covered** |
+| **Lease Evaluation & NAL Model** | Slide 10 | Re-Exam 2023-24 Q5b, Final 2022-23 Q6a [54-57] | **100% Covered** |
+| **Hire Purchase Concept & Characteristics** | Slide 11 | Final 2024-25 Q2b, ANS 2025-26 Q1b | **100% Covered** |
+| **Mathematics of Hire Purchase & Formulas** | Slide 12 | Final 2023-24 Q3b | **100% Covered** |
+| **Leasing vs. Hire Purchase Comparison** | Slide 13 | QP 2025-26 Q2b, Re-Exam 2023-24 Q7b | **100% Covered** |

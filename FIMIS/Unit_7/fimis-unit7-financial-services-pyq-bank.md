@@ -95,23 +95,12 @@ fee-based activities in the Indian financial sector:
 
 | Parameter | Fund-Based Financial Services | Fee-Based Financial Services |
 | :--- | :--- | :--- |
-| **Primary Capital Requirement** | High; requires substantial equity capital 
-and debt leverage. | Minimal; relies on human capital, IT infrastructure, 
-and expertise. |
-| **Balance Sheet Impact** | Direct; assets and liabilities are recorded on the
-provider's balance sheet. | Off-Balance Sheet; operations generate 
-contingent or zero asset entries. |
-| **Nature of Risk Exposure** | Credit risk, default risk, market risk, 
-liquidity & ALM risk. | Operational risk, reputational risk, 
-legal/compliance liability. |
-| **Primary Revenue Driver** | Net Interest Margin (NIM), capital gains, lease 
-margins. | Fee schedules, commission percentages, fixed retainers. |
-| **Regulatory Supervision** | RBI oversight (Capital Adequacy CRAR, 
-Provisioning, ALM). | SEBI oversight (Conduct rules, net worth 
-requirements, disclosures). |
-| **Representative Examples** | Equipment Leasing, Hire Purchase, Factoring, 
-Forfaiting, Housing Finance, VC/PE. | Merchant Banking, Credit Rating, 
-Portfolio Management (PMS), Stock Broking. |
+| **Primary Capital Requirement** | High; requires substantial equity capital and debt leverage. | Minimal; relies on human capital, IT infrastructure, and expertise. |
+| **Balance Sheet Impact** | Direct; assets and liabilities are recorded on the provider's balance sheet. | Off-Balance Sheet; operations generate contingent or zero asset entries. |
+| **Nature of Risk Exposure** | Credit risk, default risk, market risk, liquidity & ALM risk. | Operational risk, reputational risk, legal/compliance liability. |
+| **Primary Revenue Driver** | Net Interest Margin (NIM), capital gains, lease margins. | Fee schedules, commission percentages, fixed retainers. |
+| **Regulatory Supervision** | RBI oversight (Capital Adequacy CRAR, Provisioning, ALM). | SEBI oversight (Conduct rules, net worth requirements, disclosures). |
+| **Representative Examples** | Equipment Leasing, Hire Purchase, Factoring, Forfaiting, Housing Finance, VC/PE. | Merchant Banking, Credit Rating, Portfolio Management (PMS), Stock Broking. |
 
 ##### 3. Strategic Taxonomy of Fund-Based Services
 Fund-based services drive capital formation across commercial and industrial 
@@ -232,24 +221,14 @@ periods.
 
 ##### 3. Exhaustive Multi-Variable Comparison: Leasing vs. Hire Purchase
 
-| Comparison Parameter | Operating Lease | Finance / Capital Lease | Hire 
-Purchase (HP) |
+| Comparison Parameter | Operating Lease | Finance / Capital Lease | Hire Purchase (HP) |
 | :--- | :--- | :--- | :--- |
-| **Ownership Transfer** | Never transfers; asset returned to lessor. 
-| Optional purchase option at term end. | Transfers automatically 
-after final installment. |
-| **Duration & Term** | Short-term; significantly less than asset life. | Long-term; covers 75%+ of asset useful life. | Medium-to-long 
-term (typically 3–5 years). |
-| **Maintenance & Obsolescence Risk** | Borne by Lessor. | Borne by 
-Lessee. | Borne by Hirer. |
-| **Cancellation Clause** | Cancellable with notice. | Non-cancellable
-contract. | Non-cancellable without penalty. |
-| **Tax Treatment & Depreciation** | Lessor claims depreciation; Lessee deducts
-full rental. | Lessee claims depreciation & interest expense under Ind AS 
-116. | Hirer claims depreciation and interest element as tax expenses 
-. |
-| **Upfront Equity Requirement** | Zero down payment required. | 
-Minimal or zero down payment. | Requires 15%–25% down payment. |
+| **Ownership Transfer** | Never transfers; asset returned to lessor. | Optional purchase option at term end. | Transfers automatically after final installment. |
+| **Duration & Term** | Short-term; significantly less than asset life. | Long-term; covers 75%+ of asset useful life. | Medium-to-long term (typically 3–5 years). |
+| **Maintenance & Obsolescence Risk** | Borne by Lessor. | Borne by Lessee. | Borne by Hirer. |
+| **Cancellation Clause** | Cancellable with notice. | Non-cancellable contract. | Non-cancellable without penalty. |
+| **Tax Treatment & Depreciation** | Lessor claims depreciation; Lessee deducts full rental. | Lessee claims depreciation & interest expense under Ind AS 116. | Hirer claims depreciation and interest element as tax expenses . |
+| **Upfront Equity Requirement** | Zero down payment required. | Minimal or zero down payment. | Requires 15%–25% down payment. |
 
 ##### 4. Structured Corporate Case Study
 * **Background & Entity**: *InterGlobe Aviation Ltd. (IndiGo)* acquiring Airbus
@@ -342,19 +321,12 @@ fees.
 
 | Parameter | Factoring | Forfaiting |
 | :--- | :--- | :--- |
-| **Receivables Tenor** | Short-term (30 to 180 days). | Medium-to-Long
-term (90 days to 5 years). |
-| **Recourse Structure** | Recourse or Non-Recourse available. | 
-Strictly **Without Recourse** (100% credit risk transfer). |
-| **Underlying Instrument** | Open account invoices and trade sales ledgers 
-. | Avalized Bills of Exchange / Promissory Notes / LC. |
-| **Geographic Scope** | Primarily domestic trade; limited 2-factor 
-international. | Exclusively international capital goods export trade 
-. |
-| **Secondary Market** | No secondary trading market for factored debt. | 
-Active secondary market for forfeitable paper. |
-| **Collateral & Guarantee** | Factored accounts receivable act as underlying 
-security. | Bank unconditional guarantee ("Aval") required on bills. |
+| **Receivables Tenor** | Short-term (30 to 180 days). | Medium-to-Long term (90 days to 5 years). |
+| **Recourse Structure** | Recourse or Non-Recourse available. | Strictly **Without Recourse** (100% credit risk transfer). |
+| **Underlying Instrument** | Open account invoices and trade sales ledgers . | Avalized Bills of Exchange / Promissory Notes / LC. |
+| **Geographic Scope** | Primarily domestic trade; limited 2-factor international. | Exclusively international capital goods export trade . |
+| **Secondary Market** | No secondary trading market for factored debt. | Active secondary market for forfeitable paper. |
+| **Collateral & Guarantee** | Factored accounts receivable act as underlying security. | Bank unconditional guarantee ("Aval") required on bills. |
 
 ##### 4. Structured Corporate Case Study
 * **Background & Entity**: *Bharat Heavy Electricals Ltd. (BHEL)* exporting 
@@ -428,17 +400,11 @@ company's capital stack immediately prior to a public equity listing.
 
 | Parameter | Venture Capital (VC) | Private Equity (PE) |
 | :--- | :--- | :--- |
-| **Target Company Maturity** | Early-stage startups, pre-revenue or early 
-revenue. | Mature, established enterprises with stable cash flows. |
-| **Ownership Holding** | Minority equity stake (typically 10% to 30%). | 
-Majority/Controlling buyout stake (51% to 100%). |
-| **Investment Risk Profile** | High risk; high failure rate compensated by 
-power-law returns. | Moderate risk; relies on operational efficiency and 
-financial leverage. |
-| **Capital Structuring** | Pure equity or convertible instruments (CCPS, CCDs)
-. | Mix of equity, high-yield debt, and leveraged buyouts (LBOs). |
-| **Regulatory Category** | SEBI Category I AIF (Venture Capital Funds). |
-SEBI Category II AIF (Private Equity / Real Estate Funds). |
+| **Target Company Maturity** | Early-stage startups, pre-revenue or early revenue. | Mature, established enterprises with stable cash flows. |
+| **Ownership Holding** | Minority equity stake (typically 10% to 30%). | Majority/Controlling buyout stake (51% to 100%). |
+| **Investment Risk Profile** | High risk; high failure rate compensated by power-law returns. | Moderate risk; relies on operational efficiency and financial leverage. |
+| **Capital Structuring** | Pure equity or convertible instruments (CCPS, CCDs) . | Mix of equity, high-yield debt, and leveraged buyouts (LBOs). |
+| **Regulatory Category** | SEBI Category I AIF (Venture Capital Funds). | SEBI Category II AIF (Private Equity / Real Estate Funds). |
 
 ##### 4. Structured Corporate Case Study
 * **Background & Entity**: *Aman Sanghavi's Enterprise Software Startup (SaaS)*
@@ -520,18 +486,12 @@ banks for large industrial/infrastructure projects.
 
 | Phase | Core Operational Activity | Regulatory Compliance Obligation |
 | :--- | :--- | :--- |
-| **Pre-Issue** | Corporate Due Diligence & Structuring. | Submitting Due 
-Diligence Certificate to SEBI. |
-| **Pre-Issue** | Drafting Offer Document (DRHP/RHP). | Filing DRHP 
-with SEBI & RoC; 21-day public review. |
-| **Pre-Issue** | Marketing & Roadshows. | Ensuring no misleading 
-promotional statements. |
-| **Post-Issue**| Book Building & Bidding Collection.| Operating via 
-ASBA through SCSB banks. |
-| **Post-Issue**| Finalizing Price & Basis of Allotment.| SEBI 
-approval of allotment matrix; refund dispatches. |
-| **Post-Issue**| Listing on Recognized Stock Exchanges.| Achieving 
-trading approval within T+3/T+6 days. |
+| **Pre-Issue** | Corporate Due Diligence & Structuring. | Submitting Due Diligence Certificate to SEBI. |
+| **Pre-Issue** | Drafting Offer Document (DRHP/RHP). | Filing DRHP with SEBI & RoC; 21-day public review. |
+| **Pre-Issue** | Marketing & Roadshows. | Ensuring no misleading promotional statements. |
+| **Post-Issue**| Book Building & Bidding Collection.| Operating via ASBA through SCSB banks. |
+| **Post-Issue**| Finalizing Price & Basis of Allotment.| SEBI approval of allotment matrix; refund dispatches. |
+| **Post-Issue**| Listing on Recognized Stock Exchanges.| Achieving trading approval within T+3/T+6 days. |
 
 ##### 4. Structured Corporate Case Study
 * **Background & Entity**: *Life Insurance Corporation of India (LIC)* 
@@ -599,19 +559,13 @@ $EAD$ is Exposure at Default, and $LGD$ is Loss Given Default ($1 -
 
 ##### 3. Rating Scale Taxonomy across Primary Indian CRAs
 
-| Rating Grade Category | CRISIL Symbols | ICRA Symbols | 
-CARE Symbols | Financial Interpretation & Default Risk |
+| Rating Grade Category | CRISIL Symbols | ICRA Symbols | CARE Symbols | Financial Interpretation & Default Risk |
 | :--- | :--- | :--- | :--- | :--- |
-| **Highest Safety** | CRISIL AAA | ICRA AAA | CARE AAA | Lowest
-default risk; robust debt servicing capacity. |
-| **High Safety** | CRISIL AA | ICRA AA | CARE AA | Very low 
-credit risk; strong financial protection. |
-| **Adequate Safety** | CRISIL A / BBB | ICRA A / BBB | CARE A / BBB 
- | Moderate credit risk; sensitive to adverse economic shifts. |
-| **Speculative Grade** | CRISIL BB / B | ICRA BB / B | CARE BB / B 
- | High credit risk; speculative investment characteristics. |
-| **Default Grade** | CRISIL D | ICRA D | CARE D | In default or
-expected to default on debt obligations. |
+| **Highest Safety** | CRISIL AAA | ICRA AAA | CARE AAA | Lowest default risk; robust debt servicing capacity. |
+| **High Safety** | CRISIL AA | ICRA AA | CARE AA | Very low credit risk; strong financial protection. |
+| **Adequate Safety** | CRISIL A / BBB | ICRA A / BBB | CARE A / BBB | Moderate credit risk; sensitive to adverse economic shifts. |
+| **Speculative Grade** | CRISIL BB / B | ICRA BB / B | CARE BB / B | High credit risk; speculative investment characteristics. |
+| **Default Grade** | CRISIL D | ICRA D | CARE D | In default or expected to default on debt obligations. |
 
 ##### 4. Four-Stage Rating Methodology (EIL Framework)
 1. **Economic Analysis**: Evaluating macroeconomic factors, interest rate 
@@ -688,17 +642,11 @@ dematerialized securities via NSDL and CDSL [73-75].
 
 ##### 2. Core Operational Distinctions
 
-| Parameter | Discretionary PMS | Non-Discretionary PMS | Custodial & 
-Depository Services |
+| Parameter | Discretionary PMS | Non-Discretionary PMS | Custodial & Depository Services |
 | :--- | :--- | :--- | :--- |
-| **Investment Decision** | Managed independently by Portfolio Manager. | 
-Client retains absolute veto power over trades. | No investment decisions;
-pure safekeeping & admin. |
-| **Primary Objective** | Alpha generation & risk-adjusted capital growth. | Execution & tailored strategic advice. | Electronic settlement, 
-demat safekeeping, corporate action handling. |
-| **Regulatory Body** | SEBI (Portfolio Managers) Regulations. | SEBI 
-(Portfolio Managers) Regulations. | SEBI / Depositories Act, 1996 (NSDL / 
-CDSL). |
+| **Investment Decision** | Managed independently by Portfolio Manager. | Client retains absolute veto power over trades. | No investment decisions; pure safekeeping & admin. |
+| **Primary Objective** | Alpha generation & risk-adjusted capital growth. | Execution & tailored strategic advice. | Electronic settlement, demat safekeeping, corporate action handling. |
+| **Regulatory Body** | SEBI (Portfolio Managers) Regulations. | SEBI (Portfolio Managers) Regulations. | SEBI / Depositories Act, 1996 (NSDL / CDSL). |
 
 ##### 3. Real-World Industry Application
 * **PMS Execution**: *Motilal Oswal PMS* managing discretionary equity funds 
@@ -766,23 +714,13 @@ intermediaries.
 
 ##### 2. Multi-Variable Supervisory Comparison
 
-| Jurisdiction Parameter | Reserve Bank of India (RBI) | Securities and 
-Exchange Board of India (SEBI) |
+| Jurisdiction Parameter | Reserve Bank of India (RBI) | Securities and Exchange Board of India (SEBI) |
 | :--- | :--- | :--- |
-| **Primary Statutory Mandate** | Monetary stability, systemic liquidity, 
-banking control. | Investor protection, capital market development & 
-regulation. |
-| **Governing Legislation** | RBI Act 1934, Banking Regulation Act 1949, FEMA 
-1999.| SEBI Act 1992, SCRA 1956, Depositories Act 1996. |
-| **Regulated Intermediaries** | Commercial Banks, NBFC-Factors, HFCs, Primary 
-Dealers. | Merchant Bankers, Credit Rating Agencies, Stock Brokers, 
-PMS, Mutual Funds. |
-| **Core Supervisory Focus** | Capital Adequacy (CRAR), NPA provisioning, ALM 
-risk.| Disclosure transparency, insider trading prohibition, market 
-integrity. |
-| **Financial Services Domain** | Fund-Based (Asset financing, liquidity 
-deployment). | Fee-Based & Advisory (Capital raising, rating, broker 
-conduct). |
+| **Primary Statutory Mandate** | Monetary stability, systemic liquidity, banking control. | Investor protection, capital market development & regulation. |
+| **Governing Legislation** | RBI Act 1934, Banking Regulation Act 1949, FEMA 1999.| SEBI Act 1992, SCRA 1956, Depositories Act 1996. |
+| **Regulated Intermediaries** | Commercial Banks, NBFC-Factors, HFCs, Primary Dealers. | Merchant Bankers, Credit Rating Agencies, Stock Brokers, PMS, Mutual Funds. |
+| **Core Supervisory Focus** | Capital Adequacy (CRAR), NPA provisioning, ALM risk.| Disclosure transparency, insider trading prohibition, market integrity. |
+| **Financial Services Domain** | Fund-Based (Asset financing, liquidity deployment). | Fee-Based & Advisory (Capital raising, rating, broker conduct). |
 
 ##### 3. Regulatory Coordination in Dual Financial Intermediaries
 Certain specialized NBFCs and financial conglomerates fall under dual 
@@ -817,24 +755,16 @@ protection.
 The table below ranks Unit 7 topics by frequency of appearance across NMIMS 
 past examination papers (2022–2026):
 
-| Topic Rank | Unit 7 Syllabus Topic | Historical Frequency (Past Papers) | 
-Primary Exam Question Format |
+| Topic Rank | Unit 7 Syllabus Topic | Historical Frequency (Past Papers) | Primary Exam Question Format |
 | :---: | :--- | :---: | :--- |
-| **1** | **Equipment Leasing & Hire Purchase** | **8 Times** [17, 28, 31-36] |
-10-Mark Conceptual & Comparison Questions |
-| **2** | **Factoring & Forfaiting Services** | **7 Times** [28, 31-33, 35, 40,
-41] | 5-Mark & 10-Mark Workflow & Advantage Questions |
+| **1** | **Equipment Leasing & Hire Purchase** | **8 Times** [17, 28, 31-36] | 10-Mark Conceptual & Comparison Questions |
+| **2** | **Factoring & Forfaiting Services** | **7 Times** [28, 31-33, 35, 40, 41] | 5-Mark & 10-Mark Workflow & Advantage Questions |
 | **3** | **Credit Rating Agencies & Rationale** | **5 Times** | 10-Mark Process & CRA Comparison Questions |
-| **4** | **Fund-Based vs. Fee-Based Overview** | **4 Times** 
-| 5-Mark Definitions & 10-Mark Classification |
-| **5** | **Merchant Banking & Issue Management**| **3 Times** | 
-10-Mark Advisory & IPO Workflow Questions |
-| **6** | **Venture Capital & Private Equity** | **3 Times** | 
-10-Mark Stage-wise Funding & Contrast |
-| **7** | **SEBI & Capital Market Regulation** | **3 Times** | 
-5-Mark & 10-Mark Regulatory Role Questions |
-| **8** | **PMS, Stock Broking & Custodial** | **2 Times** | 5-Mark 
-Short Notes & Advisory Overview |
+| **4** | **Fund-Based vs. Fee-Based Overview** | **4 Times** | 5-Mark Definitions & 10-Mark Classification |
+| **5** | **Merchant Banking & Issue Management**| **3 Times** | 10-Mark Advisory & IPO Workflow Questions |
+| **6** | **Venture Capital & Private Equity** | **3 Times** | 10-Mark Stage-wise Funding & Contrast |
+| **7** | **SEBI & Capital Market Regulation** | **3 Times** | 5-Mark & 10-Mark Regulatory Role Questions |
+| **8** | **PMS, Stock Broking & Custodial** | **2 Times** | 5-Mark Short Notes & Advisory Overview |
 
 ---
 
@@ -844,26 +774,10 @@ multiple academic years despite rephrased prompts:
 
 | Core Tested Concept | Rephrased Past Exam Prompts | Exam Years & Papers |
 | :--- | :--- | :--- |
-| **Leasing vs. Hire Purchase Distinction** | • *"Distinguish between leasing 
-and hire purchase."*<br>• *"Differentiate between leasing and hire 
-purchase, providing examples."*<br>• *"In what ways is leasing different 
-from hire purchase?"* | • Final Exam 2025–26<br>• Final Exam 2024–25 
-<br>• Re-Exam 2023–24 |
-| **Forfaiting Benefits in Export Trade** | • *"Forfaiting is very beneficial 
-in international transactions. Explain benefits."*<br>• *"Explain the role
-of forfaiting in international trade and justify how it mitigates risk."* 
-<br>• *"List and describe the advantages of forfaiting."* | • Final 
-Exam 2023–24<br>• Final Exam 2024–25<br>• Re-Exam 2024–25 |
-| **Credit Rating Process & Advantages** | • *"Comment on statement by 
-explaining Credit Ratings and outlining advantages/limitations."*<br>• 
-*"List the credit rating process in brief."*<br>• *"Describe credit rating
-agencies and their importance in Indian economy."* | • Final Exam 2022–23 
-<br>• Re-Exam 2023–24<br>• Special Re-Exam 2022–23 |
-| **Fund-Based vs. Fee-Based Classification** | • *"Define Fund-based and 
-Fee-based financial services. Provide two examples."*<br>• *"Analyse 
-statement by explaining different fund-based services."*<br>• *"Name any 
-two fund-based financial services and explain contribution."* | • Final 
-Exam 2024–25<br>• Final Exam 2022–23<br>• Final Exam 2025–26 |
+| **Leasing vs. Hire Purchase Distinction** | • *"Distinguish between leasing and hire purchase."*<br>• *"Differentiate between leasing and hire purchase, providing examples."*<br>• *"In what ways is leasing different from hire purchase?"* | • Final Exam 2025–26<br>• Final Exam 2024–25 <br>• Re-Exam 2023–24 |
+| **Forfaiting Benefits in Export Trade** | • *"Forfaiting is very beneficial in international transactions. Explain benefits."*<br>• *"Explain the role of forfaiting in international trade and justify how it mitigates risk."* <br>• *"List and describe the advantages of forfaiting."* | • Final Exam 2023–24<br>• Final Exam 2024–25<br>• Re-Exam 2024–25 |
+| **Credit Rating Process & Advantages** | • *"Comment on statement by explaining Credit Ratings and outlining advantages/limitations."*<br>• *"List the credit rating process in brief."*<br>• *"Describe credit rating agencies and their importance in Indian economy."* | • Final Exam 2022–23 <br>• Re-Exam 2023–24<br>• Special Re-Exam 2022–23 |
+| **Fund-Based vs. Fee-Based Classification** | • *"Define Fund-based and Fee-based financial services. Provide two examples."*<br>• *"Analyse statement by explaining different fund-based services."*<br>• *"Name any two fund-based financial services and explain contribution."* | • Final Exam 2024–25<br>• Final Exam 2022–23<br>• Final Exam 2025–26 |
 
 ---
 
@@ -901,27 +815,16 @@ dematerialization steps, and DP operational interfaces.
 Verification table confirming syllabus alignment between `Unit-7.pptx` topics 
 and extracted past examination paper coverage:
 
-| `Unit-7.pptx` Syllabus Topic | Tested in Past NMIMS Papers? | Primary 
-Coverage Reference in Document |
+| `Unit-7.pptx` Syllabus Topic | Tested in Past NMIMS Papers? | Primary Coverage Reference in Document |
 | :--- | :---: | :--- |
-| **Meaning & Role of Financial Services** | **YES** | Module 1: Concept Group 
-1.1 |
-| **Fund-Based vs. Fee-Based Classification**| **YES** | Module 1: Concept 
-Group 1.1 |
-| **Equipment Leasing (Operating vs Finance)**| **YES** | Module 2: Concept 
-Group 2.1 |
-| **Hire Purchase & HP Mechanics** | **YES** | Module 2: Concept Group 2.1
-|
-| **Factoring (Recourse vs Non-Recourse)** | **YES** | Module 2: Concept Group 
-2.2 |
-| **Forfaiting & International Trade** | **YES** | Module 2: Concept Group 2.2 
- |
+| **Meaning & Role of Financial Services** | **YES** | Module 1: Concept Group 1.1 |
+| **Fund-Based vs. Fee-Based Classification**| **YES** | Module 1: Concept Group 1.1 |
+| **Equipment Leasing (Operating vs Finance)**| **YES** | Module 2: Concept Group 2.1 |
+| **Hire Purchase & HP Mechanics** | **YES** | Module 2: Concept Group 2.1 |
+| **Factoring (Recourse vs Non-Recourse)** | **YES** | Module 2: Concept Group 2.2 |
+| **Forfaiting & International Trade** | **YES** | Module 2: Concept Group 2.2 |
 | **Venture Capital & PE Stages** | **YES** | Module 2: Concept Group 2.3 |
-| **Merchant Banking & Issue Management** | **YES** | Module 3: Concept Group 
-3.1 |
-| **Credit Rating & Rating Agencies** | **YES** | Module 3: Concept Group 3.2 
- |
-| **Stock Broking & Underwriting** | **YES** | Module 3: Concept Group 3.1 & 
-3.3 |
-| **Mutual Funds & Securitization** | **YES** *(Covered in Unit 3/5)*| Mapped 
-in Syllabus Context & Cross-Unit Audit |
+| **Merchant Banking & Issue Management** | **YES** | Module 3: Concept Group 3.1 |
+| **Credit Rating & Rating Agencies** | **YES** | Module 3: Concept Group 3.2 |
+| **Stock Broking & Underwriting** | **YES** | Module 3: Concept Group 3.1 & 3.3 |
+| **Mutual Funds & Securitization** | **YES** *(Covered in Unit 3/5)*| Mapped in Syllabus Context & Cross-Unit Audit |
