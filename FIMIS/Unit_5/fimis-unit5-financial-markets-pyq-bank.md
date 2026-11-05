@@ -90,8 +90,22 @@ the differentiation between stock market and debt market."*
 #### Model Answer (10 Marks Blueprint Standard)
 
 ##### 1. Diagram Requirement Flag
-> 📊 **Diagram Required**: YES | **Type**: Structural Taxonomy & Flow Chart | 
-**Source**: `Unit5_Financial_Markets.pptx` (Slides 2–3) & Pathak (Chapter 1)
+📊 **Diagram Required**: YES | **Type**: Structural Taxonomy & Interbank Flow | **Exam Sketch Target**: Financial Market Taxonomy
+```
+                   INDIAN FINANCIAL MARKET ARCHITECTURE
+                                     │
+         ┌───────────────────────────┴───────────────────────────┐
+         ▼                                                       ▼
+   MONEY MARKET (T <= 1 Year)                              CAPITAL MARKET (T > 1 Year)
+   (Regulated by RBI)                                      (Regulated by SEBI)
+         │                                                       │
+   ┌─────┴─────────────────────┐                           ┌─────┴─────────────────────┐
+   ▼                           ▼                           ▼                           ▼
+[ Wholesale / Interbank ]  [ Retail / Corporate ]     [ Primary Market (NIM) ]     [ Secondary Market ]
+• Call/Notice Money        • Treasury Bills (T-Bills) • Public Issue (IPO / FPO)   • Stock Exchanges (BSE/NSE)
+• Term Money               • Commercial Paper (CP)    • Rights Issue               • Demat Trading (T+1)
+• Repos & Reverse Repos    • Certificates of Dep (CD) • Private Placement / QIP    • Clearing Corp (NSCCL)
+```
 
 ##### 2. Theoretical Foundation & Financial Taxonomy
 The financial market structure of an economy facilitates the allocation of 
@@ -206,9 +220,33 @@ advantages and disadvantages."*
 #### Model Answer (10 Marks Blueprint Standard)
 
 ##### 1. Diagram Requirement Flag
-> 📊 **Diagram Required**: YES | **Type**: Operational Workflow & Capital 
-Mobilization Loop | **Source**: Pathak (Chapter 6) & 
-`Unit5_Financial_Markets.pptx` (Slide 25)
+📊 **Diagram Required**: YES | **Type**: Operational Workflow & Capital Mobilization | **Exam Sketch Target**: Primary Market Issue Flow
+```
+               PRIMARY MARKET CAPITAL MOBILIZATION WORKFLOW
+                                     │
+           [ Corporate Issuer / Deficit Unit Needs Capital ]
+                                     │
+                                     ▼
+           [ Appoints Book Running Lead Manager (BRLM) ]
+                                     │
+                                     ▼
+           [ Prepares Draft Red Herring Prospectus (DRHP) ]
+                                     │
+                                     ▼
+           [ SEBI Review & Regulatory In-Principle Approval ]
+                                     │
+                                     ▼
+           [ Marketing, Roadshows & Price Band Announcement ]
+                                     │
+                                     ▼
+           [ ASBA Public Bidding (Retail, HNI, QIB Pools) ]
+                                     │
+                                     ▼
+           [ Basis of Allotment Finalization & Demat Credit ]
+                                     │
+                                     ▼
+           [ Capital Transferred to Issuer & Stock Listed on Exchange ]
+```
 
 ##### 2. Theoretical Foundation: Primary Market Flotation Mechanisms
 The Primary Market (New Issue Market / NIM) facilitates the direct flow of 
@@ -302,8 +340,31 @@ the factors that would be considered by anyone while investing in the IPOs."*
 #### Model Answer (10 Marks Blueprint Standard)
 
 ##### 1. Diagram Requirement Flag
-> 📊 **Diagram Required**: YES | **Type**: End-to-End Operational Workflow | 
-**Source**: `Unit5_Financial_Markets.pptx` (Slide 26) & Pathak (Chapter 6)
+📊 **Diagram Required**: YES | **Type**: End-to-End Operational Workflow | **Exam Sketch Target**: Book Building Price Discovery
+```
+                 IPO BOOK BUILDING & PRICE DISCOVERY ARCHITECTURE
+                                     │
+           [ Issuer & Merchant Banker Fix Price Band ]
+           (Cap Price <= 1.20 x Floor Price, e.g., Rs 100 - Rs 120)
+                                     │
+                                     ▼
+           [ Bidding Window Opens (3 to 5 Working Days) ]
+           (Investors submit bids at varying price points via ASBA)
+                                     │
+            ┌────────────────────────┼────────────────────────┐
+            ▼                        ▼                        ▼
+      [ Bid @ Rs 100 ]         [ Bid @ Rs 110 ]         [ Bid @ Rs 120 ]
+      (50,000 Shares)          (1,20,000 Shares)        (2,50,000 Shares)
+                                     │
+                                     ▼
+           [ Book Runner Consolidates Cumulative Demand Curve ]
+                                     │
+                                     ▼
+           [ Cut-Off Price Determined where Total Demand = Total Supply ]
+                                     │
+                                     ▼
+           [ All Successful Bidders Pay Cut-Off Price; Balance Unblocked ]
+```
 
 ##### 2. Theoretical Foundation & Terminology
 Book Building is a price discovery mechanism utilized during an Initial Public 
@@ -433,9 +494,25 @@ examples."*
 #### Model Answer (10 Marks Blueprint Standard)
 
 ##### 1. Diagram Requirement Flag
-> 📊 **Diagram Required**: YES | **Type**: Operational Architecture & 
-Settlement Flow | **Source**: `Unit5_Financial_Markets.pptx` (Slides 29–31) & 
-Pathak (Chapter 8)
+📊 **Diagram Required**: YES | **Type**: Operational Architecture & Settlement Flow | **Exam Sketch Target**: Secondary Market T+1 Flow
+```
+           SECONDARY MARKET TRADING & T+1 ROLLING SETTLEMENT
+                                     │
+     [ Investor / Buyer ] ──(Enters Order)──► [ Trading Member / Broker ]
+                                                        │
+                                                        ▼
+                                             [ Automated Screen (BOLT/NEAT) ]
+                                             (Matches Order by Price-Time Priority)
+                                                        │
+                                                        ▼ (Trade Executed: Day T)
+                                             [ Clearing Corporation (NSCCL/ICCL) ]
+                                             (Acts as Central Counterparty via Novation)
+                                                        │
+                                     ┌──────────────────┴──────────────────┐
+                                     ▼ (Day T+1 Pay-in)                    ▼ (Day T+1 Pay-out)
+                            [ Clearing Member Bank ]              [ Depositories (NSDL/CDSL) ]
+                            (Debits Buyer / Credits Seller)       (Transfers Demat Shares to Buyer)
+```
 
 ##### 2. Theoretical Foundation: Exchange Infrastructure & Clearing Mechanism
 Secondary markets enable the trading of existing, outstanding securities, 
@@ -546,9 +623,23 @@ protect investor right."*
 #### Model Answer (10 Marks Blueprint Standard)
 
 ##### 1. Diagram Requirement Flag
-> 📊 **Diagram Required**: YES | **Type**: Regulatory Architecture & Governance
-Matrix | **Source**: `Unit5_Financial_Markets.pptx` (Slide 12, 29) & Pathak 
-(Chapters 4, 5, 9)
+📊 **Diagram Required**: YES | **Type**: Regulatory Architecture & Governance | **Exam Sketch Target**: RBI vs SEBI Dual Regulatory Mandate
+```
+                 DUAL FINANCIAL REGULATORY ARCHITECTURE (INDIA)
+                                     │
+                       [ Ministry of Finance (MoF) ]
+                                     │
+            ┌────────────────────────┴────────────────────────┐
+            ▼                                                 ▼
+[ RESERVE BANK OF INDIA (RBI) ]                [ SECURITIES & EXCHANGE BOARD (SEBI) ]
+  • Statutory Act: RBI Act, 1934                 • Statutory Act: SEBI Act, 1992
+  • Mandate: Monetary Policy & Liquidity         • Mandate: Investor Protection & Market Integrity
+  • Regulated Domain:                            • Regulated Domain:
+    - Commercial & Regional Rural Banks            - Stock Exchanges (BSE, NSE, MCX)
+    - Non-Banking Financial Companies (NBFCs)      - Merchant Bankers & Underwriters
+    - Money Markets (Call, T-Bills, CPs, Repos)    - Mutual Funds & Asset Management Cos (AMCs)
+    - Foreign Exchange (Forex) & G-Secs            - Depositories (NSDL, CDSL) & Brokers
+```
 
 ##### 2. Theoretical Foundation: Regulatory Dichotomy
 Financial market stability in India relies on a dual-regulatory mandate split 
@@ -637,8 +728,24 @@ investment strategies and market dynamics."*
 #### Model Answer (10 Marks Blueprint Standard)
 
 ##### 1. Diagram Requirement Flag
-> 📊 **Diagram Required**: YES | **Type**: Lifecycle / Workflow Diagram | 
-**Source**: `Unit5_Financial_Markets.pptx` (Slides 33–37) & Madura (Chapter 1)
+📊 **Diagram Required**: YES | **Type**: Lifecycle / Workflow Diagram | **Exam Sketch Target**: 5-Phase Bubble Lifecycle
+```
+               LIFECYCLE MECHANICS OF A FINANCIAL SPECULATIVE BUBBLE
+                                     │
+  [ Phase 1: DISPLACEMENT ] ──► Technological shock or macro shift introduces new profit narrative
+            │
+            ▼
+  [ Phase 2: BOOM & CREDIT ]──► Abundant cheap liquidity accelerates buying; asset prices climb
+            │
+            ▼
+  [ Phase 3: EUPHORIA ]    ──► "New Era" narrative; retail FOMO; irrational valuation multiples
+            │
+            ▼
+  [ Phase 4: PROFIT-TAKING]──► Sophisticated smart-money begins quietly liquidating positions
+            │
+            ▼
+  [ Phase 5: PANIC & CRASH ]─► Credit dries up, margin calls trigger forced selling, asset prices crash
+```
 
 ##### 2. Theoretical Foundation: Anomalies & Bubble Lifecycle
 A Market Anomaly is a cross-sectional or time-series price pattern that 

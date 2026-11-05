@@ -52,9 +52,21 @@ Financial System? Discuss briefly its role in supporting economic growth."* |
 Final Examination | 2025–2026 | Q3a(i) | 5 Marks
 
 #### Visual Requirement Flag
-📊 **Diagram Required**: YES | **Type**: Operational Workflow (Interbank Money 
-Market & Liquidity Adjustment Mechanism) | **Source**: 
-`Unit6_Financial_Instruments.pptx` / RBI Operational Manuals
+📊 **Diagram Required**: YES | **Type**: Operational Workflow (Interbank Money Market) | **Exam Sketch Target**: RBI Liquidity Adjustment Facility (LAF)
+```
+              RBI LIQUIDITY ADJUSTMENT FACILITY (LAF) MECHANISM
+                                     │
+               ┌─────────────────────┴─────────────────────┐
+               ▼                                           ▼
+      [ REPO TRANSACTION ]                       [ REVERSE REPO TRANSACTION ]
+    (RBI Injects Cash Liquidity)                 (RBI Absorbs Excess Liquidity)
+               │                                           │
+  Commercial Bank ──(G-Sec Collateral)──► RBI    Commercial Bank ◄──(G-Sec Collateral)── RBI
+  Commercial Bank ◄────(Cash Funds)───── RBI    Commercial Bank ────(Cash Surplus)────► RBI
+               │                                           │
+   [ Bank Repurchases G-Sec at                 [ RBI Repurchases G-Sec at
+     Repo Rate (e.g., 6.50%) ]                   Reverse Repo Rate (e.g., 3.35%) ]
+```
 
 ---
 
@@ -279,8 +291,24 @@ between stock market and debt market."* | Final Examination | 2023–2024 | Q7b 
 10 Marks
 
 #### Visual Requirement Flag
-📊 **Diagram Required**: YES | **Type**: Priority of Claims Capital Structure 
-Pyramid | **Source**: `Unit6_Financial_Instruments.pptx` Slide 10
+📊 **Diagram Required**: YES | **Type**: Priority of Claims Capital Structure Pyramid | **Exam Sketch Target**: Liquidation Priority Hierarchy
+```
+             CAPITAL STRUCTURE PRIORITY OF CLAIMS (LIQUIDATION HIERARCHY)
+                                     │
+                       ┌───────────────────────────┐
+                       │   SENIOR SECURED DEBT     │  ◄── Highest Priority / Lowest Risk
+                       │   (Bank Loans, Mortgages) │      (Secured by Fixed Assets)
+                       ├───────────────────────────┤
+                       │  SENIOR UNSECURED DEBT    │  ◄── Commercial Paper, Unsecured Debentures
+                       ├───────────────────────────┤
+                       │    SUBORDINATED DEBT      │  ◄── Tier-II Capital, Mezzanine Finance
+                       ├───────────────────────────┤
+                       │    PREFERENCE SHARES      │  ◄── Fixed Dividend Claim Before Equity
+                       ├───────────────────────────┤
+                       │      COMMON EQUITY        │  ◄── Lowest Priority / Highest Risk
+                       │   (Ordinary Shareholders) │      (Residual Claimants of Assets)
+                       └───────────────────────────┘
+```
 
 ---
 
@@ -366,8 +394,26 @@ measures. Explain the initiatives in detail."* | Special Re-Examination |
 2022–2023 | Q6b | 10 Marks
 
 #### Visual Requirement Flag
-📊 **Diagram Required**: YES | **Type**: Rights Issue Execution Workflow & 
-Dilution Mechanics | **Source**: Pathak Ch. 6
+📊 **Diagram Required**: YES | **Type**: Rights Issue Execution Workflow & Dilution | **Exam Sketch Target**: Rights Issue vs Renunciation Flow
+```
+                 RIGHTS ISSUE EXECUTION & DILUTION WORKFLOW
+                                     │
+           [ Board Approves Rights Ratio & Subscription Price ]
+           (e.g., 1 Rights Share for every 4 Shares held @ Rs 80; CMP = Rs 100)
+                                     │
+                                     ▼
+           [ Record Date: Eligible Shareholders Credited with RE in Demat ]
+                                     │
+                    ┌────────────────┴────────────────┐
+                    ▼                                 ▼
+           [ EXERCISE RIGHTS ]               [ RENOUNCE RIGHTS ]
+           Subscribe @ Discounted Price      Sell Rights Entitlement (RE) on Exchange
+           (Retains Percentage Ownership)    (Receives Cash; Ownership Percentage Diluted)
+                                     │
+                                     ▼
+           [ Theoretical Ex-Rights Price (TERP) Established ]
+           $$TERP = \frac{(N \times CMP) + (S \times Issue Price)}{N + S}$$
+```
 
 ---
 
@@ -465,9 +511,21 @@ financial systems."* | Re-Examination | 2023–2024 / 2024–2025 | Q4b | 10 Mar
 
 
 #### Visual Requirement Flag
-📊 **Diagram Required**: YES | **Type**: Derivative Market Taxonomy & Risk 
-Transfer Architecture | **Source**: `Unit6_Financial_Instruments.pptx` Slides 
-11–16
+📊 **Diagram Required**: YES | **Type**: Derivative Market Taxonomy & Risk Transfer | **Exam Sketch Target**: OTC vs Exchange Traded Derivatives
+```
+                 FINANCIAL DERIVATIVES RISK TRANSFER TAXONOMY
+                                     │
+         ┌───────────────────────────┴───────────────────────────┐
+         ▼                                                       ▼
+   [ OVER-THE-COUNTER (OTC) ]                              [ EXCHANGE-TRADED ]
+   • Custom Bilateral Contracts                            • Standardized Contracts
+   • High Counterparty / Default Risk                      • Guaranteed by Clearing Corporation
+   • Non-liquid / Flexible Settlement                      • High Liquidity / T+1 Daily MTM Settlement
+         │                                                       │
+   ┌─────┴──────────────┐                                  ┌─────┴──────────────┐
+   ▼                    ▼                                  ▼                    ▼
+[ Forward Contracts ] [ Currency / IR Swaps ]           [ Financial Futures ] [ Financial Options ]
+```
 
 ---
 
@@ -666,9 +724,23 @@ operates and assess its effectiveness in managing various types of financial
 risks."* | Re-Examination | 2023–24 / 2024–25 | Q2a | 10 Marks
 
 #### Visual Requirement Flag
-📊 **Diagram Required**: YES | **Type**: Plain Vanilla Fixed-for-Floating 
-Interest Rate Swap Flow Diagram | **Source**: 
-`Unit6_Financial_Instruments.pptx` Slide 15 / Madura Ch. 15
+📊 **Diagram Required**: YES | **Type**: Plain Vanilla Fixed-for-Floating IRS Flow | **Exam Sketch Target**: 3-Party Interest Rate Swap Mechanism
+```
+          PLAIN VANILLA FIXED-FOR-FLOATING INTEREST RATE SWAP (IRS)
+                                     │
+                       ┌───────────────────────────┐
+                       │   SWAP BANK / DEALER      │
+                       │   (Market Intermediary)   │
+                       └───────────────────────────┘
+                         ▲                       ▲
+     Pays Fixed (7.00%)  │                       │  Pays Floating (SOFR + 1.20%)
+    Receives SOFR + 0.80%│                       │  Receives Fixed (7.20%)
+                         ▼                       ▼
+            ┌────────────────────────┐       ┌────────────────────────┐
+            │       COMPANY A        │       │       COMPANY B        │
+            │ (Seeks Floating Debt)  │       │   (Seeks Fixed Debt)   │
+            └────────────────────────┘       └────────────────────────┘
+```
 
 ---
 

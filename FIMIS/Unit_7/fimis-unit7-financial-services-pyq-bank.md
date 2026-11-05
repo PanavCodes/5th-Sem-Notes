@@ -50,8 +50,22 @@ system, but has not reached its potential. Apply the concepts studied in the
 class to explain the statement mentioned above."* | Special Re-Examination | 
 2022–2023 | Q4(a) | 10 Marks
 
-📊 Diagram Required: YES | Type: Structural Workflow | Source: Unit-7.pptx & 
-Pathak (Ch. 17)
+📊 **Diagram Required**: YES | **Type**: Structural Workflow | **Exam Sketch Target**: Fund-Based vs Fee-Based Intermediary Taxonomy
+```
+              FINANCIAL SERVICES CORE INTERMEDIARY TAXONOMY
+                                     │
+         ┌───────────────────────────┴───────────────────────────┐
+         ▼                                                       ▼
+   [ FUND-BASED FINANCIAL SERVICES ]                       [ FEE-BASED FINANCIAL SERVICES ]
+   (Asset & Capital Balance Sheet Deployment)              (Advisory & Intermediary Services)
+         │                                                       │
+   ┌─────┴─────────────────────┐                           ┌─────┴─────────────────────┐
+   ▼                           ▼                           ▼                           ▼
+[ Short-Term / Working Cap ] [ Long-Term Capital Pres ]  [ Capital Market Advisory ] [ Asset Administration ]
+• Factoring & Forfaiting     • Equipment Leasing         • Merchant Banking (IPOs)   • Credit Rating (CRISIL)
+• Consumer Credit            • Hire Purchase (HP)        • Underwriting              • Portfolio Mgmt (PMS)
+• Trade Credit Bills         • Housing Finance / VC      • Stock Broking             • Custodial Services
+```
 
 ```
                        FINANCIAL SERVICES ECOSYSTEM
@@ -171,8 +185,19 @@ calculations."* | Final Examination | 2023–2024 | Q3(b) | 10 Marks
 * *"Articulate the reasons when hire purchases is beneficial and not-beneficial
 to companies."* | Special Re-Examination | 2022–2023 | Q1(c) | 5 Marks
 
-📊 Diagram Required: YES | Type: Workflow & Mathematical Structure | Source: 
-Unit-8.pptx
+📊 **Diagram Required**: YES | **Type**: Workflow & Mathematical Structure | **Exam Sketch Target**: Equipment Lease vs Hire Purchase Legal Flow
+```
+                EQUIPMENT LEASE VS. HIRE PURCHASE CONTRACTUAL FLOW
+                                     │
+         ┌───────────────────────────┴───────────────────────────┐
+         ▼                                                       ▼
+   [ EQUIPMENT LEASE ]                                     [ HIRE PURCHASE (HP) ]
+   • Legal Structure: Bailment (Indian Contract Act)       • Legal Structure: Sale Agreement (HP Act)
+   • Title / Ownership: REMAINS WITH LESSOR                • Title: TRANSFERS ON FINAL INSTALLMENT
+   • Down Payment: Typically NIL                           • Down Payment: 15% to 25% Mandatory
+   • Tax Deduction: Full Lease Rental is Tax Deductible    • Tax Deduction: Double Shield (Interest + Deprec)
+   • Balance Sheet: Capitalized under Ind AS 116           • Balance Sheet: Hirer Capitalizes Full Asset Value
+```
 
 ```
    LEASING WORKFLOW                       HIRE PURCHASE WORKFLOW
@@ -270,8 +295,19 @@ Re-Examination | 2024–2025 | Q1(b) | 5 Marks
 * *"List and describe the advantages of forfaiting."* | Re-Examination | 
 2024–2025 | Q1(b) | 5 Marks
 
-📊 Diagram Required: YES | Type: Structural Trade Workflow | Source: 
-Unit-9.pptx & Pathak (Ch. 20)
+📊 **Diagram Required**: YES | **Type**: Structural Trade Workflow | **Exam Sketch Target**: Factoring vs Forfaiting Trade Finance Flow
+```
+             FACTORING VS. FORFAITING TRADE FINANCE WORKFLOW
+                                     │
+         ┌───────────────────────────┴───────────────────────────┐
+         ▼                                                       ▼
+   [ FACTORING (Short-Term Trade) ]                        [ FORFAITING (Medium/Long-Term Export) ]
+   • Tenor: 30 to 180 Days                                 • Tenor: 1 to 7 Years
+   • Underlying: Consumer Goods & Receivables Ledger       • Underlying: Capital Goods & Plant Machinery
+   • Recourse: Recourse OR Non-Recourse                    • Recourse: STRICTLY 100% WITHOUT RECOURSE
+   • Financing: 80% to 90% Advance                         • Financing: 100% Cash Financed Upfront
+   • Debt Instrument: Sales Invoices & Debt Assignment     • Debt Instrument: Avalised Promissory Notes / Bills
+```
 
 ```
                   FORFAITING STRUCTURAL MECHANISM
@@ -604,8 +640,22 @@ Marks
 * *"Briefly discuss any one of the fee-based financial services."* (Custodial /
 Depository / PMS) | Final Examination | 2025–2026 | Q1(d) | 5 Marks
 
-📊 Diagram Required: YES | Type: Intermediary Architecture | Source: Pathak 
-(Ch. 18) & Unit-2.pptx
+📊 **Diagram Required**: YES | **Type**: Intermediary Architecture | **Exam Sketch Target**: PMS & Custodial Settlement Architecture
+```
+           PORTFOLIO MANAGEMENT & CUSTODIAL OPERATIONAL ARCHITECTURE
+                                     │
+           [ HNI / Institutional Client ] ──(Allocates Capital)──► [ PMS Fund Manager ]
+                                                                        │
+                                                                 (Formulates Strategy)
+                                                                        │
+                                                                        ▼
+                                                             [ Execution on Exchanges ]
+                                                                        │
+                                      ┌─────────────────────────────────┴─────────────────────────────────┐
+                                      ▼                                                                   ▼
+                         [ Custodian / Clearing Agent ]                                      [ Depository (NSDL/CDSL) ]
+                         (Safekeeping of Client Funds & Assets)                              (Electronic Demat Holding)
+```
 
 ```
                      DEPOSITORY SYSTEM ARCHITECTURE
@@ -674,8 +724,22 @@ financial regulator and describe how these roles contribute to the stability of
 the financial markets."* | Final Examination / Re-Examination | 2024–2025 | 
 Q1(a) | 5 Marks
 
-📊 Diagram Required: YES | Type: Regulatory Jurisdiction Matrix | Source: Unit 
-2.pptx & Pathak (Ch. 24)
+📊 **Diagram Required**: YES | **Type**: Regulatory Jurisdiction Matrix | **Exam Sketch Target**: RBI vs SEBI Domain Allocation
+```
+                 DUAL REGULATORY INTERMEDIARY DOMAIN ALLOCATION
+                                     │
+                       [ Ministry of Finance (MoF) ]
+                                     │
+            ┌────────────────────────┴────────────────────────┐
+            ▼                                                 ▼
+[ RESERVE BANK OF INDIA (RBI) ]                [ SECURITIES & EXCHANGE BOARD (SEBI) ]
+  • Governs Credit & Fund Liquidity              • Governs Securities & Fee Intermediaries
+  • Entities:                                    • Entities:
+    - NBFC-Asset Finance Companies (AFCs)          - Merchant Bankers / Lead Managers
+    - Equipment Leasing & HP Companies             - Credit Rating Agencies (CRISIL, ICRA)
+    - NBFC-Factors (under Factoring Act)           - Stock Brokers & Depository Participants
+    - Housing Finance Companies (HFCs)             - Portfolio Management Service (PMS) Providers
+```
 
 ```
                      DUAL REGULATORY JURISDICTION MATRIX

@@ -30,3 +30,4 @@ for u in [5, 6, 7, 8, 9, 10]:
                     row_idx += 1
                 if row_errs == 0:
                     print(f"  All {row_idx - i - 1} rows have exact {delim_cols} columns!")
+

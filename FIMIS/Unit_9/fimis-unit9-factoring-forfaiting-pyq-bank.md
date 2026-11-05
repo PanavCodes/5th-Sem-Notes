@@ -48,8 +48,22 @@ advances cash (typically **80% to 90%** of invoice value), takes over sales
 ledger administration, collects payments from buyers (**debtors**), and 
 provides protection against credit defaults [18-21].
 
-`📊 Diagram Required: YES | Type: Structural Flow | Source: Unit-9.pptx / 
-Pathak Ch. 20`
+📊 **Diagram Required**: YES | **Type**: Structural Flow | **Exam Sketch Target**: Tripartite Factoring Mechanism
+```
+                   TRIPARTITE FACTORING STRUCTURAL MECHANISM
+                                     │
+          [ Seller / Client ] ────────(1. Delivers Goods)────────► [ Buyer / Debtor ]
+                   │                                                       │
+                   │ (2. Assigns Invoice Debt)                             │ (4. Pays Full
+                   ▼                                                       │     Invoice at
+          ┌────────────────┐                                               │     Maturity)
+          │  FACTOR / NBFC │ ◄─────────────────────────────────────────────┘
+          └────────────────┘
+                   │
+                   ▼ (3. Prepayment: 80% to 90% Upfront)
+          [ Seller receives working capital instantly;
+            Remaining 10-20% received after collection minus Factor fee ]
+```
 
 ```
      [CLIENT / SELLER]  <--- (1) Sales Contract & Delivery --->  [DEBTOR / 
@@ -138,8 +152,18 @@ of the above statement, mention the importance of export factoring."** |
 Factoring arrangements vary based on credit risk allocation, advance timing, 
 assignment disclosure, and trade geography:
 
-`📊 Diagram Required: YES | Type: Classification Tree | Source: Unit-9.pptx / 
-Pathak Ch. 20`
+📊 **Diagram Required**: YES | **Type**: Classification Tree | **Exam Sketch Target**: Factoring Structural Taxonomy
+```
+                      STRUCTURAL CLASSIFICATIONS OF FACTORING
+                                         │
+         ┌───────────────────────────────┼───────────────────────────────┐
+         ▼                               ▼                               ▼
+  [ CREDIT RISK BASIS ]          [ TIMING BASIS ]               [ DISCLOSURE BASIS ]
+  • Recourse Factoring           • Advance Factoring            • Disclosed Factoring
+    (Bad debts borne by Seller)    (80-90% Prepayment Day 1)      (Notice of Assignment to Buyer)
+  • Non-Recourse Factoring       • Maturity Factoring           • Undisclosed Factoring
+    (Factor absorbs 100% loss)     (Payment on collection date)   (Debtor unaware of Factor)
+```
 
 ```
                              [FACTORING CLASSIFICATIONS]
@@ -187,8 +211,22 @@ country.
      3. **Import Factor** (in importer's country)
      4. **Importer (Customer)**
 
-`📊 Diagram Required: YES | Type: Workflow Architecture | Source: Pathak Ch. 
-20`
+📊 **Diagram Required**: YES | **Type**: Workflow Architecture | **Exam Sketch Target**: International Two-Factor Cross-Border Flow
+```
+           INTERNATIONAL TWO-FACTOR CROSS-BORDER EXPORT WORKFLOW
+                                     │
+       [ Exporter (Home Country) ] ──(1. Ships Goods)──► [ Importer (Foreign Country) ]
+                   │                                                     ▲
+   (2. Assigns     │                                                     │ (4. Pays Invoice
+       Export Debt)▼                                                     │     on Maturity)
+          ┌────────────────┐                                   ┌────────────────┐
+          │ EXPORT FACTOR  │ ──(3. Re-assigns Receivables)───► │ IMPORT FACTOR  │
+          │ (Home Country) │ ◄──────(5. Remits Funds)───────── │ (Foreign Host) │
+          └────────────────┘                                   └────────────────┘
+                   │
+                   ▼ (Advance Payment: 80%)
+       [ Exporter secures working capital & 100% foreign credit protection ]
+```
 
 ```
  [EXPORTER] --(Ships Goods & Invoices)--> [IMPORTER]
@@ -265,8 +303,28 @@ Exchange** or **Promissory Notes** payable over 6 months to 7 years.
 negotiable instrument by a prime international bank in the importer's country 
 ("*Per Aval*"), guaranteeing unconditional payment upon maturity.
 
-`📊 Diagram Required: YES | Type: Workflow Diagram | Source: Unit-9.pptx / 
-Pathak Ch. 20`
+📊 **Diagram Required**: YES | **Type**: Workflow Diagram | **Exam Sketch Target**: Forfaiting Avalised Bills Discounting Flow
+```
+                 FORFAITING AVALISED BILLS OF EXCHANGE WORKFLOW
+                                     │
+       [ Exporter (Capital Goods) ] ──(1. Delivers Plant)──► [ Importer (Foreign Buyer) ]
+                   │                                                     │
+                   │                                          (2. Issues Series of
+                   │                                              Promissory Notes)
+                   │                                                     ▼
+                   │                                         [ Importer's Bank (Aval) ]
+                   │                                         (Guarantees Notes "Per Aval")
+                   │                                                     │
+                   │ ◄──────────────────(3. Delivers Avalised Notes)─────┘
+                   │
+                   ▼ (4. Surrenders Avalised Notes Without Recourse)
+          ┌────────────────┐
+          │   FORFAITER    │ ──(5. Pays 100% Cash Minus Discount)──► [ Exporter ]
+          └────────────────┘
+                   │
+                   ▼ (6. Presents Notes for Payment at Maturity: 1 to 5 Years)
+          [ Importer's Bank Honors Payment unconditionally ]
+```
 
 ```
  (1) Export Contract (Capital Goods)

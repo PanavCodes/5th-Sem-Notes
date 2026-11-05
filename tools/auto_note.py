@@ -253,7 +253,7 @@ Formatting: Strictly GitHub Markdown with standard LaTeX ($...$, $$...$$)."""
 - For EVERY question inside a group, list:
   * *Exact Question String* | *Exam/Paper Name* | *Year* | *Q. Number* | *Marks*
 - Provide **ONE definitive, comprehensive model answer** per group scaled to the highest mark allocation.
-- Tag diagrams: `📊 Diagram Required: YES | Type: [...] | Source: [Slide/Textbook]`
+- Tag & Draw Diagrams: `📊 Diagram Required: YES | Type: [...] | Exam Sketch Target: [...]`. Immediately beneath this tag, draw the **complete, self-contained ASCII box-and-arrow diagram or Mermaid flowchart** to sketch in the exam hall. Never leave it as an external reference.
 
 ### 5. MARK-PROPORTIONAL ANSWER FORMATTING
 - **2 Marks**: Formal definition + 2 core bullet points.
