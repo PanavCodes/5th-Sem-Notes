@@ -183,12 +183,12 @@ Industry
 * **(1) Corporate Background:** *ABC Logistics Pvt. Ltd.*, an Indian mid-tier 
 freight company, secured a commercial contract requiring 50 specialized 
 heavy-duty haulage trucks. Purchasing the fleet outright required an immediate 
-capital outlay of $\text{Rs. } 15 \text{ Crores}$, which would drain its 
+capital outlay of ₹15 Crores, which would drain its 
 liquid cash reserves and violate existing bank loan leverage covenants.
 * **(2) Structural Mechanism:** ABC Logistics entered into a 5-year operating 
 lease arrangement with an NBFC Asset Finance Company. The lessor purchased the 
 50 trucks directly from the manufacturer and leased them to ABC Logistics for a
-fixed monthly lease rental of $\text{Rs. } 5.5 \text{ Lakhs per vehicle}$ 
+fixed monthly lease rental of ₹5.5 Lakhs per vehicle 
 (inclusive of routine maintenance and comprehensive insurance).
 * **(3) Regulatory & Market Challenge:** Mid-way through the lease, strict 
 emission norm transitions (BS-IV to BS-VI) were mandated, threatening heavy 
@@ -197,7 +197,7 @@ increased market debt costs.
 * **(4) Financial & Operational Outcome:** Because the contract was structured 
 as an operating lease, the obsolescence risk rested entirely with the lessor 
 . ABC Logistics deducted $100\%$ of its annual lease rental 
-payments ($\text{Rs. } 3.3 \text{ Crores}$) from taxable income. At the end of the 5-year term, ABC Logistics returned the older fleet to 
+payments (₹3.3 Crores) from taxable income. At the end of the 5-year term, ABC Logistics returned the older fleet to 
 the lessor and transitioned to a new fleet without incurring resale losses or 
 capital asset write-offs.
 
@@ -263,8 +263,7 @@ parties involved are:
    * **Lessee:** User of the asset.
    * **Lessor (Equity Participant):** Provides $20\% - 40\%$ of the asset 
 purchase cost.
-   * **Lender (Debt Participant):** Institutional lender providing $60\% - 
-80\%$ non-recourse debt secured by a primary mortgage over the asset and 
+   * **Lender (Debt Participant):** Institutional lender providing $60\% - 80\%$ non-recourse debt secured by a primary mortgage over the asset and 
 assignment of lease rentals.
 
 ---
@@ -427,8 +426,10 @@ where $k_d$ is the firm's pre-tax borrowing rate and $T$ is the
 marginal corporate income tax rate.
 
 ##### Exhaustive NAL Equation
-\[NAL = I_0 - \sum_{t=1}^n \frac{L_t \cdot (1 - T)}{(1 + r_d)^t} - \sum_{t=1}^n
-\frac{D_t \cdot T}{(1 + r_d)^t} - \frac{S_n \cdot (1 - T_{cg})}{(1 + r_d)^n}\\]
+$$
+NAL = I_0 - \sum_{t=1}^n \frac{L_t \cdot (1 - T)}{(1 + r_d)^t} - \sum_{t=1}^n
+\frac{D_t \cdot T}{(1 + r_d)^t} - \frac{S_n \cdot (1 - T_{cg})}{(1 + r_d)^n}
+$$
 
 Where:
 * $I_0$ = Initial Capital Outlay / Purchase Price of Asset.
@@ -489,15 +490,14 @@ maintenance and asset management to the lessor.
 
 ##### Problem Statement
 *TexStyle Garments Ltd.*, an SME manufacturer, is evaluating whether to lease 
-or purchase a computer-controlled cutting machine costing $\text{Rs. } 
-10,00,000$. 
-* **Option A (Lease):** Annual lease rental of $\text{Rs. } 3,60,000$ 
+or purchase a computer-controlled cutting machine costing ₹10,00,000. 
+* **Option A (Lease):** Annual lease rental of ₹3,60,000 
 payable at the end of each year for $3 \text{ years}$.
 * **Option B (Buy via Bank Loan):** The bank offers a 3-year term loan at a 
 pre-tax interest rate of $10\%$ per annum.
 * **Depreciation:** Straight Line Method (SLM) over $3 \text{ years}$ 
-(Annual Depreciation = $\text{Rs. } 3,33,333.33$).
-* **Salvage Value at Year 3:** $\text{Rs. } 0$.
+(Annual Depreciation = ₹3,33,333.33).
+* **Salvage Value at Year 3:** ₹0.
 * **Corporate Tax Rate ($T$):** $30\%$ ($0.30$).
 
 ##### Step-by-Step Solution
@@ -507,32 +507,46 @@ pre-tax interest rate of $10\%$ per annum.
 
 **Step 2: Calculate Annual Cash Outflows under Leasing**
 * Annual After-Tax Lease Rental:
-\[L_t \cdot (1 - T) = \text{Rs. } 3,60,000 \cdot (1 - 0.30) = \text{Rs. } 
-2,52,000\\]
+$$
+L_t \cdot (1 - T) = \text{Rs. } 3,60,000 \cdot (1 - 0.30) = \text{Rs. } 
+2,52,000
+$$
 * Lost Annual Depreciation Tax Shield:
-\[D_t \cdot T = \text{Rs. } 3,33,333.33 \cdot 0.30 = \text{Rs. } 1,00,000\\] 
+$$
+D_t \cdot T = \text{Rs. } 3,33,333.33 \cdot 0.30 = \text{Rs. } 1,00,000
+$$ 
 
 * Total Annual After-Tax Outflow of Leasing:
-\[\text{Outflow}_t = \text{Rs. } 2,52,000 + \text{Rs. } 1,00,000 = \text{Rs. } 
-3,52,000 \text{ per year}\\]
+$$
+\text{Outflow}_t = \text{Rs. } 2,52,000 + \text{Rs. } 1,00,000 = \text{Rs. } 
+3,52,000 \text{ per year}
+$$
 
 **Step 3: Calculate Present Value (PV) of Leasing Outflows**
 Using the Present Value Interest Factor of Annuity ($PVIFA$) at $7\%$ 
 for $3 \text{ years}$:
-\[PVIFA(7\%, 3) = \frac{1 - (1 + 0.07)^{-3}}{0.07} = \frac{1 - 0.816298}{0.07} 
-\approx 2.6243\\]
+$$
+PVIFA(7\%, 3) = \frac{1 - (1 + 0.07)^{-3}}{0.07} = \frac{1 - 0.816298}{0.07} 
+\approx 2.6243
+$$
 
-\[\text{PV of Outflows} = \text{Rs. } 3,52,000 \cdot 2.6243 = \text{Rs. } 
-9,23,753.60\\]
+$$
+\text{PV of Outflows} = \text{Rs. } 3,52,000 \cdot 2.6243 = \text{Rs. } 
+9,23,753.60
+$$
 
 **Step 4: Compute Net Advantage of Leasing (NAL)**
-\[NAL = I_0 - \text{PV of Leasing Outflows}\\]
-\[NAL = \text{Rs. } 10,00,000 - \text{Rs. } 9,23,753.60 = +\text{Rs. } 
-76,246.40\\]
+$$
+NAL = I_0 - \text{PV of Leasing Outflows}
+$$
+$$
+NAL = \text{Rs. } 10,00,000 - \text{Rs. } 9,23,753.60 = +\text{Rs. } 
+76,246.40
+$$
 
 ##### Financial Recommendation
 Since $NAL = +\text{Rs. } 76,246.40 > 0$, leasing the machine yields a net 
-present value savings of $\text{Rs. } 76,246.40$ over buying. 
+present value savings of ₹76,246.40 over buying. 
 *TexStyle Garments Ltd.* should choose to **Lease**.
 
 ---
@@ -541,13 +555,11 @@ present value savings of $\text{Rs. } 76,246.40$ over buying.
 
 * **(1) Background:** *Aether Telecom Ltd.* needed to expand its 5G network 
 coverage by adding 2,000 cell sites across urban areas. Constructing 
-ground-based telecom towers required an estimated capex of $\text{Rs. } 35 
-\text{ Lakhs per tower}$ ($\text{Rs. } 700 \text{ Crores}$ total capital 
+ground-based telecom towers required an estimated capex of ₹35 Lakh per tower (₹700 Crore total capital 
 outlay).
 * **(2) Structural Mechanism:** Aether Telecom evaluated an independent TowerCo
 model, opting to **Lease** tenancy slots on existing shared telecom towers for 
-a fixed master service agreement rental fee of $\text{Rs. } 35,000 \text{ per
-month per site}$.
+a fixed master service agreement rental fee of ₹35,000 per month per site.
 * **(3) Regulatory & Operational Challenge:** Municipal rights-of-way (RoW) 
 fees and energy costs (diesel/grid power) posed operational cost risks. Tenancy
 ratios determined TowerCo rental escalation clauses.
@@ -664,16 +676,24 @@ from Day 1.
 2. **Down Payment ($DP$):** Initial cash payment made at contract inception
 .
 3. **Amount Financed ($P$):**
-\[P = CP - DP\\]
+$$
+P = CP - DP
+$$
 4. **Flat Interest Rate Calculation ($I_{flat}$):** Interest is calculated 
 on the original principal $P$ for the entire term without accounting for 
 monthly principal reduction:
-\[I_{flat} = P \cdot r_{flat} \cdot T_{years}\\]
+$$
+I_{flat} = P \cdot r_{flat} \cdot T_{years}
+$$
 5. **Total Hire Purchase Price ($HPP$):**
-\[HPP = DP + P + I_{flat}\\]
+$$
+HPP = DP + P + I_{flat}
+$$
 6. **Equated Monthly Instalment ($EMI$):**
-\[EMI = \frac{P + I_{flat}}{n} \quad \text{where } n = \text{total number of 
-monthly instalments}\\]
+$$
+EMI = \frac{P + I_{flat}}{n} \quad \text{where } n = \text{total number of 
+monthly instalments}
+$$
 7. **Conversion: Flat Rate to Effective Reducing Annual Rate ($r_{eff}$):**
 \
 
@@ -684,8 +704,8 @@ monthly instalments}\\]
 ##### Problem Statement
 *Apex Engineering Pvt. Ltd.* acquires a CNC machine under a Hire Purchase 
 agreement.
-* **Cash Price ($CP$):** $\text{Rs. } 1,00,000$
-* **Down Payment ($DP$):** $\text{Rs. } 20,000$ ($20\%$)
+* **Cash Price ($CP$):** ₹1,00,000
+* **Down Payment ($DP$):** ₹20,000 ($20\%$)
 * **Quoted Flat Interest Rate ($r_{flat}$):** $10\%$ per annum
 * **Tenure:** $2 \text{ Years}$ ($n = 24 \text{ monthly instalments}$) 
 
@@ -693,21 +713,29 @@ agreement.
 ##### Step-by-Step Solution
 
 **Step 1: Compute Principal Amount Financed ($P$)**
-\[P = CP - DP = \text{Rs. } 1,00,000 - \text{Rs. } 20,00,000 = \text{Rs. } 
-80,000\\]
+$$
+P = CP - DP = \text{Rs. } 1,00,000 - \text{Rs. } 20,00,000 = \text{Rs. } 
+80,000
+$$
 
 **Step 2: Calculate Total Flat Interest Charges ($I_{flat}$)**
-\[I_{flat} = P \cdot r_{flat} \cdot T_{years} = \text{Rs. } 80,000 \cdot 0.10 
-\cdot 2 = \text{Rs. } 16,000\\]
+$$
+I_{flat} = P \cdot r_{flat} \cdot T_{years} = \text{Rs. } 80,000 \cdot 0.10 
+\cdot 2 = \text{Rs. } 16,000
+$$
 
 **Step 3: Calculate Total Hire Purchase Price ($HPP$)**
-\[HPP = DP + P + I_{flat} = \text{Rs. } 20,00,000 + \text{Rs. } 80,000 + 
-\text{Rs. } 16,000 = \text{Rs. } 1,16,000\\]
+$$
+HPP = DP + P + I_{flat} = \text{Rs. } 20,00,000 + \text{Rs. } 80,000 + 
+\text{Rs. } 16,000 = \text{Rs. } 1,16,000
+$$
 
 **Step 4: Calculate Equated Monthly Instalment ($EMI$)**
-\[EMI = \frac{P + I_{flat}}{n} = \frac{\text{Rs. } 80,000 + \text{Rs. } 
+$$
+EMI = \frac{P + I_{flat}}{n} = \frac{\text{Rs. } 80,000 + \text{Rs. } 
 16,000}{24} = \frac{\text{Rs. } 96,000}{24} = \text{Rs. } 4,000 \text{ per 
-month}\\]
+month}
+$$
 
 **Step 5: Compute Effective Reducing Annual Interest Rate ($r_{eff}$)**
 \
@@ -722,12 +750,10 @@ reducing rates when comparing HP with bank term loans.
 #### 5. Structured Case Study: Commercial Fleet Financing in Road Transport
 
 * **(1) Background:** *Shriram Transport Logistics* funded an independent fleet
-operator purchasing 10 commercial haulage trucks costing $\text{Rs. } 30 
-\text{ Lakhs each}$ ($\text{Rs. } 3 \text{ Crores}$ total cash price) 
+operator purchasing 10 commercial haulage trucks costing ₹30 Lakh each (₹3 Crore total cash price) 
 .
 * **(2) Structural Mechanism:** The operator paid a $20\%$ down payment 
-($\text{Rs. } 60 \text{ Lakhs}$) and financed the remaining $\text{Rs. } 
-2.4 \text{ Crores}$ through a 48-month Hire Purchase agreement hypothecating 
+(₹60 Lakh) and financed the remaining ₹2.4 Crore through a 48-month Hire Purchase agreement hypothecating 
 the vehicles to the NBFC.
 * **(3) Regulatory Challenge:** Periodic freight rate volatility caused cash 
 flow mismatches, triggering temporary defaults on month 18 EMI payments.

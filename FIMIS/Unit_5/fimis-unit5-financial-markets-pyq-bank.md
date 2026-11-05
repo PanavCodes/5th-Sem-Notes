@@ -22,15 +22,13 @@ Papers).
 As mandated by the authoritative syllabus anchor 
 (`Unit5_Financial_Markets.pptx`), Unit 5 encompasses six core thematic domains:
 1. **Capital Markets vs. Money Markets**: Structural taxonomy, economic roles, 
-participant profiles, maturity horizons ($T \le 1\text{ year}$ vs. $T > 
-1\text{ year}$), debt vs. equity dichotomy, and regulatory dual-control (RBI 
+participant profiles, maturity horizons ($T \le 1\text{ year}$ vs. $T > 1\text{ year}$), debt vs. equity dichotomy, and regulatory dual-control (RBI 
 vs. SEBI).
 2. **Primary Market (New Issue Market) Mechanics**: Capital mobilization, 
 Public Offerings (IPO/FPO), Rights Issues, Private Placement, Preferential 
 Allotments, and Institutional Placement Programmes (IPP/QIP).
 3. **The IPO Process & Book Building Mechanism**: Role of Book Running Lead 
-Managers (BRLMs), Price Band dynamics ($P_{\text{cap}} \le 1.20 \times 
-P_{\text{floor}}$), Cut-off price, ASBA (Application Supported by Blocked 
+Managers (BRLMs), Price Band dynamics ($P_{\text{cap}} \le 1.20 \times P_{\text{floor}}$), Cut-off price, ASBA (Application Supported by Blocked 
 Amount), Underwriting obligations, and Green-Shoe (Over-Allotment) Option 
 mechanics.
 4. **Secondary Markets & Exchange Infrastructure**: Stock Exchanges (BSE, NSE),
@@ -44,8 +42,8 @@ Participants (DPs), Fungibility, and Beneficial Owner (BO) vs. Registered Owner
 (RO).
 6. **Financial Market Anomalies & Speculative Bubbles**: Behavioral market 
 efficiency deviations, asset price bubble lifecycles (Displacement 
-$\rightarrow$ Boom $\rightarrow$ Euphoria $\rightarrow$ Profit 
-Taking $\rightarrow$ Panic), Tulip Mania (1637), South Sea Bubble (1720), 
+→ Boom → Euphoria → Profit 
+Taking → Panic), Tulip Mania (1637), South Sea Bubble (1720), 
 Dot-Com Crisis (2000), and the 2008 Global Financial Crisis (Subprime Mortgage 
 / MBS / CDO systemic liquidity freeze).
 
@@ -175,11 +173,10 @@ India's largest conglomerate expanding across petrochemicals, digital services
 - **Part 2: Structural Mechanism**: In 2020–2021, RIL executed a dual financial
 market strategy:
   1. Raised $\approx \$26\text{ Billion}$ through equity dilution in the 
-primary market (Rights Issue of $\approx \text{Rs } 53,125\text{ Crore}$ 
+primary market (Rights Issue of ≈ ₹53,125 Crore 
 alongside private placements to strategic global investors like Meta and 
 Google).
-  2. Simultaneously issued short-term Commercial Papers ($T = 90\text{ to } 
-180\text{ days}$) in the money market to optimize daily cash balances and 
+  2. Simultaneously issued short-term Commercial Papers ($T = 90\text{ to } 180\text{ days}$) in the money market to optimize daily cash balances and 
 lower effective borrowing costs to $< 4.5\%$.
 - **Part 3: Regulatory & Market Challenge**: RIL faced strict SEBI compliance 
 mandates regarding Rights Issue allotment timelines, pricing discounts, and RBI
@@ -303,8 +300,7 @@ capitalization.
 - **Part 1: Background & Entity**: *Tata Steel Limited* — A major global steel 
 producer undertaking heavy capital expenditure to expand production capacity at
 its Kalinganagar facility and deleverage its consolidated balance sheet.
-- **Part 2: Structural Mechanism**: Tata Steel executed a massive $\text{Rs }
-12,800\text{ Crore}$ Rights Issue in two tranches (Fully Paid and Partly Paid
+- **Part 2: Structural Mechanism**: Tata Steel executed a massive ₹12,800 Crore Rights Issue in two tranches (Fully Paid and Partly Paid
 Equity Shares) offered to existing shareholders at a $\approx 20\%$ 
 discount to the prevailing secondary market price.
 - **Part 3: Regulatory & Market Challenge**: The critical risk ("double-edged 
@@ -378,8 +374,10 @@ pricing.
 ($P_{\text{floor}}$) and a **Cap Price** ($P_{\text{cap}}$). Under SEBI
 regulations, the spread between the floor and cap price cannot exceed 
 $20\%$:
-  \[\frac{P_{\text{cap}} - P_{\text{floor}}}{P_{\text{floor}}} \le 0.20 \quad 
-\implies \quad P_{\text{cap}} \le 1.20 \times P_{\text{floor}}\\]
+  $$
+\frac{P_{\text{cap}} - P_{\text{floor}}}{P_{\text{floor}}} \le 0.20 \quad 
+\implies \quad P_{\text{cap}} \le 1.20 \times P_{\text{floor}}
+$$
 - **Cut-off Price**: The final equilibrium clearing price 
 ($P_{\text{cut-off}}$) determined by the BRLM after evaluating cumulative 
 institutional and retail bid density in the electronic order book. Retail 
@@ -444,22 +442,19 @@ market sentiment and pre-listing liquidity.
 
 ##### 6. Structured 4-Part Corporate Case Study
 - **Part 1: Background & Entity**: *Zomato Limited* — A leading Indian food 
-delivery tech platform that launched its marquee $\text{Rs } 9,375\text{ 
-Crore}$ IPO in July 2021.
+delivery tech platform that launched its marquee ₹9,375 Crore IPO in July 2021.
 - **Part 2: Structural Mechanism**: Executed a $100\%$ Book Built IPO with 
 a price band of $\text{Rs } 72\text{ to } \text{Rs } 76\text{ per share}$. 
-The issue comprised a Fresh Issue of $\text{Rs } 9,000\text{ Crore}$ and an
-Offer for Sale (OFS) of $\text{Rs } 375\text{ Crore}$ by Info Edge. 
+The issue comprised a Fresh Issue of ₹9,000 Crore and an
+Offer for Sale (OFS) of ₹375 Crore by Info Edge. 
 $100\%$ of retail applications were processed via ASBA with UPI handles.
 - **Part 3: Regulatory & Market Challenge**: Zomato was a loss-making startup, 
 requiring it to list under SEBI's QIB-led route (mandatory $75\%$ 
 allocation to QIBs, with retail capped at $10\%$). BRLMs faced the 
 challenge of discovering a fair valuation for an un-profitable tech entity 
 without traditional $\text{P/E}$ benchmarks.
-- **Part 4: Financial Outcome**: The IPO was oversubscribed $38.25\text{ 
-times}$, driven by strong QIB demand ($52\times$). The cut-off price was 
-set at $\text{Rs } 76$. Shares listed at $\text{Rs } 115$ ($\approx 
-51\%$ listing gain), demonstrating the effectiveness of the electronic book 
+- **Part 4: Financial Outcome**: The IPO was oversubscribed 38.25 times, driven by strong QIB demand ($52\times$). The cut-off price was 
+set at ₹76. Shares listed at ₹115 ($\approx 51\%$ listing gain), demonstrating the effectiveness of the electronic book 
 building and ASBA mechanism.
 
 ---
@@ -548,11 +543,11 @@ exchange due to regulatory non-compliance).
 The operational lifecycle of a secondary market trade under $T+1$ execution
 proceeds as follows:
 - **Trade Day ($T$)**: Order matched on BSE/NSE matching engine 
-$\rightarrow$ Real-time margin calculation ($\text{VaR} + \text{ELM}$) 
-debited from broker's clearing account $\rightarrow$ Trade confirmation 
+→ Real-time margin calculation ($\text{VaR} + \text{ELM}$) 
+debited from broker's clearing account → Trade confirmation 
 slip generated.
 - **Night of Trade Day ($T$)**: Clearing Corporation (NSCCL/ICCL) executes 
-trade net-off $\rightarrow$ Sends clearing files to Custodians, Depository 
+trade net-off → Sends clearing files to Custodians, Depository 
 Participants (NSDL/CDSL), and Clearing Banks.
 - **Settlement Day ($T+1$, Morning / Pay-in Phase)**:
   - *Securities Pay-in*: Selling brokers transfer shares from DP accounts to 
@@ -580,15 +575,14 @@ accounts by 1:30 PM. Complete settlement closed within 24 hours of execution.
 services company listed on BSE/NSE whose promoter entity (Baring Private Equity
 Asia) decided to take the company private via Voluntary Delisting in 2020.
 - **Part 2: Structural Mechanism**: Promoters initiated Voluntary Delisting 
-under SEBI rules by offering a floor price of $\text{Rs } 285.75\text{ per 
-share}$. The final discovered exit price via the *Reverse Book Building (RBB)* 
-process reached $\text{Rs } 475\text{ per share}$.
+under SEBI rules by offering a floor price of ₹285.75 per share. The final discovered exit price via the *Reverse Book Building (RBB)* 
+process reached ₹475 per share.
 - **Part 3: Regulatory & Market Challenge**: Promoters faced the statutory 
 challenge of acquiring at least $90\%$ of total outstanding equity capital. If 
 public shareholders demanded an exorbitant RBB price, the promoters reserved 
 the right to reject the discovered price and cancel the delisting offer.
 - **Part 4: Financial Outcome**: Promoters accepted the discovered price of 
-$\text{Rs } 475$, successfully acquiring required public shares. Hexaware was 
+₹475, successfully acquiring required public shares. Hexaware was 
 delisted from BSE and NSE. The process provided public shareholders with a 
 $\approx 66\%$ premium over the floor price, illustrating how SEBI's delisting 
 framework protects minority shareholder rights while allowing corporate 
@@ -692,16 +686,14 @@ million client accounts.
 - **Part 2: Structural Mechanism**: KSBL unauthorizedly misused client Power of
 Attorney (PoA), transferring fully paid demat securities belonging to client 
 account holders to its own pool account. It then pledged these client shares 
-with commercial banks (e.g., HDFC Bank, ICICI Bank) to raise $\approx \text{Rs 
-} 2,300\text{ Crore}$ in debt finance for its real estate affiliate.
+with commercial banks (e.g., HDFC Bank, ICICI Bank) to raise ≈ ₹2,300 Crore in debt finance for its real estate affiliate.
 - **Part 3: Regulatory & Market Challenge**: Misappropriation of client assets 
 threatened systemic trust across the secondary market clearing and settlement 
 infrastructure, creating severe contagion risk for stock exchanges.
 - **Part 4: Financial Outcome**: SEBI executed swift regulatory intervention:
   1. Issued an interim order banning Karvy from taking on new clients and 
 barring it from secondary trading.
-  2. Directed NSDL to transfer pledged securities worth $\approx \text{Rs } 
-2,000\text{ Crore}$ directly back to the demat accounts of nearly 83,000 
+  2. Directed NSDL to transfer pledged securities worth ≈ ₹2,000 Crore directly back to the demat accounts of nearly 83,000 
 victimized investors.
   3. Subsequently mandated the *Pledge/Re-pledge Framework*, ensuring brokers 
 can never transfer client securities to their own pool accounts, setting a 

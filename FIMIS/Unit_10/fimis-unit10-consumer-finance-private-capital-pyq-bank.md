@@ -62,14 +62,17 @@ borrower's gross monthly income dedicated to servicing existing debt
 obligations plus the proposed loan's EMI.
 
 ###### FOIR Mathematical Formula:
-\[\text{FOIR} = \left( \frac{\text{Existing Monthly Debt Obligations} + 
-\text{Proposed New EMI}}{\text{Gross Monthly Income}} \right) \times 100\\]
+$$
+\text{FOIR} = \left( \frac{\text{Existing Monthly Debt Obligations} + 
+\text{Proposed New EMI}}{\text{Gross Monthly Income}} \right) \times 100
+$$
 
 Where the **EMI** is calculated using the standard loan amortization formula:
-\[\text{EMI} = P \times r \times \frac{(1 + r)^n}{(1 + r)^n - 1}\\]
+$$
+\text{EMI} = P \times r \times \frac{(1 + r)^n}{(1 + r)^n - 1}
+$$
 *   $P = \text{Principal Loan Amount}$
-*   $r = \text{Periodic Monthly Interest Rate } \left(\frac{\text{Annual 
-Rate}}{12 \times 100}\right)$
+*   $r = \text{Periodic Monthly Interest Rate } \left(\frac{\text{Annual Rate}}{12 \times 100}\right)$
 *   $n = \text{Total Repayment Tenure in Months}$
 
 Under RBI prudential guidelines, lenders enforce a strict FOIR benchmark 
@@ -91,12 +94,13 @@ default risk.
 ##### 4. Structured Case Study: Household Consumption Smoothing & Default Shock
 
 1.  **Background:** A salaried retail borrower with a Gross Monthly Income of 
-$\text{INR } 1,00,000$ maintains an existing auto loan EMI of $\text{INR 
-} 20,000$ per month. The borrower applies for a personal loan resulting in an
-additional proposed EMI of $\text{INR } 35,000$.
+INR 1,00,000 maintains an existing auto loan EMI of INR 20,000 per month. The borrower applies for a personal loan resulting in an
+additional proposed EMI of ₹35,000.
 2.  **Structural Mechanism:** The bank calculates the borrower's proposed FOIR:
-    \[\text{FOIR} = \left( \frac{20,000 + 35,000}{1,00,000} \right) \times 100 
-= 55\%\\]
+    $$
+\text{FOIR} = \left( \frac{20,000 + 35,000}{1,00,000} \right) \times 100 
+= 55\%
+$$
     Because $55\%$ exceeds the regulatory risk ceiling benchmark of 
 $50\%$, the loan application triggers an automated credit denial or 
 requires income enhancement.
@@ -105,8 +109,7 @@ systemic retail defaults during economic downturns, elevating Non-Performing
 Assets (NPAs) across retail NBFCs and commercial banks.
 4.  **Financial Outcome:** By enforcing a strict FOIR cap of $45\%$, the 
 lender restructures the loan principal $P$ to lower the proposed EMI to 
-$\text{INR } 25,000$, bringing total obligations to $\text{INR } 
-45,000$ ($\text{FOIR} = 45\%$). This ensures stable consumption 
+INR 25,000, bringing total obligations to INR 45,000 ($\text{FOIR} = 45\%$). This ensures stable consumption 
 smoothing without breaching credit risk thresholds.
 
 ---
@@ -180,13 +183,17 @@ transactions executed in non-domestic currencies.
 ###### Mathematical Model for Compounded Rollover Interest:
 When a cardholder rolls over a balance, the interest-free grace period is 
 voided, and interest accrues daily from the *date of transaction*:
-\[\text{Total Interest Payable} = \left[ \sum_{i=1}^{k} \left( 
+$$
+\text{Total Interest Payable} = \left[ \sum_{i=1}^{k} \left( 
 \text{Transaction Amount}_i \times \text{Days Outstanding}_i \right) \right] 
-\times \left( \frac{\text{Annual Interest Rate } (r) \times 12}{365} \right)\\]
+\times \left( \frac{\text{Annual Interest Rate } (r) \times 12}{365} \right)
+$$
 
 Where the Annual Percentage Rate (APR) compounds as:
-\[\text{Effective Annual Rate (EAR)} = \left( 1 + \frac{\text{APR}}{12} 
-\right)^{12} - 1\\]
+$$
+\text{Effective Annual Rate (EAR)} = \left( 1 + \frac{\text{APR}}{12} 
+\right)^{12} - 1
+$$
 
 ##### 3. Exhaustive Multi-Variable Comparison: Stakeholder Benefits of Credit 
 Cards
@@ -266,9 +273,11 @@ individuals and businesses.
 CIBIL scores range from **300 to 900**.
 
 ###### Mathematical Weighting Distribution of CIBIL Scoring Model:
-\[\text{CIBIL Score} = f\left( 0.35 \times \text{RH} + 0.30 \times \text{CU} + 
+$$
+\text{CIBIL Score} = f\left( 0.35 \times \text{RH} + 0.30 \times \text{CU} + 
 0.15 \times \text{CH} + 0.10 \times \text{CM} + 0.10 \times \text{IQ} 
-\right)\\]
+\right)
+$$
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -483,8 +492,7 @@ properties.
 Board Act 1987 as the principal agency to promote and regulate Housing Finance 
 Companies (HFCs).
 *   **Interlink with RBI:** NHB assists RBI by maintaining financial stability 
-in the real estate sector, setting Loan-to-Value (LTV) ceilings ($75\% - 
-90\%$), administering refinance facilities to primary lending institutions, 
+in the real estate sector, setting Loan-to-Value (LTV) ceilings (75% - 90%), administering refinance facilities to primary lending institutions, 
 and enforcing Priority Sector Lending (PSL) mortgage limits for low-income 
 housing.
 
@@ -676,9 +684,7 @@ Therefore, Aman approaches a **Category I Venture Capital Fund**.
 3.  **Regulatory/Market Challenge:** Valuation gap between founder expectations
 and VC term sheet conditionality (Anti-dilution clauses, Drag-along rights, and
 Liquidation preferences).
-4.  **Financial Outcome:** The VC firm injects $\text{INR } 15 \text{ 
-Crores}$ for a $20\%$ equity stake (valuing the startup at $\text{INR }
-75 \text{ Crores}$ post-money). Aman retains operational control while 
+4.  **Financial Outcome:** The VC firm injects ₹15 Crore for a $20\%$ equity stake (valuing the startup at ₹75 Crore post-money). Aman retains operational control while 
 deploying funds to scale technology infrastructure, achieving $5\times$ ARR
 growth before Series B.
 

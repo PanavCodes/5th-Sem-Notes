@@ -230,17 +230,23 @@ the final installment.
 ##### 2. Financial Formulas & NAL / HP Valuation Mathematics
 * **Net Advantage to Leasing (NAL)**: Evaluates whether a firm should lease or 
 buy an asset using discounted cash flow analysis:
-\[NAL = P_0 - \sum_{t=1}^{N} \frac{L_t (1 - T)}{(1 + k_d)^t} - \sum_{t=1}^{N} 
-\frac{D_t \cdot T}{(1 + k_d)^t} + \frac{V_N}{(1 + k_d)^N}\\]
+$$
+NAL = P_0 - \sum_{t=1}^{N} \frac{L_t (1 - T)}{(1 + k_d)^t} - \sum_{t=1}^{N} 
+\frac{D_t \cdot T}{(1 + k_d)^t} + \frac{V_N}{(1 + k_d)^N}
+$$
 Where $P_0$ is initial asset purchase cost, $L_t$ is annual lease 
 rental, $T$ is marginal corporate tax rate, $k_d$ is after-tax cost of 
 debt $r_d(1-T)$, $D_t$ is annual tax depreciation, and $V_N$ is 
 residual asset value at year $N$. If $NAL > 0$, leasing is financially 
 superior to buying.
 * **Hire Purchase Flat vs. Effective Interest Rate**:
-\[Flat\ Interest\ Rate\ (F) = \left( \frac{\text{Total Interest 
-Paid}}{\text{Principal Borrowed} \times n} \right) \times 100\\]
-\[Effective\ Annualized\ Rate\ (E) = \frac{2n \cdot F}{n + 1}\\]
+$$
+Flat\ Interest\ Rate\ (F) = \left( \frac{\text{Total Interest 
+Paid}}{\text{Principal Borrowed} \times n} \right) \times 100
+$$
+$$
+Effective\ Annualized\ Rate\ (E) = \frac{2n \cdot F}{n + 1}
+$$
 Where $n$ represents the total number of annual or annualized installment 
 periods.
 
@@ -339,17 +345,23 @@ on a **100% non-recourse basis**.
 
 ##### 2. Mathematical Cost Structure
 * **Factoring Effective Annualized Cost**:
-\[\text{Total Factoring Charges} = \text{Finance Charge (Interest on Advance)} 
-+ \text{Service Fee (Ledger Admin)}\\]
-\[\text{Effective Cost (\%)} = \left( \frac{\text{Finance Fee} + \text{Service 
+$$
+\text{Total Factoring Charges} = \text{Finance Charge (Interest on Advance)} 
++ \text{Service Fee (Ledger Admin)}
+$$
+$$
+\text{Effective Cost (\%)} = \left( \frac{\text{Finance Fee} + \text{Service 
 Fee}}{\text{Net Cash Advance}} \right) \times \frac{365}{\text{Tenor (Days)}} 
-\times 100\\]
+\times 100
+$$
 Where the factor typically advances 70%–90% of the gross invoice value upfront 
 .
 * **Forfaiting Pricing Elements**:
-\[\text{Forfaiting Discount} = \text{Face Value} \times \left( 
+$$
+\text{Forfaiting Discount} = \text{Face Value} \times \left( 
 \frac{\text{LIBOR/SOFR} + \text{Margin}}{100} \right) \times 
-\frac{\text{Maturity Days} + \text{Grace Days}}{360}\\]
+\frac{\text{Maturity Days} + \text{Grace Days}}{360}
+$$
 Where margin reflects country risk, importer creditworthiness, and commitment 
 fees.
 
@@ -588,10 +600,11 @@ probability and creditworthiness of an issuer regarding a specific debt
 security (Bonds, Debentures, Commercial Paper, Fixed Deposits).
 
 ##### 2. Mathematical Risk Formulation & Loss Estimation
-\[Expected\ Loss\ (EL) = PD \times EAD \times LGD\\]
+$$
+Expected\ Loss\ (EL) = PD \times EAD \times LGD
+$$
 Where $PD$ is Probability of Default assigned to the rating symbol, 
-$EAD$ is Exposure at Default, and $LGD$ is Loss Given Default ($1 - 
-\text{Recovery Rate}$).
+$EAD$ is Exposure at Default, and $LGD$ is Loss Given Default ($1 - \text{Recovery Rate}$).
 
 ##### 3. Rating Scale Taxonomy across Primary Indian CRAs
 

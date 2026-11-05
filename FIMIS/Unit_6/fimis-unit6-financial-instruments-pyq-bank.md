@@ -87,24 +87,26 @@ on a discount or yield basis:
 on behalf of the Government of India (GoI) to bridge seasonal revenue deficits 
 [4-6, 12]. Issued in maturities of **91-day**, **182-day**, and **364-day**. Issued at a discount to Face Value ($F$) and redeemed at par ($F$),
 carrying zero credit default risk. Minimum denomination is 
-$\text{₹}25,000$ and multiples thereof.
+₹25,000 and multiples thereof.
   * *Discount Yield Formula*:
-    \[Y = \left( \frac{F - P}{P} \right) \times \left( \frac{365}{N} \right) 
-\times 100\\]
+    $$
+Y = \left( \frac{F - P}{P} \right) \times \left( \frac{365}{N} \right) 
+\times 100
+$$
     where $P$ is the purchase price, $F$ is the face value 
-($\text{₹}100$), and $N$ is the exact tenor in days.
+(₹100), and $N$ is the exact tenor in days.
 * **Commercial Paper (CP)**: Unsecured money market negotiable promissory note 
 issued by corporations, Primary Dealers (PDs), and All India Financial 
 Institutions (FIs) to fund short-term working capital needs [7-9].
   * *Statutory Norms*: Governed by RBI CPs Directions. Minimum credit rating 
 required is **A2** (by a SEBI-registered rating agency). Issued for 
 maturities between **7 days and 1 year** in minimum denominations of 
-$\text{₹}5\text{ Lakhs}$ [7-9].
+₹5 Lakh [7-9].
 * **Certificates of Deposit (CD)**: Dematerialized negotiable money market 
 instruments issued by scheduled commercial banks and select FIs to raise 
 wholesale funding during periods of tight market liquidity [6-8]. Issued at a 
 discount to face value with a tenure of 7 days to 1 year for banks (up to 3 
-years for FIs) in minimum denominations of $\text{₹}1\text{ Lakh}$ [6-8].
+years for FIs) in minimum denominations of ₹1 Lakh [6-8].
 * **Call / Notice / Term Money**: Unsecured interbank market for overnight 
 funding (Call Money: 1 day), short-notice borrowing (Notice Money: 2–14 days), 
 and short-term interbank placement (Term Money: 15–364 days). Primarily 
@@ -137,7 +139,7 @@ transaction (lending cash against G-Sec collateral).
 | :--- | :--- | :--- | :--- | :--- |
 | **Issuer Category** | Reserve Bank of India (GoI) | Corporate / PDs / FIs | Commercial Banks / FIs | Banks, PDs, Corporates, RBI |
 | **Tenor / Maturity** | 91, 182, 364 Days | 7 Days to 1 Year [7-9] | 7 Days to 1 Year (Banks) | Overnight to 14 Days (LAF) |
-| **Minimum Denomination** | $\text{₹}25,000$ | $\text{₹}5,000,000$ ($\text{₹}5\text{ L}$) | $\text{₹}100,000$ ($\text{₹}1\text{ L}$) | Typically $\text{₹}5\text{ Crores}$ (Interbank) |
+| **Minimum Denomination** | ₹25,000 | ₹50,00,000 (₹5 L) | ₹1,00,000 (₹1 L) | Typically ₹5 Crores (Interbank) |
 | **Credit Default Risk** | Zero (Sovereign Guarantee) | High / Corporate Default Risk | Low Bank Default Risk | Very Low (Collateralized) |
 | **Statutory Regulator** | RBI (*RBI Act, 1934*) | RBI / SEBI Directions | RBI (*Banking Reg. Act, 1949*) | RBI Liquidity Framework |
 | **Yield / Pricing Mechanism**| Discount to Face Value | Discount to Face Value | Discount to Face Value | Repo Rate Coupon / Haircut |
@@ -228,7 +230,9 @@ rate volatility.
 4. **Bond Price & Yield Inverse Relationship**:
    The market price ($P$) of a fixed-income bond and its Yield to Maturity 
 ($YTM$) exhibit an inverse relationship:
-   \[P = \sum_{t=1}^{N} \frac{C_t}{(1 + YTM)^t} + \frac{F}{(1 + YTM)^N}\\]
+   $$
+P = \sum_{t=1}^{N} \frac{C_t}{(1 + YTM)^t} + \frac{F}{(1 + YTM)^N}
+$$
    When market interest rates rise, the discount factor increases, causing 
 existing bond prices to drop (and vice-versa).
 
@@ -256,8 +260,7 @@ Option Value ]
 
 ##### 4. Structured Corporate Case Study: Tata Motors Limited NCD & Convertible
 Debt Refinancing
-1. **Background & Entity**: Tata Motors required $\text{₹}3,000\text{ 
-Crores}$ long-term capital for Jaguar Land Rover (JLR) electric vehicle 
+1. **Background & Entity**: Tata Motors required ₹3,000 Crore long-term capital for Jaguar Land Rover (JLR) electric vehicle 
 platform expansion and debt deleveraging.
 2. **Structural Mechanism**: The company issued a mix of 10-year **Secured 
 Non-Convertible Debentures (NCDs)** carrying an $8.20\%$ annual coupon 
@@ -363,14 +366,14 @@ Rights)
 ##### 4. Structured Corporate Case Study: Reliance Industries Debt-Free 
 Transition
 1. **Background & Entity**: Reliance Industries Limited (RIL) accumulated over 
-$\text{₹}1,60,000\text{ Crores}$ in net debt by 2019 to fund its telecom 
+₹1,60,000 Crore in net debt by 2019 to fund its telecom 
 (Jio) and retail capital buildout.
 2. **Structural Mechanism**: RIL executed a capital restructuring plan by 
-issuing a massive $\text{₹}53,124\text{ Crore}$ **Rights Issue** alongside 
+issuing a massive ₹53,124 Crore **Rights Issue** alongside 
 selling equity stakes in Jio Platforms and Reliance Retail to global investors 
 (Google, Meta).
 3. **Regulatory/Market Challenge**: High debt servicing costs 
-($>\text{₹}20,000\text{ Crores}$ annually) exposed RIL to interest rate 
+(> ₹20,000 Crore annually) exposed RIL to interest rate 
 cycles, prompting a shift from debt to equity.
 4. **Financial Outcome**: RIL achieved net debt-free status 9 months ahead of 
 schedule, drastically improving its P/E multiple, strengthening balance sheet 
@@ -483,11 +486,11 @@ after a specified period.
 
 ##### 4. Structured Corporate Case Study: L&T Finance Holdings Rights Issue
 1. **Background & Entity**: L&T Finance Holdings (LTFH) announced a 
-$\text{₹}3,000\text{ Crore}$ **Rights Issue** in 2021 to strengthen capital
+₹3,000 Crore **Rights Issue** in 2021 to strengthen capital
 adequacy (CRAR) post-NBFC liquidity squeeze.
 2. **Structural Mechanism**: LTFH offered 17 new equity shares for every 74 
-held at an offer price of $\text{₹}65$ per share (a $33\%$ discount to 
-the prevailing market price of $\text{₹}97$).
+held at an offer price of ₹65 per share (a $33\%$ discount to 
+the prevailing market price of ₹97).
 3. **Regulatory/Market Challenge**: Failure of retail shareholders to subscribe
 risked leaving the issue under-subscribed and depressing market sentiment.
 4. **Financial Outcome**: The promoter (Larsen & Toubro Ltd.) backed the issue 
@@ -588,7 +591,7 @@ in US Dollars ($USD$) while incurring operating costs in Indian Rupees
 ($INR$).
 2. **Structural Mechanism**: To lock in budget exchange rates, Infosys enters 
 into **Plain Vanilla OTC Forward Contracts** with authorized dealer banks to 
-sell $USD$ at $\text{₹}83.50/USD$ six months forward.
+sell $USD$ at ₹83.50/USD six months forward.
 3. **Regulatory/Market Challenge**: Unhedged currency movements risk eroding 
 operating margins if the Rupee appreciates sharply against the USD.
 4. **Financial Outcome**: By using plain vanilla forwards, Infosys eliminates 
@@ -646,7 +649,9 @@ non-refundable **Option Premium** ($C$ or $P$) to the option seller
 (writer). The seller incurs a binding obligation if the option is 
 exercised.
    * **Option Valuation Structure**:
-     \[\text{Option Premium} = \text{Intrinsic Value} + \text{Time Value}\\]
+     $$
+\text{Option Premium} = \text{Intrinsic Value} + \text{Time Value}
+$$
      * *Call Intrinsic Value*: $\max(S - X, 0)$
      * *Put Intrinsic Value*: $\max(X - S, 0)$
    * **Option Moneyness**:
@@ -685,12 +690,11 @@ Upside)
 | **Hedging Outcome** | Locks in a fixed execution rate; eliminates upside gain . | Creates a price floor/cap while retaining favorable upside. |
 
 ##### 4. Structured Corporate Case Study: Portfolio Downside Risk Protection
-1. **Background & Entity**: Equity Mutual Fund holds a $\text{₹}500\text{ 
-Crore}$ Nifty 50 equity portfolio and anticipates a market correction due to 
+1. **Background & Entity**: Equity Mutual Fund holds a ₹500 Crore Nifty 50 equity portfolio and anticipates a market correction due to 
 global rate hikes.
 2. **Structural Mechanism**: The fund manager evaluates selling **Nifty Index 
 Futures** vs. buying **Nifty OTM Put Options** ($X = 21,500$, Premium = 
-$\text{₹}150$).
+₹150).
 3. **Regulatory/Market Challenge**: Selling futures locks the portfolio value 
 completely. If markets rally $+15\%$, the futures position generates 
 massive MTM cash losses.
@@ -799,16 +803,15 @@ and interest rate exposure into domestic currency liabilities ($INR$).
 
 ##### 4. Structured Corporate Case Study: Indian Corporate ECB Currency Swap
 1. **Background & Entity**: Bharti Airtel raises $\$500\text{ Million}$ via 
-External Commercial Borrowings (ECB) at a floating rate of SOFR $+ 150\text{ 
-bps}$ for 5 years to expand telecom infrastructure.
+External Commercial Borrowings (ECB) at a floating rate of $\text{SOFR} + 150\text{ bps}$ for 5 years to expand telecom infrastructure.
 2. **Structural Mechanism**: To hedge $USD/INR$ currency depreciation and 
 rising US dollar interest rates, Airtel enters into a 5-year **Currency Swap** 
 with State Bank of India (SBI).
-3. **Regulatory/Market Challenge**: If the Rupee depreciates from $\text{₹}83$ 
-to $\text{₹}90/USD$, Airtel's Rupee cost of debt servicing would surge, 
+3. **Regulatory/Market Challenge**: If the Rupee depreciates from ₹83 
+to ₹90/USD, Airtel's Rupee cost of debt servicing would surge, 
 violating internal leverage limits.
 4. **Financial Outcome**: Under the currency swap, Airtel pays SBI a fixed 
-Rupee interest rate ($8.10\%$) and receives SOFR $+ 150\text{ bps}$ in 
+Rupee interest rate ($8.10\%$) and receives $\text{SOFR} + 150\text{ bps}$ in 
 $USD$ to pay its international ECB bondholders. The USD liability is converted 
 into a stable Rupee obligation, eliminating exchange rate and interest rate 
 risk.

@@ -117,16 +117,15 @@ working-capital lockups, and reduces cascading supply-chain defaults.
 
 #### 5. Structured Corporate Case Study
 * **Part 1: Background & Entity**: **Vardhman Textiles Ltd.** (SME supplier) 
-invoices a large retail chain $\text{₹}10\text{ Lakh}$ with a 90-day credit
+invoices a large retail chain ₹10 Lakh with a 90-day credit
 period, creating a severe working-capital crunch for purchasing raw cotton 
 .
 * **Part 2: Structural Mechanism**: Vardhman assigns the invoice to **SBI 
-Global Factors**. On Day 1, SBI Factors advances **80% ($\text{₹}8\text{ 
-Lakh}$)**. SBI Factors manages the sales ledger and collects 
+Global Factors**. On Day 1, SBI Factors advances **80% (₹8 Lakh)**. SBI Factors manages the sales ledger and collects 
 directly from the retailer on Day 90.
 * **Part 3: Regulatory/Market Challenge**: On Day 60, the retailer enters 
 insolvency proceedings. Under the **recourse clause**, the factor demands 
-refund of the $\text{₹}8\text{ Lakh}$ advance; under a **non-recourse 
+refund of the ₹8 Lakh advance; under a **non-recourse 
 contract**, the factor absorbs the bad debt.
 * **Part 4: Financial Outcome**: By utilizing non-recourse factoring (paying a 
 **2.5% fee** vs 1.5% recourse fee), Vardhman successfully insulated its balance
@@ -248,7 +247,7 @@ country.
 
 #### 3. Structured Corporate Case Study (International Factoring)
 * **Part 1: Background & Entity**: **Indo-Euro Apparels Ltd.** (Tirupur 
-exporter) ships $\text{€}500,000$ worth of garments to a buyer in Germany 
+exporter) ships €500,000 worth of garments to a buyer in Germany 
 on 90-day open-account terms.
 * **Part 2: Structural Mechanism**: Exporter approaches **SBI Global Factors** 
 (Export Factor), which ties up with **FDI Factor Germany** (Import Factor) 
@@ -342,23 +341,32 @@ BANK]
 
 #### 3. Pricing Dynamics & Mathematical Formulas
 The discount rate charged by a forfaiter is calculated as:
-\[\text{Discount Rate} = \text{Benchmark Rate (SOFR / LIBOR)} + \text{Risk 
-Margin (Country + Bank Risk)}\\]
+$$
+\text{Discount Rate} = \text{Benchmark Rate (SOFR / LIBOR)} + \text{Risk 
+Margin (Country + Bank Risk)}
+$$
 
-\[\text{Discount Amount } (D) = \text{Face Value } (FV) \times \text{Discount 
+$$
+\text{Discount Amount } (D) = \text{Face Value } (FV) \times \text{Discount 
 Rate } (R) \times \left( \frac{\text{Tenor in Days } (T) + \text{Grace 
-Days}}{360} \right)\\]
+Days}}{360} \right)
+$$
 
-\[\text{Net Cash Proceeds} = Face\ Value - Discount\ Amount - Commitment\ 
-Fee\\]
+$$
+\text{Net Cash Proceeds} = \text{Face Value} - \text{Discount Amount} - \text{Commitment Fee}
+$$
 
 **Numerical Calculation Example**:
 An exporter holds a $\$1,000,000$ promissory note due in $180$ days. 
 The forfaiter quotes a discount rate of $6\%$ per annum ($360$-day year
 basis) with zero commitment fees:
-\[D = \$1,000,000 \times 0.06 \times \left( \frac{180}{360} \right) = 
-\$30,000\\]
-\[\text{Net Proceeds} = \$1,000,000 - \$30,000 = \$970,000\\]
+$$
+D = \$1,000,000 \times 0.06 \times \left( \frac{180}{360} \right) = 
+\$30,000
+$$
+$$
+\text{Net Proceeds} = \$1,000,000 - \$30,000 = \$970,000
+$$
 
 #### 4. Five Comprehensive Risk Mitigations for Exporters
 1. **100% Commercial Credit Risk Elimination**: Total non-recourse surrender 
@@ -376,7 +384,7 @@ credit capacity and Return on Assets (ROA).
 
 #### 5. Structured Corporate Case Study
 * **Part 1: Background & Entity**: **Kirloskar Pumps Ltd.** exports 
-$\text{₹}20\text{ Crore}$ heavy industrial pumping machinery to a public 
+₹20 Crore heavy industrial pumping machinery to a public 
 works buyer in Kenya on 4-year deferred payment terms (8 half-yearly 
 installments).
 * **Part 2: Structural Mechanism**: The Kenyan buyer issues 8 Promissory Notes,
@@ -386,7 +394,7 @@ acts as forfaiter, purchasing all notes at a SOFR + 2.5% spread discount.
 foreign exchange shortages and sovereign debt restructuring, triggering a debt 
 moratorium.
 * **Part 4: Financial Outcome**: Because Kirloskar sold the notes on a **100% 
-non-recourse forfaiting basis**, the $\text{₹}20\text{ Crore}$ cash 
+non-recourse forfaiting basis**, the ₹20 Crore cash 
 received at shipment remains fully protected. EXIM Bank recovers directly from 
 KCB Bank Kenya via secondary market trading.
 
@@ -455,13 +463,12 @@ Systems Act, 2007 to facilitate MSME invoice discounting.
   2. **M1xchange** (Mynd Solutions)
   3. **Invoicemart** (A.TReDS - Axis Bank JV)
 * **Tripartite Auction Mechanism**: MSME sellers upload invoices 
-$\rightarrow$ Corporate buyers digitally verify and accept invoices 
-$\rightarrow$ Multiple financiers (banks / NBFC-Factors) bid competitively 
-in a transparent auction $\rightarrow$ MSME receives immediate payout at 
+→ Corporate buyers digitally verify and accept invoices 
+→ Multiple financiers (banks / NBFC-Factors) bid competitively 
+in a transparent auction → MSME receives immediate payout at 
 lowest market discount rates without recourse.
 
-`📊 Diagram Required: YES | Type: Platform Architecture | Source: Pathak Ch. 20
-/ Slide Unit 9`
+`📊 Diagram Required: YES | Type: Platform Architecture | Exam Sketch Target: TReDS Auction Architecture`
 
 ```
   [MSME SELLER] ------(Uploads Invoice)-----> [ TReDS PLATFORM ]
@@ -481,14 +488,13 @@ lowest market discount rates without recourse.
 supplier in Pune) supplies components to **Tata Motors**, facing 90-day payment
 delays that restrict working capital.
 * **Part 2: Structural Mechanism**: Precision Auto uploads an invoice of 
-$\text{₹}50\text{ Lakh}$ on **RXIL (TReDS)**. Tata Motors accepts 
+₹50 Lakh on **RXIL (TReDS)**. Tata Motors accepts 
 the invoice online. B2B financiers bid competitively, with SBI factoring the 
 bill at a low $6.5\%$ annualized discount rate.
 * **Part 3: Regulatory/Market Challenge**: Ensuring non-recourse priority 
 sector lending (PSL) classification for participating banks under RBI 
 guidelines.
-* **Part 4: Financial Outcome**: Precision Auto receives $\text{₹}49.2\text{ 
-Lakh}$ cash within 24 hours without collateral, while Tata Motors settles 
+* **Part 4: Financial Outcome**: Precision Auto receives ₹49.2 Lakh cash within 24 hours without collateral, while Tata Motors settles 
 with RXIL on the 90th day, demonstrating successful institutional liquidity 
 acceleration.
 
@@ -529,8 +535,7 @@ capital goods and turnkey projects.
 | **9. Sales Ledger Admin** | **Comprehensive ledger maintenance** and debt collection | Financing instrument only; **no sales ledger management** |
 | **10. Geographic Scope** | Both Domestic and International (Two-Factor System) | Exclusively **International Trade** transactions |
 
-`📊 Diagram Required: YES | Type: Structural Comparison | Source: Unit-9.pptx /
-Pathak Ch. 20`
+`📊 Diagram Required: YES | Type: Structural Comparison | Exam Sketch Target: Factoring vs Forfaiting Comparison Matrix`
 
 ```
                      [TRADE FINANCE RECEIVABLES]

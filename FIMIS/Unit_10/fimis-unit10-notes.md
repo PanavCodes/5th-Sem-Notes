@@ -569,7 +569,7 @@ Venture capital investments proceed through sequential funding rounds:
     1.  *Early Stage*: Secured initial seed funding from Accel Partners in 2009, followed by Series A/B rounds from Tiger Global Management.
     2.  *Growth Expansion*: Raised billions in subsequent rounds from SoftBank Vision Fund, Tencent, and Naspers to construct logistics networks, fund tech infrastructure, and acquire **PhonePe** to dominate digital payments.
 *   **The Exit Event (2018)**:
-    *   In 2018, US retail giant **Walmart** acquired a 77% controlling stake in Flipkart for **$16 Billion**, marking one of the largest strategic e-commerce acquisitions globally.
+    *   In 2018, US retail giant **Walmart** acquired a 77% controlling stake in Flipkart for **\$16 Billion**, marking one of the largest strategic e-commerce acquisitions globally.
 *   **Outcome & Impact**: Early venture capital investors achieved massive capital appreciation on their initial investments. The acquisition provided full liquidity, demonstrating the multi-stage VC lifecycle from seed capital to global strategic buyout.
 
 ⭐ **Must Remember**: A Leveraged Buyout (LBO) uses the target company's own assets as collateral to borrow the acquisition debt, relying on the target's operating cash flows to service the debt load.
@@ -723,12 +723,12 @@ The SEBI (Delisting of Equity Shares) Regulations govern the voluntary delisting
 
 #### 3. Landmark Case Studies
 
-##### Case Study A: Dell Inc. 2013 LBO ($24.4 Billion Going-Private Buyout)
+##### Case Study A: Dell Inc. 2013 LBO (\$24.4 Billion Going-Private Buyout)
 *   **Background**: In 2013, founder Michael Dell and private equity firm Silver Lake Partners sought to take PC giant Dell Inc. private to restructure its business away from declining PC sales toward enterprise cloud software without quarter-to-quarter public stock market pressure.
 *   **Execution**:
-    1.  Executed a classic Leveraged Buyout (LBO) valued at **$24.4 Billion**.
-    2.  Financed via $15 Billion in debt provided by major investment banks, combined with equity roll-overs from Michael Dell and Silver Lake cash capital.
-    3.  Bought out all public common shareholders at a cash premium price of $13.75 per share.
+    1.  Executed a classic Leveraged Buyout (LBO) valued at **\$24.4 Billion**.
+    2.  Financed via \$15 Billion in debt provided by major investment banks, combined with equity roll-overs from Michael Dell and Silver Lake cash capital.
+    3.  Bought out all public common shareholders at a cash premium price of \$13.75 per share.
 *   **Outcome**: Dell delisted its stock from NASDAQ, successfully executed a multi-year corporate transformation away from public market scrutiny, and subsequently re-listed as a far more profitable enterprise years later.
 
 ##### Case Study B: Vedanta Ltd. 2020 Failed Voluntary Delisting

@@ -430,7 +430,7 @@ The pricing of a forfaiting facility comprises four mathematical components:
 |    - Strategic M&A Buyout (Sale to corporate buyer).                                              |
 |    - Secondary Sale to late-stage Private Equity funds.                                           |
 | 4. Real-World Examples: Info Edge backing Zomato (2010 to 2021 IPO); Accel & Tiger Global        |
-|    funding Flipkart (2009 to $16B Walmart buyout in 2018).                                        |
+|    funding Flipkart (2009 to \\\\$16B Walmart buyout in 2018).                                        |
 +---------------------------------------------------------------------------------------------------+
 ```
 
@@ -477,7 +477,7 @@ VC funds operate on 7-to-10 year fund life cycles and must realize liquidity thr
 
 ##### 4. Real-World Case Studies
 - ⭐ **Zomato VC Journey (Info Edge to 2021 IPO)**: Sanjeev Bikhchandani's Info Edge invested seed capital of ₹4.7 Crore in Zomato in 2010. Over subsequent funding rounds, global VCs (Sequoia, Tiger Global, Ant Financial) injected growth capital to fund city expansions and tech infrastructure. In July 2021, Zomato launched its ₹9,375 Crore IPO. Info Edge liquidated part of its equity stake during the IPO, realizing over $1,000\times$ return on its seed investment.
-- 🧠 **Flipkart VC Scale & Walmart Buyout (2008–2018)**: Flipkart (founded in 2007 by Sachin and Binny Bansal) received early seed funding of $150,000$ from Accel Partners in 2009. Subsequent Series A-to-H growth rounds led by Tiger Global, Naspers, and SoftBank poured billions to scale logistics infrastructure (Ekart) and customer acquisition. In 2018, US retail giant **Walmart acquired 77% of Flipkart for $16 Billion**. This mega trade sale provided complete, lucrative cash exits for early VC backers Accel and Tiger Global.
+- 🧠 **Flipkart VC Scale & Walmart Buyout (2008–2018)**: Flipkart (founded in 2007 by Sachin and Binny Bansal) received early seed funding of \$150,000 from Accel Partners in 2009. Subsequent Series A-to-H growth rounds led by Tiger Global, Naspers, and SoftBank poured billions to scale logistics infrastructure (Ekart) and customer acquisition. In 2018, US retail giant **Walmart acquired 77% of Flipkart for \$16 Billion**. This mega trade sale provided complete, lucrative cash exits for early VC backers Accel and Tiger Global.
 
 ##### 5. Study Markers
 - ⭐ **Must Remember**: VC involves equity risk capital and active management participation, NOT fixed-interest lending.
@@ -554,10 +554,10 @@ Where:
 
 ##### 5. Real-World Case Study
 - ⭐ **Priya's Wealth Creation SIP Case**: Priya, a 25-year-old software engineer, starts a monthly SIP of **₹5,000** in a diversified Equity Mutual Fund offering an estimated average return of **12% p.a.** over a 20-year horizon.
-  - Total Cash Outlay over 20 years ($240 \text{ months} \times ₹5,000$) = **₹12,000,000** (₹12 Lakh).
+  - Total Cash Outlay over 20 years (240 months × ₹5,000) = **₹12,000,000** (₹12 Lakh).
   - Using SIP Formula: $i = \frac{0.12}{12} = 0.01$, $n = 240$.
 
-  $$FV = 5000 \times \left[ \frac{(1.01)^{240} - 1}{0.01} \right] \times 1.01 = 5000 \times 989.255 \times 1.01 \approx \mathbf{\text{₹}49,95,740}$$
+  $$FV = 5000 \times \left[ \frac{(1.01)^{240} - 1}{0.01} \right] \times 1.01 = 5000 \times 989.255 \times 1.01 \approx \mathbf{\text{Rs. } 49,95,740} \text{ (₹49.95 Lakh)}$$
 
   **Outcome**: Compounding generates **₹37.95 Lakh in net capital gains**, transforming modest retail savings into wealth.
 
@@ -908,7 +908,7 @@ The table below synthesizes all 10 financial services across six critical operat
 | **Textile Exporter Non-Recourse** | Factoring | Selling ₹1 Cr European export receivables to a non-recourse factor; factor absorbed 100% loss when buyer went bankrupt on day 60. |
 | **Indian Engineering African Export**| Forfaiting | Discounting ₹50 Cr 5-year avalized export bills via EXIM Bank, getting ₹43 Cr immediate cash and eliminating African currency risk. |
 | **Zomato VC Journey** | Venture Capital | Info Edge seed funding of ₹4.7 Cr in 2010 yielding $1,000\times+$ return upon Zomato's ₹9,375 Cr IPO in 2021. |
-| **Flipkart M&A Buyout** | Venture Capital | Early funding by Accel & Tiger Global leading to a $16 Billion acquisition by Walmart in 2018, delivering mega cash exits. |
+| **Flipkart M&A Buyout** | Venture Capital | Early funding by Accel & Tiger Global leading to a \$16 Billion acquisition by Walmart in 2018, delivering mega cash exits. |
 | **Priya SIP Wealth Compounding**| Mutual Funds | Investing ₹5,000/month over 20 years at 12% p.a. yields ₹49.95 Lakh total wealth on a ₹12 Lakh principal outlay. |
 | **2008 Subprime Collapse** | Securitization | Originate-to-distribute subprime mortgage securitization into CDOs causing global financial crisis upon default spikes. |
 | **LIC ₹21,000 Cr IPO** | Merchant Banking | Syndicate of 10 lead merchant bankers managing India's largest public issue, DRHP filing, and global institutional roadshows. |

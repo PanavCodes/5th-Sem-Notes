@@ -450,8 +450,8 @@ Both markets play distinct yet complementary roles in sustaining economic growth
 Through the 1980s, India ran a highly controlled, closed economy characterized by industrial licensing (**The License Raj**), dominant public sector enterprises, administered pricing, and heavy protective trade barriers. This statist approach created severe macroeconomic imbalances:
 *   **Fiscal Imbalance:** The government's fiscal deficit expanded to **8.4% of GDP**, and internal government debt rose to **53% of GDP**, largely funded by high reserve pre-emptions (SLR/CRR) on commercial banks.
 *   **The Gulf War Shock (1990–91):** The outbreak of the Gulf War spiked global crude oil prices, ballooning India's import bill. Simultaneously, remittances from Indian workers in the Gulf collapsed, and export channels were disrupted.
-*   **The Reserves Crisis:** India’s foreign exchange reserves plummeted to **$1.2 billion** (barely sufficient to cover two weeks of essential imports).
-*   **Default Avoidance:** Facing imminent sovereign default, international credit lines were frozen due to rating downgrades. To meet immediate obligations, the Indian government had to pledge and airlift **47 tonnes of gold** to the Bank of England and **20 tonnes** to the Union Bank of Switzerland to secure a $600 million emergency loan, subsequently adopting an IMF-mandated Structural Adjustment Programme (SAP).
+*   **The Reserves Crisis:** India’s foreign exchange reserves plummeted to **\$1.2 billion** (barely sufficient to cover two weeks of essential imports).
+*   **Default Avoidance:** Facing imminent sovereign default, international credit lines were frozen due to rating downgrades. To meet immediate obligations, the Indian government had to pledge and airlift **47 tonnes of gold** to the Bank of England and **20 tonnes** to the Union Bank of Switzerland to secure a \$600 million emergency loan, subsequently adopting an IMF-mandated Structural Adjustment Programme (SAP).
 
 #### 📊 Diagram: 1991 LPG Reform Triggers & Implementation Flow
 ```

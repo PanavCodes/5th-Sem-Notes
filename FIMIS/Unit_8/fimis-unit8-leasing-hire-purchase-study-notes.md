@@ -184,14 +184,14 @@ Effective April 1, 2019, **Indian Accounting Standard 116 (Ind AS 116)** elimina
 #### Real-World Corporate Case Studies & Institutional Examples
 
 ##### Case Study 1: BPO Corporate IT Laptop Operating Lease
-*   **Context**: A 200-seat Business Process Outsourcing (BPO) firm required 200 enterprise-grade laptops. Outright procurement required an immediate cash outlay of $\approx \text{₹1,00,000,000}$ ($\text{₹50,000 per unit}$).
-*   **Structure**: The BPO executed a 3-year operating lease with a technology vendor at $\text{₹2,000 per laptop per month}$ ($\text{₹4,00,000 total monthly rental}$ inclusive of full repair, maintenance, and insurance).
-*   **Outcome**: The BPO preserved $\text{₹1 crore}$ in liquidity for talent hiring and client acquisition. At the end of Year 3, the BPO returned the obsolete laptops to the lessor without residual value risk and seamlessly upgraded to next-generation systems.
+*   **Context**: A 200-seat Business Process Outsourcing (BPO) firm required 200 enterprise-grade laptops. Outright procurement required an immediate cash outlay of ≈ ₹10 Crore (₹50,000 per unit).
+*   **Structure**: The BPO executed a 3-year operating lease with a technology vendor at ₹2,000 per laptop per month (₹4,00,000 total monthly rental inclusive of full repair, maintenance, and insurance).
+*   **Outcome**: The BPO preserved ₹1 crore in liquidity for talent hiring and client acquisition. At the end of Year 3, the BPO returned the obsolete laptops to the lessor without residual value risk and seamlessly upgraded to next-generation systems.
 
 ##### Case Study 2: Infrastructure Equipment Finance Lease (L&T Finance / Tata Capital)
-*   **Context**: A civil engineering contractor secured a road building contract requiring a specialized heavy-duty hydraulic crane priced at $\text{₹2,00,000,000}$ with a 10-year useful life.
+*   **Context**: A civil engineering contractor secured a road building contract requiring a specialized heavy-duty hydraulic crane priced at ₹2,00,000,000 with a 10-year useful life.
 *   **Structure**: The contractor executed an 8-year non-cancellable finance lease with an NBFC (L&T Finance). The contractor agreed to pay monthly finance lease rentals, maintain the crane, and insure the asset.
-*   **Outcome**: The contract included a nominal bargain purchase option of $\text{₹1,00,000}$ at month 96. The lessee effectively purchased the crane on structured credit while utilizing monthly project cash flows to service the lease rentals.
+*   **Outcome**: The contract included a nominal bargain purchase option of ₹1,00,000 at month 96. The lessee effectively purchased the crane on structured credit while utilizing monthly project cash flows to service the lease rentals.
 
 ##### Case Study 3: Airline Fleet Expansion via Sale & Leaseback (IndiGo / InterGlobe Aviation)
 *   **Context**: IndiGo Airlines places bulk aircraft orders with Airbus to achieve scale economies, but holding massive aircraft fleets directly on its balance sheet would severely impair corporate liquidity and spike debt leverage.
@@ -199,14 +199,14 @@ Effective April 1, 2019, **Indian Accounting Standard 116 (Ind AS 116)** elimina
 *   **Outcome**: IndiGo converts fixed capital assets into massive liquid cash reserves, generating substantial initial sale margins while maintaining an ultra-young, fuel-efficient fleet without balance sheet debt overhang.
 
 ##### Case Study 4: Commercial Real Estate Debt Restructuring via Sale & Leaseback
-*   **Context**: A major hotel resort chain accumulated $\text{₹25,00,000,000}$ in high-cost short-term bank debt following a sector slowdown, causing severe cash flow distress.
-*   **Structure**: The company executed a $\text{₹40,00,000,000}$ Sale & Leaseback of its flagship hotel property with an institutional real estate investment trust (REIT).
-*   **Outcome**: The hotel received $\text{₹40 crore}$ in lump-sum cash, fully retired its $\text{₹25 crore}$ bank debt, allocated $\text{₹15 crore}$ to property renovation, and retained long-term operational control of the hotel under a 20-year lease structure.
+*   **Context**: A major hotel resort chain accumulated ₹250 Crore in high-cost short-term bank debt following a sector slowdown, causing severe cash flow distress.
+*   **Structure**: The company executed a ₹400 Crore Sale & Leaseback of its flagship hotel property with an institutional real estate investment trust (REIT).
+*   **Outcome**: The hotel received ₹40 Crore in lump-sum cash, fully retired its ₹25 Crore bank debt, allocated ₹15 Crore to property renovation, and retained long-term operational control of the hotel under a 20-year lease structure.
 
 ##### Case Study 5: Big-Ticket Transports via Leveraged Lease (AerCap / SMBC)
-*   **Context**: Financing a long-haul widebody aircraft worth $\text{₹1,000,000,000}$ ($100 \text{ crore}$) presents extreme single-asset risk for a single lessor.
-*   **Structure**: An international leasing firm (AerCap) structures a Leveraged Lease. AerCap injects $\text{₹25 crore}$ ($25\%$) as equity owner, while a syndicate of commercial banks provides $\text{₹75 crore}$ ($75\%$) as non-recourse senior debt secured by a first charge on the aircraft and assignment of airline rentals.
-*   **Outcome**: AerCap acquires $100\%$ of the tax depreciation benefits on the $\text{₹100 crore}$ asset while exposing only $\text{₹25 crore}$ of its own capital to equity risk.
+*   **Context**: Financing a long-haul widebody aircraft worth ₹100 Crore ($100 \text{ crore}$) presents extreme single-asset risk for a single lessor.
+*   **Structure**: An international leasing firm (AerCap) structures a Leveraged Lease. AerCap injects ₹25 Crore ($25\%$) as equity owner, while a syndicate of commercial banks provides ₹75 Crore ($75\%$) as non-recourse senior debt secured by a first charge on the aircraft and assignment of airline rentals.
+*   **Outcome**: AerCap acquires $100\%$ of the tax depreciation benefits on the ₹100 Crore asset while exposing only ₹25 Crore of its own capital to equity risk.
 
 🧠 **Must Understand**: Under Ind AS 116, the historical distinction between operating and finance leases remains intact for **lessors**, but is completely eliminated for **lessees** (who must recognize an ROU Asset and Lease Liability for all leases over 12 months).
 
@@ -333,22 +333,22 @@ A critical theoretical issue in capital budgeting is selecting the correct disco
 
 #### Conceptual Illustration of NAL Principles
 
-Consider a corporate treasury team evaluating a project requiring a $\text{₹10,000,000}$ industrial machine with a 3-year useful life.
+Consider a corporate treasury team evaluating a project requiring a ₹1 Crore (₹10,00,000) industrial machine with a 3-year useful life.
 
-*   **Leasing Option**: Lease rentals of $\text{₹3,60,000 per year}$ for 3 years. Corporate tax rate $T = 30\%$. Annual tax depreciation $Dep = \text{₹3,00,000 per year}$. Pre-tax borrowing rate $k_d = 10\%$.
+*   **Leasing Option**: Lease rentals of ₹3,60,000 per year for 3 years. Corporate tax rate $T = 30\%$. Annual tax depreciation $Dep = \text{Rs. } 3{,}00{,}000\text{/year}$ (₹3,00,000 per year). Pre-tax borrowing rate $k_d = 10\%$.
 *   **After-Tax Discount Rate**: 
     $$r = 10\% \times (1 - 0.30) = 7\%$$
 *   **Annual After-Tax Lease Rental**: 
-    $$L_t(1-T) = \text{₹3,60,000} \times (1 - 0.30) = \text{₹2,52,000}$$
+    $$L_t(1-T) = \text{Rs. } 3{,}60{,}000 \times (1 - 0.30) = \text{Rs. } 2{,}52{,}000$$
 *   **Annual Lost Depreciation Tax Shield**: 
-    $$T \cdot Dep_t = 30\% \times \text{₹3,00,000} = \text{₹90,000}$$
+    $$T \cdot Dep_t = 30\% \times \text{Rs. } 3{,}00{,}000 = \text{Rs. } 90{,}000$$
 *   **Total Annual Cash Disadvantage of Leasing**: 
-    $$\text{₹2,52,000 (Lease Rent)} + \text{₹90,000 (Lost Tax Shield)} = \text{₹3,42,000 per year}$$
-*   **Present Value of Outflows**: Discounting $\text{₹3,42,000}$ annually for 3 years at $7\%$ yield an aggregate Present Value of Cash Outflows of $\approx \text{₹8,98,000}$.
+    $$\text{Rs. } 2{,}52{,}000 \text{ (Lease Rent)} + \text{Rs. } 90{,}000 \text{ (Lost Tax Shield)} = \text{Rs. } 3{,}42{,}000 \text{ per year}$$
+*   **Present Value of Outflows**: Discounting ₹3,42,000 annually for 3 years at $7\%$ yield an aggregate Present Value of Cash Outflows of $\approx \text{Rs. } 8{,}98{,}000$ (₹8,98,000).
 *   **Net Advantage of Leasing**:
-    $$\text{NAL} = \text{Initial Outlay Saved } (\text{₹10,00,000}) - \text{PV of Outflows } (\text{₹8,98,000}) = +\text{₹1,02,000}$$
+    $$\text{NAL} = \text{Initial Outlay Saved } (\text{Rs. } 10{,}00{,}000) - \text{PV of Outflows } (\text{Rs. } 8{,}98{,}000) = +\text{Rs. } 1{,}02{,}000$$
 
-Since NAL is **positive** ($+\text{₹1,02,000}$), the treasury team formally recommends **leasing** over purchasing, as leasing conserves $\text{₹1,02,000}$ in net present value capital.
+Since NAL is **positive** ($+\text{Rs. } 1{,}02{,}000$), the treasury team formally recommends **leasing** over purchasing, as leasing conserves ₹1,02,000 in net present value capital.
 
 ---
 
@@ -494,12 +494,12 @@ Where $n$ is the total number of monthly instalments.
 
 ##### Conceptual Illustration of the Flat Rate Trap
 Consider a small business financing an asset under HP:
-*   Cash Price = $\text{₹1,00,000}$. Down Payment = $\text{₹20,000}$. Financed Principal $P = \text{₹80,000}$.
+*   Cash Price = ₹1,00,000. Down Payment = ₹20,000. Financed Principal Financed Principal $P =$ ₹80,000.
 *   Quoted Flat Rate = $10\%$ per annum for a 2-year tenor ($n = 24\text{ months}$).
-*   Total Flat Interest = $\text{₹80,000} \times 10\% \times 2 = \text{₹16,000}$.
-*   Total HP Repayment = $\text{₹80,000} + \text{₹16,000} = \text{₹96,000}$.
-*   Monthly Instalment = $\text{₹96,000} / 24 = \text{₹4,000 per month}$.
-*   Total HP Cost = Down Payment ($\text{₹20,000}$) $+$ Instalments ($\text{₹96,000}$) = $\text{₹1,16,000}$.
+*   Total Flat Interest = $\text{Rs. } 80{,}000 \times 10\% \times 2 = \text{Rs. } 16{,}000$ (₹16,000).
+*   Total HP Repayment = $\text{Rs. } 80{,}000 + \text{Rs. } 16{,}000 = \text{Rs. } 96{,}000$ (₹96,000).
+*   Monthly Instalment = $\text{Rs. } 96{,}000 / 24 = \text{Rs. } 4{,}000\text{/month}$ (₹4,000/month).
+*   Total HP Cost = Down Payment (₹20,000) $+$ Instalments (₹96,000) = ₹1,16,000.
 *   **Effective Interest Rate Calculation**:
     $$R_{eff} \approx 10\% \times \frac{2 \times 24}{24 + 1} = 10\% \times \frac{48}{25} = 19.2\%$$
 
@@ -507,13 +507,13 @@ The hirer paying a quoted $10\%$ flat rate is actually incurring a true economic
 
 #### Real-World Case Study: Retail Commercial Equipment HP
 
-*   **Context**: An expanding specialty coffee chain requires a commercial espresso machine priced at $\text{₹5,00,000}$ cash price.
+*   **Context**: An expanding specialty coffee chain requires a commercial espresso machine priced at ₹5,00,000 cash price.
 *   **Structure**: The cafe executes a 24-month Hire Purchase agreement with an equipment finance NBFC.
-    - Upfront Down Payment: $\text{₹1,00,000}$ ($20\%$).
-    - Financed Balance: $\text{₹4,00,000}$.
-    - Instalments: 24 Equated Monthly Instalments of $\text{₹20,000}$ each.
-*   **Operational Outcome**: The cafe installs the coffee machine immediately. The daily cash profits generated from coffee sales comfortably cover the $\text{₹20,000}$ monthly EMI.
-*   **Legal & Tax Outcome**: The cafe claims Section 32 tax depreciation on the $\text{₹5,00,000}$ cash price and deducts the interest portion of each EMI under Section 36. After month 24, the final payment triggers full ownership transfer to the cafe. If the cafe had defaulted in month 6, the NBFC held the statutory authority to enter the premises and repossess the espresso machine.
+    - Upfront Down Payment: ₹1,00,000 ($20\%$).
+    - Financed Balance: ₹4,00,000.
+    - Instalments: 24 Equated Monthly Instalments of ₹20,000 each.
+*   **Operational Outcome**: The cafe installs the coffee machine immediately. The daily cash profits generated from coffee sales comfortably cover the ₹20,000 monthly EMI.
+*   **Legal & Tax Outcome**: The cafe claims Section 32 tax depreciation on the ₹5,00,000 cash price and deducts the interest portion of each EMI under Section 36. After month 24, the final payment triggers full ownership transfer to the cafe. If the cafe had defaulted in month 6, the NBFC held the statutory authority to enter the premises and repossess the espresso machine.
 
 ---
 
@@ -555,12 +555,12 @@ $$\begin{aligned}
 
 ### Consolidated Real-World Case Study Index
 
-1.  **Corporate IT Operating Lease**: 200-seat BPO leases laptops at $\text{₹2,000/mo}$ to preserve $\text{₹1 crore}$ liquidity, transferring technological obsolescence risk to the lessor.
-2.  **Infrastructure Finance Lease**: Construction firm finance-leases a $\text{₹2 crore}$ crane for 8 years from L&T Finance with a nominal purchase option at term end.
+1.  **Corporate IT Operating Lease**: 200-seat BPO leases laptops at ₹2,000/mo to preserve ₹1 crore liquidity, transferring technological obsolescence risk to the lessor.
+2.  **Infrastructure Finance Lease**: Construction firm finance-leases a ₹2 crore crane for 8 years from L&T Finance with a nominal purchase option at term end.
 3.  **Airline Fleet Sale & Leaseback**: IndiGo Airlines executes bulk SLB agreements with SMBC Aviation Capital for Airbus A320neo jets, generating massive liquid cash reserves while operating a young fleet.
-4.  **Hotel Debt Restructuring SLB**: Hotel resort sells property for $\text{₹40 crore}$ to a REIT, pays off $\text{₹25 crore}$ short-term bank debt, and retains continuous operational management.
-5.  **Big-Ticket Leveraged Aircraft Lease**: AerCap puts up $25\%$ equity while bank consortium provides $75\%$ non-recourse senior debt for a $\text{₹100 crore}$ aircraft leased to an international carrier.
-6.  **Retail Commercial Equipment HP**: Specialty cafe buys a $\text{₹5 lakh}$ espresso machine via $20\%$ down payment and 24 monthly EMIs, claiming Section 32 depreciation and Section 36 interest deductions.
+4.  **Hotel Debt Restructuring SLB**: Hotel resort sells property for ₹40 Crore to a REIT, pays off ₹25 Crore short-term bank debt, and retains continuous operational management.
+5.  **Big-Ticket Leveraged Aircraft Lease**: AerCap puts up $25\%$ equity while bank consortium provides $75\%$ non-recourse senior debt for a ₹100 Crore aircraft leased to an international carrier.
+6.  **Retail Commercial Equipment HP**: Specialty cafe buys a ₹5 lakh espresso machine via $20\%$ down payment and 24 monthly EMIs, claiming Section 32 depreciation and Section 36 interest deductions.
 
 ---
 

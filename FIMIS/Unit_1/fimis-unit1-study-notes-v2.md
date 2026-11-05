@@ -253,7 +253,7 @@ As outlined in Slide 21, the global integration of capital introduces **four sys
 ## ⚡ PART 3: IMPACT OF LIBERALIZATION (1991 LPG REFORMS)
 
 ### 1. Dimensions of LPG
-In **July 1991**, facing a severe Balance-of-Payments (BoP) crisis—with forex reserves falling to **$1.2 billion** (barely enough for two weeks of imports) and a fiscal deficit of **8.4% of GDP**—the Indian government initiated the **LPG (Liberalization, Privatization, and Globalization) Reforms**:
+In **July 1991**, facing a severe Balance-of-Payments (BoP) crisis—with forex reserves falling to **\$1.2 billion** (barely enough for two weeks of imports) and a fiscal deficit of **8.4% of GDP**—the Indian government initiated the **LPG (Liberalization, Privatization, and Globalization) Reforms**:
 *   **Liberalization:** Reducing government licensing, removing entry barriers, and deregulating interest rates to let market forces determine pricing.
 *   **Privatization:** Dismantling state monopolies, initiating disinvestment in Public Sector Undertakings (PSUs), and opening core sectors (banking, insurance, telecom) to private capital.
 *   **Globalization:** Opening the economy to foreign trade and investment, allowing foreign institutional investors (FIIs) to invest in Indian stock markets (1992).

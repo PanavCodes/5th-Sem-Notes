@@ -153,7 +153,7 @@ Equity capital forms the primary risk-absorbing cushion of a corporate balance s
 4.  **Capital Structure Dilution**: Issuing debt does not dilute existing shareholder control or EPS. Issuing fresh equity dilutes ownership percentage and voting power.
 
 #### Real-World Case Study: Zomato’s 2021 Initial Public Offer (IPO)
-*   🚀 **Context & Structure**: In July 2021, food-tech platform Zomato Limited launched its IPO on the NSE and BSE, raising ₹9,375 crore ($₹9,000\text{ crore fresh issue} + ₹375\text{ crore offer for sale}$).
+*   🚀 **Context & Structure**: In July 2021, food-tech platform Zomato Limited launched its IPO on the NSE and BSE, raising ₹9,375 crore (₹9,000 crore fresh issue + ₹375 crore offer for sale).
 *   📈 **Equity Dynamics**: Investors buying Zomato equity became part-owners of a loss-making but high-growth tech platform. The stock opened at a 51% premium over its issue price of ₹76, peaked above ₹160, later corrected sharply to below ₹50 during global tech sell-offs, before recovering strongly.
 *   💡 **Comparative Contrast**: A Zomato debenture holder would have received a fixed 8% coupon regardless of whether Zomato made profits or losses. Conversely, Zomato equity shareholders bore extreme price volatility, receiving no dividends, but participating directly in the enterprise's long-term equity valuation shifts.
 
@@ -245,7 +245,7 @@ Equity capital forms the primary risk-absorbing cushion of a corporate balance s
         *   **Knock-Out Option**: Ceases to exist (knocks out) if the underlying price touches the barrier level.
 
 #### Real-World Case Studies: Derivatives in Action
-*   💼 **IT Exporters INR/USD Forward Contracts**: Indian IT exporters (TCS, Infosys) earning revenue in US Dollars lock in future exchange rates (e.g., locking $1\text{ USD} = ₹84.50$ six months forward) via bank forward contracts to shield rupee profit margins from currency appreciation.
+*   💼 **IT Exporters INR/USD Forward Contracts**: Indian IT exporters (TCS, Infosys) earning revenue in US Dollars lock in future exchange rates (e.g., locking 1 USD = ₹84.50 six months forward) via bank forward contracts to shield rupee profit margins from currency appreciation.
 *   ✈️ **IndiGo Airlines Crude Oil Futures**: IndiGo uses long hedges on crude oil futures (MCX/NYMEX) to lock in jet fuel purchase costs, preventing sudden oil price spikes from eroding operational margins.
 *   🏛️ **ECB Currency Swap Execution**: An Indian corporation raising a \$100 million External Commercial Borrowing (ECB) enters a currency swap with a foreign exchange bank, converting dollar principal and coupon liabilities into Rupee-denominated obligations to eliminate exchange rate risk.
 *   💥 **2008 Indian SME Exotic Forex Derivative Crisis**: In 2007–08, Indian banks sold complex exotic currency derivatives (leveraged Knock-In / Knock-Out options) to exporting SMEs under the guise of "zero-cost currency hedges." When the global financial crisis caused extreme rupee volatility, the embedded leverage knocked in, causing losses running into thousands of crores for exporters and leading to years of court litigation.
@@ -294,20 +294,20 @@ Let $S_T = \text{Spot Price at Expiration}$, $K = \text{Strike Price}$, and $P =
 #### Detailed Analysis of Synthetic Option Strategies
 
 ##### Strategy A: Protective Put (Long Stock + Long Put)
-*   **Execution**: Investor buys 1 share of Stock $A$ at spot price $S_0 = ₹100$ and buys a Put Option with strike $K = ₹100$ for premium $P = ₹5$. Total Initial Investment = $S_0 + P = ₹105$.
+*   **Execution**: Investor buys 1 share of Stock $A$ at spot price $S_0 =$ ₹100 and buys a Put Option with strike $K =$ ₹100 for premium $P =$ ₹5. Total Initial Investment = $S_0 + P =$ ₹105.
 *   **Payoff Equation**:
     $$\text{Net Position Value at Expiration} = S_T + \max(0, K - S_T) - (S_0 + P)$$
 *   **Payoff Breakdown Across Expiration Scenarios**:
-    *   *Scenario 1: Stock Price Falls to $S_T = ₹70$*:
-        *   Put Option Payoff = $K - S_T = 100 - 70 = +₹30$.
-        *   Stock Portfolio Value = $₹70$.
-        *   Total Position Realized = $70 + 30 = ₹100$.
-        *   Net Profit/Loss = $100 - 105 = -₹5$ (Loss is strictly capped at Put Premium $P$).
-    *   *Scenario 2: Stock Price Soars to $S_T = ₹150$*:
-        *   Put Option Expires Unexercised = $₹0$.
-        *   Stock Portfolio Value = $₹150$.
-        *   Total Position Realized = $₹150$.
-        *   Net Profit = $150 - 105 = +₹45$ (Full participation in upside minus option premium).
+    *   *Scenario 1: Stock Price Falls to $S_T =$ ₹70*:
+        *   Put Option Payoff = $K - S_T = 100 - 70 = +30$ (₹30).
+        *   Stock Portfolio Value = ₹70.
+        *   Total Position Realized = $70 + 30 = 100$ (₹100).
+        *   Net Profit/Loss = $100 - 105 = -5$ (-₹5) (Loss is strictly capped at Put Premium $P$).
+    *   *Scenario 2: Stock Price Soars to $S_T =$ ₹150*:
+        *   Put Option Expires Unexercised = ₹0.
+        *   Stock Portfolio Value = ₹150.
+        *   Total Position Realized = ₹150.
+        *   Net Profit = $150 - 105 = +45$ (+₹45) (Full participation in upside minus option premium).
 
 ```
   Net Profit ($)
@@ -322,19 +322,19 @@ Let $S_T = \text{Spot Price at Expiration}$, $K = \text{Strike Price}$, and $P =
 ```
 
 ##### Strategy B: Covered Call (Long Stock + Short Call)
-*   **Execution**: Investor owns 1 share of Stock $B$ purchased at $S_0 = ₹100$ and sells a Call Option with strike $K = ₹110$ for premium $P = ₹4$. Net Cash Outflow = $S_0 - P = ₹96$.
+*   **Execution**: Investor owns 1 share of Stock $B$ purchased at $S_0 =$ ₹100 and sells a Call Option with strike $K =$ ₹110 for premium $P =$ ₹4. Net Cash Outflow = $S_0 - P =$ ₹96.
 *   **Payoff Equation**:
     $$\text{Net Position Value at Expiration} = S_T - \max(0, S_T - K) + P$$
 *   **Payoff Breakdown Across Expiration Scenarios**:
-    *   *Scenario 1: Stock Price Remains Stagnant at $S_T = ₹100$*:
+    *   *Scenario 1: Stock Price Remains Stagnant at $S_T =$ ₹100*:
         *   Call Option Expires Unexercised ($0$ loss).
-        *   Investor retains stock ($₹100$) + Call Premium ($₹4$). Total = $₹104$.
-        *   Net Profit = $104 - 100 = +₹4$ (Yield enhancement in flat market).
-    *   *Scenario 2: Stock Price Surges to $S_T = ₹140$*:
-        *   Call Buyer Exercises Option at $K = ₹110$.
-        *   Investor must deliver share at $K = ₹110$.
-        *   Total Realized Cash = $110 + 4 = ₹114$.
-        *   Net Profit = $114 - 100 = +₹14$ (Maximum profit capped at $K + P - S_0$).
+        *   Investor retains stock (₹100) + Call Premium (₹4). Total = ₹104.
+        *   Net Profit = $104 - 100 = +4$ (+₹4) (Yield enhancement in flat market).
+    *   *Scenario 2: Stock Price Surges to $S_T =$ ₹140*:
+        *   Call Buyer Exercises Option at $K =$ ₹110.
+        *   Investor must deliver share at $K =$ ₹110.
+        *   Total Realized Cash = $110 + 4 = 114$ (₹114).
+        *   Net Profit = $114 - 100 = +14$ (+₹14) (Maximum profit capped at $K + P - S_0$).
 
 ```
   Net Profit ($)
@@ -370,7 +370,7 @@ Let $S_T = \text{Spot Price at Expiration}$, $K = \text{Strike Price}$, and $P =
 1.  **Reliance Industries NCDs (Corporate Debt)**: Demonstrates top-tier corporate debt issuance via secured Non-Convertible Debentures at competitive rates.
 2.  **IL&FS Commercial Paper Default (2018)**: Default on unsecured commercial paper that froze India's ₹10-lakh-crore CP market and triggered a systemic liquidity crisis across NBFCs and mutual funds.
 3.  **NABARD Tax-Free Bonds (Institutional Debt)**: AAA-rated long-term sovereign-backed debt financing rural infrastructure with tax-exempt coupons for conservative investors.
-4.  **Zomato IPO 2021 (Equity vs. Debt)**: $₹9,375\text{ crore}$ equity listing illustrating residual risk, equity upside, and lack of fixed returns vs. debt stability.
+4.  **Zomato IPO 2021 (Equity vs. Debt)**: ₹9,375 crore equity listing illustrating residual risk, equity upside, and lack of fixed returns vs. debt stability.
 5.  **IT Exporters Rupee Forwards (Forwards)**: TCS/Infosys booking INR/USD forward contracts to lock in conversion rates and eliminate currency volatility risk on export revenues.
 6.  **IndiGo Jet Fuel Futures (Futures & Long Hedge)**: Airline buying crude oil/jet fuel futures to hedge against price spikes threatening operating margins.
 7.  **ECB Currency Swaps (Swaps)**: Corporate converting US Dollar External Commercial Borrowing principal and interest into Rupee liabilities to remove FX risk.
