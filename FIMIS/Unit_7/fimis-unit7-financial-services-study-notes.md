@@ -430,7 +430,7 @@ The pricing of a forfaiting facility comprises four mathematical components:
 |    - Strategic M&A Buyout (Sale to corporate buyer).                                              |
 |    - Secondary Sale to late-stage Private Equity funds.                                           |
 | 4. Real-World Examples: Info Edge backing Zomato (2010 to 2021 IPO); Accel & Tiger Global        |
-|    funding Flipkart (2009 to \\\\$16B Walmart buyout in 2018).                                        |
+|    funding Flipkart (2009 to \\\\\$16B Walmart buyout in 2018).                                        |
 +---------------------------------------------------------------------------------------------------+
 ```
 

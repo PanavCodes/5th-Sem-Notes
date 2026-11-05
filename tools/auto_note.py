@@ -86,6 +86,54 @@ def clean_citations(text: str) -> str:
     return re.sub(r"[ \t]*\[\d+(?:[,\s]+\d+)*\]", "", text)
 
 
+def sanitize_markdown(content: str) -> str:
+    """
+    Exhaustive post-processing pipeline:
+      1. Strips NotebookLM citation markers ([38], [12, 14])
+      2. Fixes display LaTeX math brackets \\[ ... \\] -> $$ ... $$
+      3. Normalizes inline \\( ... \\) -> $ ... $
+      4. Cleans LaTeX currency issues ($\\text{₹}10\\text{ Lakh}$ -> ₹10 Lakh)
+      5. Fixes table multiline headers & pipe alignments via perfect_table_fixer
+    """
+    # 1. Citations
+    content = clean_citations(content)
+
+    # 2. Display brackets \[ ... \] -> $$ ... $$
+    content = re.sub(r"\\\[(.*?)\\\]", r"$$\n\1\n$$", content, flags=re.DOTALL)
+    content = re.sub(r"\\\s*\n\$\$", r"\n$$", content)
+
+    # 3. Inline brackets \( ... \) -> $ ... $
+    content = re.sub(r"\\\\\(", "$", content)
+    content = re.sub(r"\\\\\)", "$", content)
+    content = re.sub(r"\\\(", "$", content)
+    content = re.sub(r"\\\)", "$", content)
+
+    # 4. Currency symbols (Rupees & Rs.)
+    def repl_rupee(m):
+        val = m.group(1).strip()
+        unit = m.group(2).strip() if m.group(2) else ""
+        unit = re.sub(r"\s+", " ", unit)
+        return f"₹{val} {unit}".strip()
+
+    content = re.sub(
+        r"\$\\text\{₹\}\s*([0-9,.]+)\s*(?:\\text\{\s*([A-Za-z\s]+)\s*\})?\$",
+        repl_rupee,
+        content,
+        flags=re.DOTALL
+    )
+    content = re.sub(r"\$\\text\{₹\s*([0-9,.]+)\s*\}\$", r"₹\1", content)
+
+    # 5. Markdown table fixer
+    try:
+        sys.path.insert(0, str(REPO_ROOT / "tools"))
+        from perfect_table_fixer import repair_content
+        content = repair_content(content)
+    except Exception:
+        pass
+
+    return content.strip()
+
+
 def slugify(text: str) -> str:
     """Turn title into kebab-case filename slug."""
     text = text.lower()
@@ -431,15 +479,14 @@ def main():
 
     print(f"✅ Generated {len(raw_markdown.splitlines())} lines ({len(raw_markdown.split())} words) of content.")
 
-    # 5. Clean citations if requested
-    if args.clean_citations:
-        print("🧹 Cleaning NotebookLM citation brackets [x]...")
-        raw_markdown = clean_citations(raw_markdown)
+    # 5. Sanitize and format markdown (citations, LaTeX, currencies, tables)
+    print("🧹 Sanitizing Markdown (citations, LaTeX brackets, currency signs, and table alignments)...")
+    cleaned_markdown = sanitize_markdown(raw_markdown)
 
     # 6. Save to Repo
     unit_dir = find_or_create_unit_dir(subject, args.unit)
     target_path = unit_dir / filename
-    target_path.write_text(raw_markdown.strip() + "\n", encoding="utf-8")
+    target_path.write_text(cleaned_markdown.strip() + "\n", encoding="utf-8")
     rel_path = target_path.relative_to(REPO_ROOT)
     print(f"💾 File saved to: {rel_path.as_posix()}")
 
