@@ -18,9 +18,9 @@
     3.  **Defined Maturity**: Fixed tenure (ranging from 7 days for money market paper up to 30 years for sovereign bonds), except perpetual bonds.
     4.  **Lower Risk & Limited Upside**: Lower volatility and default risk compared to equity, but return is capped at the agreed coupon rate.
 *   **Key Debt Categories**:
-    *   *Sovereign Debt*: Government Securities (G-Secs) & Treasury Bills (T-Bills).
+    *   *Sovereign Debt*: Government Securities (G-Secs), Treasury Bills (T-Bills), Sovereign Green Bonds (2023), and Sovereign Gold Bonds (SGBs).
     *   *Corporate Debt*: Corporate Bonds (Secured), Debentures (Unsecured), Non-Convertible Debentures (NCDs), Commercial Papers (CPs).
-    *   *Bank/Institutional Debt*: Certificates of Deposit (CDs), Institutional Tax-Free Bonds (NABARD, HUDCO).
+    *   *Bank/Institutional Debt*: Certificates of Deposit (CDs), Institutional Tax-Free Bonds (NHAI, REC, NABARD), and Additional Tier 1 (AT1) Basel III Perpetual Bonds.
 
 #### 📊 Quick Summary Table: Debt Instrument Taxonomies
 | Instrument Class | Typical Issuer | Tenure / Maturity | Security / Collateral | Primary Pricing Mechanism |
@@ -84,6 +84,11 @@ Debt instruments serve as the primary credit-allocation mechanism in the financi
     *   *Lesson*: Credit ratings can lag structural risks; unsecured money market instruments like CPs carry severe contagion risk during defaults.
 *   🏛️ **NABARD Tax-Free Bonds**:
     *   NABARD and HUDCO issued long-dated, tax-free bonds to mobilize low-cost long-term capital for rural infrastructure and housing projects. Carrying AAA ratings and explicit sovereign backing, these bonds offered conservative retail investors safety and tax-exempt yields.
+*   ⚖️ **The Landmark Yes Bank AT1 Bond Write-Down Case**:
+    *   *Crisis & Write-Down*: In March 2020, during the RBI-led reconstruction of Yes Bank, the administrator wrote down **₹8,415 crore** of Additional Tier 1 (AT1) perpetual bonds to zero, shocking institutional and retail bondholders who assumed the bonds were quasi-sovereign safe.
+    *   *Judicial Challenge*: Bondholders challenged the write-down in court. The Bombay High Court quashed the write-down in January 2023 because the administrator lacked statutory authority under the final reconstruction scheme.
+    *   *Supreme Court Verdict (15 October 2026)*: The **Supreme Court of India upheld the High Court's order**, affirming that while AT1 bonds are designed as loss-absorbing capital, any loss write-down must adhere to statutory procedural validity.
+    *   *Takeaway*: Debt safety depends fundamentally on contractual covenants and statutory seniority, not merely on the issuer's institutional brand.
 
 ---
 
@@ -118,8 +123,14 @@ Debt instruments serve as the primary credit-allocation mechanism in the financi
 Equity capital forms the primary risk-absorbing cushion of a corporate balance sheet. By selling equity, a company secures perpetual capital without incurring fixed debt-servicing obligations.
 
 1.  **Ownership & Capital Formation**: Equity share capital is divided into units of equal face value (e.g., ₹1, ₹2, or ₹10 per share). Investors purchasing equity shares acquire voting power proportional to their shareholding.
-2.  **Governance & Statutory Disclosures**: Stock exchanges (BSE & NSE) enforce strict listing obligations under SEBI (LODR) Regulations 2015. Companies must publish quarterly financial results, disclose price-sensitive information immediately, and maintain independent board representation.
-3.  **Residual Risk & Return Mechanics**: Equity offers asymmetric upside potential:
+2.  **Types of Equity-Related Instruments**:
+    *   *Ordinary Equity Shares*: Standard units of residual ownership granting one vote per share.
+    *   *Shares with Differential Voting Rights (DVR)*: Shares carrying superior or fractional voting rights (often offering a higher dividend rate to compensate for reduced voting power).
+    *   *Preference Shares*: Hybrid instruments carrying a fixed dividend rate and priority in repayment during liquidation; may be cumulative, redeemable, or convertible.
+    *   *Bonus & Rights Shares*: Bonus shares capitalize reserves without cash outflow; Rights shares give existing shareholders pre-emptive subscription rights at a discounted price.
+    *   *Sweat Equity & ESOPs*: Sweat equity is issued to promoters/employees for intellectual property or value addition; Employee Stock Option Plans (ESOPs) align employee retention with firm equity appreciation.
+3.  **Governance & Statutory Disclosures**: Stock exchanges (BSE & NSE) enforce strict listing obligations under SEBI (LODR) Regulations 2015. Companies must publish quarterly financial results, disclose price-sensitive information immediately, and maintain independent board representation.
+4.  **Residual Risk & Return Mechanics**: Equity offers asymmetric upside potential:
     *   *Upside*: Shareholders enjoy unlimited upside through share price appreciation and dividend distributions as company cash flows grow.
     *   *Downside*: If the company suffers insolvency, equity holders face total capital loss as residual claimants.
 
@@ -239,16 +250,24 @@ Equity capital forms the primary risk-absorbing cushion of a corporate balance s
 *   **Plain Vanilla**: Standardized exchange contracts with clean payoff profiles and high market liquidity (e.g., Nifty Index Futures, standard European Stock Options).
 *   **Exotic Derivatives**: Complex OTC structures with non-standard payoffs:
     *   *American vs. European*: American options can be exercised at any time prior to expiry; European options can be exercised **only on the exact expiration date**.
-    *   *Path-Dependent Options*: Payoff depends on the historical price trajectory of the underlying asset, not just the final settlement price.
-    *   *Barrier Options*: Feature a pre-set barrier price.
-        *   **Knock-In Option**: Becomes active only if the underlying price reaches the barrier level.
-        *   **Knock-Out Option**: Ceases to exist (knocks out) if the underlying price touches the barrier level.
+    *   *Barrier Options (Knock-In / Knock-Out)*: Option activates or terminates if the underlying asset breaches a defined barrier price.
+    *   *Asian Options*: Payoff is determined by the **average price** of the underlying asset over a specified sampling period rather than the single price at maturity.
+    *   *Digital / Binary Options*: Delivers a predetermined, fixed all-or-nothing cash payout if a condition is satisfied.
+    *   *Lookback Options*: Payoff depends on the optimal maximum or minimum price reached by the underlying asset during the option's entire life.
+    *   *Compound & Basket Options*: Options on options, or contracts linked simultaneously to multiple underlying assets.
 
-#### Real-World Case Studies: Derivatives in Action
-*   💼 **IT Exporters INR/USD Forward Contracts**: Indian IT exporters (TCS, Infosys) earning revenue in US Dollars lock in future exchange rates (e.g., locking 1 USD = ₹84.50 six months forward) via bank forward contracts to shield rupee profit margins from currency appreciation.
-*   ✈️ **IndiGo Airlines Crude Oil Futures**: IndiGo uses long hedges on crude oil futures (MCX/NYMEX) to lock in jet fuel purchase costs, preventing sudden oil price spikes from eroding operational margins.
-*   🏛️ **ECB Currency Swap Execution**: An Indian corporation raising a \$100 million External Commercial Borrowing (ECB) enters a currency swap with a foreign exchange bank, converting dollar principal and coupon liabilities into Rupee-denominated obligations to eliminate exchange rate risk.
-*   💥 **2008 Indian SME Exotic Forex Derivative Crisis**: In 2007–08, Indian banks sold complex exotic currency derivatives (leveraged Knock-In / Knock-Out options) to exporting SMEs under the guise of "zero-cost currency hedges." When the global financial crisis caused extreme rupee volatility, the embedded leverage knocked in, causing losses running into thousands of crores for exporters and leading to years of court litigation.
+#### Real-World Case Studies & Regulatory Realities
+*   📉 **SEBI Official F&O Studies on Retail Losses (2024–2025)**:
+    *   *September 2024 Study*: SEBI revealed that **93% of individual retail F&O traders incurred net losses** over FY22–FY24, with aggregate net losses exceeding **₹1.8 lakh crore**.
+    *   *July 2025 Study*: Reconfirmed that **91% of retail traders lost money in FY25** (net losses of ~**₹1.06 lakh crore**).
+    *   *Regulatory Action*: Prompted SEBI to enforce higher contract minimums, reduce weekly expiries, and increase margin buffers to curb speculative retail losses.
+*   💥 **Exotic Derivatives Scams & Systemic Collapses**:
+    *   *2008 Indian SME Forex Crisis*: Indian banks sold complex leveraged exotic options to exporting SMEs (e.g., Wockhardt, Bharat Forge). When the Rupee experienced sharp volatility, embedded leverage triggered catastrophic losses.
+    *   *Barings Bank (1995)*: Rogue trader **Nick Leeson** accumulated unauthorized, leveraged futures positions on the Nikkei 225, collapsing the historic 233-year-old British merchant bank.
+    *   *Archegos Capital (2021)*: Concentrated Total Return Swaps (TRS) taken with investment banks resulted in a \$10 billion liquidation, causing multi-billion-dollar losses for Credit Suisse.
+*   💼 **Corporate Hedging**:
+    *   *IT Exporters*: TCS and Infosys lock in forward INR/USD exchange rates to stabilize operational margins.
+    *   *Airlines*: **Southwest Airlines** famously used oil derivative hedges to save billions during global crude spikes, while Indian carriers (IndiGo) hedge fuel and dollar lease commitments.
 
 ---
 
@@ -347,6 +366,20 @@ Let $S_T = \text{Spot Price at Expiration}$, $K = \text{Strike Price}$, and $P =
        │        ╱
        │       ╱  (Downside Risk Parallel to Stock)
 ```
+
+#### Faculty Worked Examples: Practical Hedging Mechanics
+
+> 🔢 **Faculty Worked Example 1 (Currency Forward Hedge for Exporters):**  
+> An Indian software exporter expects to receive **US\$1,000,000** in 3 months. If the Rupee appreciates (e.g., from ₹84 to ₹80 per USD), the firm receives significantly fewer rupees upon conversion.  
+> * *Hedging Action*: The exporter enters a 3-month forward contract with its bank to sell US\$1M at a locked-in rate of ₹84.20.  
+> * *Outcome*: The company removes all exchange rate uncertainty from its budget. Even if the rupee appreciates to ₹80, it is guaranteed to receive ₹8.42 crore. If the rupee depreciates to ₹86, it foregoes the windfall gain, but achieves complete cash flow certainty.
+
+> 🔢 **Faculty Worked Example 2 (Portfolio Beta Hedging with Index Futures):**  
+> An equity fund manager holds a stock portfolio valued at **₹50,00,000 (₹50 Lakh)** with a beta of **$\beta = 1.2$** relative to the Nifty 50 Index. The Nifty stands at **25,000 points**, and each Nifty futures contract has a lot size of **25 units**.  
+> 1. $\text{Value of One Nifty Futures Contract} = 25,000 \times 25 = \mathbf{₹6,25,000}$.  
+> 2. $\text{Optimal Number of Futures Contracts to Short (Sell)} = \frac{\beta \times \text{Portfolio Value}}{\text{Futures Contract Value}}$  
+>    $$\text{Number of Contracts} = \frac{1.2 \times ₹50,00,000}{₹6,25,000} = \frac{₹60,00,000}{₹6,25,000} = \mathbf{9.6 \approx 10\text{ Contracts}}$$  
+> If the broader market falls by 10%, the portfolio loses $\approx 12\%$ (₹6,00,000), but the gain on the 10 short futures contracts ($\approx ₹6,25,000$) completely neutralizes the equity portfolio loss.
 
 ---
 

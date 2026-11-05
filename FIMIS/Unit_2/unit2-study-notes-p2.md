@@ -209,7 +209,9 @@ The RBI executes four overarching functional mandates across the financial ecosy
 
 #### Role 1: Banking Regulation & Supervision
 - **Licensing & Branch Expansion**: Issues operational licenses to Commercial Banks, RRBs, Small Finance Banks (SFBs), Payments Banks, and Urban Cooperative Banks under Section 22 of the Banking Regulation Act, 1949 [53, 504].
-- **Prudential Framework**: Enforces minimum Capital Adequacy Ratios (CRAR / Basel III), Risk-Weighted Asset (RWA) guidelines, exposure limits, and Income Recognition, Asset Classification, and Provisioning (IRACP) norms [63, 504].
+- **Prudential Framework**: Enforces minimum Capital Adequacy Ratios (CRAR of 9% + Capital Conservation Buffer under Basel III), Risk-Weighted Asset (RWA) guidelines, exposure limits, and Income Recognition, Asset Classification, and Provisioning (IRACP) norms [63, 504].
+- **NPA Classification Nuance**: For term loans, an account overdue for $>90\text{ days}$ is classified as an NPA. However, for cash-credit/overdraft accounts, the "out-of-order" criterion applies (where outstanding balance exceeds sanctioned limit or credits are insufficient to cover interest).
+- **Scale-Based Regulation (SBR) for NBFCs**: Since October 2022, NBFCs are categorized into four tiered regulatory layers based on size and systemic risk: **Base Layer**, **Middle Layer**, **Upper Layer** (systemically critical NBFCs like Bajaj Finance facing near-bank prudential regulation), and **Top Layer** (emergency buffer).
 - **On-Site & Off-Site Inspection**: Conducts annual financial inspections (CAMELS framework) and off-site surveillance to catch stress early [209, 504].
 
 #### Role 2: Regulation of NBFCs & Payment Systems
@@ -217,7 +219,17 @@ The RBI executes four overarching functional mandates across the financial ecosy
 - **Payment & Settlement Systems**: Governs all retail and wholesale payment systems (UPI, NEFT, RTGS, Credit/Debit cards, PPIs) under the Payment and Settlement Systems Act, 2007 (PSSA) [505].
 
 #### Role 3: Monetary Policy & Forex Management
-- **Monetary Policy Transmission**: Formulates monetary policy via the Monetary Policy Committee (MPC) to maintain price stability while supporting economic growth [199, 506]. Utilizes direct tools (CRR, SLR) and indirect liquidity instruments (Repo rate, Reverse Repo, MSF, Open Market Operations) [20, 506].
+- **Monetary Policy Framework (Flexible Inflation Targeting)**: Formulates monetary policy via the 6-member Monetary Policy Committee (MPC — 3 RBI officials, 3 Government appointees) to maintain price stability while supporting economic growth [199, 506].
+  * ⭐ **Statutory Target (2026–2031)**: In accordance with the Government of India Gazette notification dated 25 March 2026, the Consumer Price Index (CPI) inflation target is retained at **4%**, with a lower tolerance limit of **2%** and an upper tolerance limit of **6%** for the five-year period from **1 April 2026 to 31 March 2031**.
+  * **Corridor Architecture**: Features the **Standing Deposit Facility (SDF)** as the uncollateralized floor of the policy corridor (introduced in 2022), the benchmark **Repo Rate** in the middle, and the **Marginal Standing Facility (MSF)** as the upper ceiling.
+  * **Policy Transmission in Action**: During COVID-19, the RBI slashed the repo rate to 4.0% (May 2020) to spur economic revival. As post-pandemic inflation escalated, the repo rate was progressively hiked to 6.50% (February 2023), transmitting higher loan EMIs across floating-rate retail borrowers.
+- **Direct Reserve Tools & Worked Example**:
+  > 🔢 **Faculty Worked Example (CRR & SLR Liquidity Impact):**  
+  > Suppose a commercial bank mobilizes Net Demand and Time Liabilities (NDTL) deposits of **₹100 crore**. With statutory requirements set at $\text{CRR} = 4\%$ and $\text{SLR} = 18\%$:  
+  > 1. $\text{Cash kept with RBI (CRR)} = ₹100\text{ crore} \times 4\% = \mathbf{₹4\text{ crore}}$.  
+  > 2. $\text{Approved liquid securities (SLR)} = ₹100\text{ crore} \times 18\% = \mathbf{₹18\text{ crore}}$.  
+  > 3. $\text{Lendable resources remaining} = 100 - (4 + 18) = \mathbf{₹78\text{ crore}}$.  
+  > If the RBI tightens policy by raising CRR to $5\%$, available lendable resources immediately drop to **₹77 crore**, contracting systemic credit creation.
 - **Forex Reserves & Exchange Rate**: Manages India's foreign exchange reserves (Gold, SDRs, foreign currency assets) and ensures orderly forex market conduct under the Foreign Exchange Management Act, 1999 (FEMA) [212, 506].
 
 #### Role 4: Financial Stability & Development Mandate
@@ -253,6 +265,12 @@ The RBI executes four overarching functional mandates across the financial ecosy
   3. *Lending Restrictions*: Higher credit risk margins, restrictions on expanding exposure to unrated or high-risk corporate borrowers [508].
   4. *Management Compensation*: Caps on executive compensation and director fees [508].
 - **Outcome**: The PCA framework forced Dhanlaxmi Bank to conserve capital, lower operating expenses, recover bad loans, and restore CRAR above threshold levels before restrictions were gradually eased [508].
+
+#### 4. Paytm Payments Bank Supervisory Action (2024)
+- **Background**: Paytm Payments Bank was an affiliate of One97 Communications offering wallet, digital savings, and UPI merchant services.
+- **The Core Crisis**: Persistent non-compliance with KYC/AML norms, lack of independence between parent fintech and bank entity, and failure to address supervisory concerns flagged in consecutive external audits.
+- **RBI Action**: In January 2024, the RBI invoked Section 35A of the Banking Regulation Act, 1949, directing the bank to stop accepting fresh deposits, credit transactions, top-ups in customer accounts, prepaid instruments, wallets, and FASTags after March 2024.
+- **Regulatory Principle**: Demonstrated that fintech-partnered new-age banks operate under the exact same stringent regulatory and supervisory oversight as traditional scheduled commercial banks; technology cannot bypass core prudential compliance.
 
 ---
 
@@ -560,6 +578,9 @@ To achieve the national vision of **"Insurance for All by 2047"**, IRDAI has ini
 > ✍️ **Exam Focus: Key Reform Highlights**  
 > - **Regulatory Sandbox & DPDP Act**: InsurTech innovations (wearable health tracking, micro-insurance) tested under sandbox rules must strictly comply with India's **Digital Personal Data Protection (DPDP) Act, 2023** to protect subscriber biometric and health data [570].  
 > - **74% Foreign Direct Investment (FDI)**: Capital limits raised from 49% to **74%** via automatic route, attracting global capital while requiring majority Indian directors and management control [527, 570].
+> - **5-Year Health Insurance Moratorium**: IRDAI reduced the continuous coverage moratorium period to **5 continuous years**. After 5 years of active coverage, insurers cannot reject health claims on grounds of non-disclosure or pre-existing diseases (except proven fraud).
+> - **Grievance Redressal Architecture**: Monitored via the centralized **Bima Bharosa Portal** and the statutory **Insurance Ombudsman Scheme**.
+> - **Social Insurance Integration**: Underpins mega-welfare insurance mechanisms including **Pradhan Mantri Fasal Bima Yojana (PMFBY, 2016)** for agrarian crop protection and **Ayushman Bharat PM-JAY (2018)** for secondary/tertiary hospitalization cover.
 
 ---
 
@@ -620,6 +641,12 @@ Established in **2003** by an executive resolution and granted full statutory st
    - Launched in **May 2015** specifically targeting workers in the **unorganized sector** (age group 18–40) [157, 576].
    - Guarantees a fixed minimum monthly pension of **₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000** from age 60, depending on contribution [576].
    - Government co-contribution offered for eligible subscribers who joined during initial rollout [576].
+
+3. **NPS Vatsalya (2024)**:
+   - Dedicated pension savings plan introduced for **minors** (opened by parents/guardians), seamlessly transitioning into a standard NPS Tier-I account upon turning 18.
+
+4. **Unified Pension Scheme (UPS)**:
+   - Notified in **January 2025** and operationalized from **1 April 2025**, the UPS provides an assured pension option under the NPS framework for eligible Central Government employees (providing 50% of the last drawn basic pay as an assured pension for minimum 25 years of service), addressing the fiscal vs. social security debate between the Old Pension Scheme (OPS) and NPS.
 
 ```
 +-----------------------------------------------------------------------------------+

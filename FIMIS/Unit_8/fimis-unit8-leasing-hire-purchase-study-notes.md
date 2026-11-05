@@ -333,22 +333,31 @@ A critical theoretical issue in capital budgeting is selecting the correct disco
 
 #### Conceptual Illustration of NAL Principles
 
-Consider a corporate treasury team evaluating a project requiring a ₹1 Crore (₹10,00,000) industrial machine with a 3-year useful life.
-
-*   **Leasing Option**: Lease rentals of ₹3,60,000 per year for 3 years. Corporate tax rate $T = 30\%$. Annual tax depreciation $Dep = \text{Rs. } 3{,}00{,}000\text{/year}$ (₹3,00,000 per year). Pre-tax borrowing rate $k_d = 10\%$.
-*   **After-Tax Discount Rate**: 
-    $$r = 10\% \times (1 - 0.30) = 7\%$$
-*   **Annual After-Tax Lease Rental**: 
-    $$L_t(1-T) = \text{Rs. } 3{,}60{,}000 \times (1 - 0.30) = \text{Rs. } 2{,}52{,}000$$
-*   **Annual Lost Depreciation Tax Shield**: 
-    $$T \cdot Dep_t = 30\% \times \text{Rs. } 3{,}00{,}000 = \text{Rs. } 90{,}000$$
-*   **Total Annual Cash Disadvantage of Leasing**: 
-    $$\text{Rs. } 2{,}52{,}000 \text{ (Lease Rent)} + \text{Rs. } 90{,}000 \text{ (Lost Tax Shield)} = \text{Rs. } 3{,}42{,}000 \text{ per year}$$
-*   **Present Value of Outflows**: Discounting ₹3,42,000 annually for 3 years at $7\%$ yield an aggregate Present Value of Cash Outflows of $\approx \text{Rs. } 8{,}98{,}000$ (₹8,98,000).
-*   **Net Advantage of Leasing**:
-    $$\text{NAL} = \text{Initial Outlay Saved } (\text{Rs. } 10{,}00{,}000) - \text{PV of Outflows } (\text{Rs. } 8{,}98{,}000) = +\text{Rs. } 1{,}02{,}000$$
-
-Since NAL is **positive** ($+\text{Rs. } 1{,}02{,}000$), the treasury team formally recommends **leasing** over purchasing, as leasing conserves ₹1,02,000 in net present value capital.
+> 🔢 **Faculty Worked Example (Lease vs. Buy / NAL Capital Budgeting Decision):**  
+> A corporate entity requires an industrial machine costing **₹10,00,000** with an economic life of **5 years** and nil salvage value (depreciated straight-line at ₹2,00,000/year).  
+> * Corporate tax rate $T = 30\%$.  
+> * Pre-tax borrowing rate $k_d = 10\%$.  
+> * Lessor quotes an annual lease rental of **₹2,50,000** payable at the end of each year for 5 years.  
+> 
+> **Step 1: Calculate After-Tax Discount Rate**:  
+> $$r = k_d(1 - T) = 10\% \times (1 - 0.30) = 7\%$$  
+> Present Value Interest Factor of Annuity (PVIFA at $7\%, 5\text{ years}$) = **4.1002**.  
+> 
+> **Step 2: Present Value of Leasing Cost**:  
+> * Annual after-tax lease rental = $₹2,50,000 \times (1 - 0.30) = \mathbf{₹1,75,000/year}$.  
+> * $\text{PV of Cost of Leasing} = ₹1,75,000 \times 4.1002 = \mathbf{₹7,17,535}$.  
+> 
+> **Step 3: Present Value of Buying Cost**:  
+> * Upfront machine purchase price = ₹10,00,000.  
+> * Annual depreciation tax shield = $₹2,00,000 \times 30\% = \mathbf{₹60,00,000/year}$ (₹60,000/year).  
+> * $\text{PV of Depreciation Tax Shield} = ₹60,000 \times 4.1002 = \mathbf{₹2,46,012}$.  
+> * $\text{Net PV Cost of Buying} = ₹10,00,000 - ₹2,46,012 = \mathbf{₹7,53,988}$.  
+> 
+> **Step 4: Compute Net Advantage of Leasing (NAL)**:  
+> $$\text{NAL} = \text{Net PV Cost of Buying} - \text{PV Cost of Leasing}$$  
+> $$\text{NAL} = ₹7,53,988 - ₹7,17,535 = \mathbf{+₹36,453}$$  
+> 
+> **Decision**: Because $\text{NAL}$ is positive ($+₹36,453$), leasing is financially superior to borrowing and buying, conserving ₹36,453 in net present value capital.
 
 ---
 
@@ -385,6 +394,8 @@ Since NAL is **positive** ($+\text{Rs. } 1{,}02{,}000$), the treasury team forma
 #### Conceptual Foundation & Legal Framework
 
 In India, hire purchase agreements are governed by the general provisions of the **Indian Contract Act, 1872** (specifically Bailment provisions under Sections 148–171) and the **Sale of Goods Act, 1930**. 
+
+> ⚠️ **Critical Examination & Statutory Caution**: The *Hire-Purchase Act, 1972* was passed by Parliament but was **never brought into force** and was formally repealed by the *Hire-Purchase (Repeal) Act, 2005*. Therefore, **never cite the 1972 Act as governing law in an exam**. In India, hire-purchase agreements are governed by the general principles of bailment under the **Indian Contract Act, 1872** (Sections 148–171) and the **Sale of Goods Act, 1930**.
 
 Legally, a Hire Purchase contract is defined not as an immediate contract of sale, but as an **agreement of bailment coupled with an option to purchase**. The vendor acts as the owner-bailor, while the hirer acts as the user-bailee.
 
@@ -494,16 +505,43 @@ Where $n$ is the total number of monthly instalments.
 
 ##### Conceptual Illustration of the Flat Rate Trap
 Consider a small business financing an asset under HP:
-*   Cash Price = ₹1,00,000. Down Payment = ₹20,000. Financed Principal Financed Principal $P =$ ₹80,000.
+*   Cash Price = ₹1,00,000. Down Payment = ₹20,000. Financed Principal $P =$ ₹80,000.
 *   Quoted Flat Rate = $10\%$ per annum for a 2-year tenor ($n = 24\text{ months}$).
-*   Total Flat Interest = $\text{Rs. } 80{,}000 \times 10\% \times 2 = \text{Rs. } 16{,}000$ (₹16,000).
-*   Total HP Repayment = $\text{Rs. } 80{,}000 + \text{Rs. } 16{,}000 = \text{Rs. } 96{,}000$ (₹96,000).
-*   Monthly Instalment = $\text{Rs. } 96{,}000 / 24 = \text{Rs. } 4{,}000\text{/month}$ (₹4,000/month).
+*   Total Flat Interest = $₹80,000 \times 10\% \times 2 = \mathbf{₹16,000}$.
+*   Total HP Repayment = $₹80,000 + ₹16,000 = \mathbf{₹96,000}$.
+*   Monthly Instalment = $₹96,000 / 24 = \mathbf{₹4,000\text{/month}}$.
 *   Total HP Cost = Down Payment (₹20,000) $+$ Instalments (₹96,000) = ₹1,16,000.
 *   **Effective Interest Rate Calculation**:
-    $$R_{eff} \approx 10\% \times \frac{2 \times 24}{24 + 1} = 10\% \times \frac{48}{25} = 19.2\%$$
+    $$R_{eff} \approx 10\% \times \frac{2 \times 24}{24 + 1} = 10\% \times \frac{48}{25} = \mathbf{19.2\%}$$
 
 The hirer paying a quoted $10\%$ flat rate is actually incurring a true economic borrowing cost of **$19.2\%$ per annum** on a reducing-balance basis.
+
+> 🔢 **Faculty Worked Example (Car Hire Purchase & Effective Rate Calculation):**  
+> * **Asset Cash Price**: ₹8,00,000  
+> * **Down Payment (20%)**: ₹1,60,000  
+> * **Financed Principal ($P$)**: ₹6,40,000  
+> * **Loan Tenor ($N$)**: 3 years ($n = 36$ monthly instalments)  
+> * **Quoted Flat Interest Rate ($R_{flat}$)**: 8% per annum  
+>  
+> **Step 1: Calculate Total Flat Interest**:  
+> $$\text{Total Flat Interest} = P \times R_{flat} \times N = ₹6,40,000 \times 8\% \times 3 = \mathbf{₹1,53,600}$$  
+>  
+> **Step 2: Calculate Total Amount Payable and Monthly EMI**:  
+> $$\text{Total Amount Payable} = P + \text{Total Interest} = ₹6,40,000 + ₹1,53,600 = \mathbf{₹7,93,600}$$  
+> $$\text{Monthly EMI} = \frac{₹7,93,600}{36} = \mathbf{₹22,044.44 \approx ₹22,044\text{/month}}$$  
+>  
+> **Step 3: Compute the True Effective Interest Rate ($R_{eff}$)**:  
+> Using the standard reducing-balance approximation formula:  
+> $$R_{eff} \approx R_{flat} \times \left[\frac{2n}{n + 1}\right] = 8\% \times \left[\frac{2 \times 36}{36 + 1}\right] = 8\% \times \frac{72}{37} \approx \mathbf{15.57\% \approx 15.6\%\text{ p.a.}}$$  
+> *Core Takeaway*: The quoted flat rate of 8% conceals a true economic borrowing rate of **15.6% p.a.** because the principal debt diminishes each month while interest is continuously levied on the original ₹6.4 lakh.
+
+> 💡 **Retail Insight — The "No-Cost EMI" Illusion & Vehicle/Consumer Finance:**  
+> In modern retail financing (e.g., Bajaj Finance, TVS Credit, Amazon, Flipkart):  
+> * Consumers are offered "0% interest" or "No-Cost EMI" on smartphones, electronics, or two-wheelers.  
+> * **Economic Reality**: Money is never free. The financing cost is recovered through:  
+>   1. **Merchant Subvention (Discount)**: The retailer gives an upfront discount equal to the interest amount directly to the NBFC/bank. For example, on a ₹60,000 laptop, the bank pays the seller ₹54,000, and collects ₹5,000/month for 12 months from the customer (yielding ₹6,000 interest to the lender).  
+>   2. **Processing Fees & Loss of Cash Discounts**: Outright cash buyers receive a 5%–10% instant discount which "No-Cost EMI" buyers forfeit, or an upfront non-refundable processing fee is charged.  
+> * **Regulatory Mandate**: RBI guidelines strictly prohibit banks and NBFCs from misrepresenting loans as "zero cost" without disclosing the merchant subvention mechanism and calculating the Key Fact Statement (KFS) stating the annualized percentage rate (APR).
 
 #### Real-World Case Study: Retail Commercial Equipment HP
 

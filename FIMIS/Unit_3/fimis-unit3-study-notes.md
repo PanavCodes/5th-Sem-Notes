@@ -58,6 +58,7 @@ The evolution of DFIs in India can be divided into four distinct economic phases
  * *Conversions:* Major DFIs transformed into commercial universal banks to access low-cost public retail deposits (CASA). ICICI undertook a reverse merger with ICICI Bank in 2002; IDBI merged with IDBI Bank in 2003–04.
 * **Phase IV: New-Age Infrastructure DFIs (2015–Present)**
  * **IDFC Bank (2015):** IDFC (founded in 1997 as an infrastructure DFI) was issued a commercial banking license by the RBI and commenced banking operations on October 1, 2015.
+ * **NaBFID (2021):** Established under the *National Bank for Financing Infrastructure and Development Act, 2021* as India’s apex infrastructure financing DFI, bridging the long-term debt deficit for the National Infrastructure Pipeline (NIP).
  * Specialized public-private sovereign wealth setups, such as the National Investment and Infrastructure Fund (NIIF) and IIFCL, emerged to finance modern heavy-infrastructure projects using global institutional capital.
 
 ---
@@ -115,8 +116,15 @@ The table below compares the pricing, tenure, and constraints of key DFI funding
 
 ### 1. The Structural Divide (BFIs vs. NBFIs)
 The institutional spectrum of resource mobilization is divided into Banking Financial Institutions (BFIs) and Non-Banking Financial Institutions (NBFIs):
-* **BFIs (Banks):** Authorized financial entities licensed under the Banking Regulation Act to accept public demand deposits, disburse commercial credit, and run payments/settlement networks. Their liabilities form a direct part of the national money supply.
-* **NBFIs (Non-Banks):** Specialized entities that provide banking-like credit, asset-leasing, hire-purchase, insurance, or investment services, but do not hold a banking license and are strictly prohibited from accepting public demand deposits. They act strictly as credit purveyors.
+* **BFIs (Banks):** Authorized financial entities licensed under the Banking Regulation Act, 1949 to accept public demand deposits, disburse commercial credit, and run payments/settlement networks. Their liabilities form a direct part of the national money supply.
+* **NBFIs / NBFCs (Non-Banks):** Defined under **Section 45-I(f) of the Reserve Bank of India Act, 1934**. Rather than mere company registration, the RBI mandates the **"50–50 Principal Business Test"**:
+  $$\text{Financial Assets} \ge 50\% \text{ of Total Assets} \quad \text{AND} \quad \text{Financial Income} \ge 50\% \text{ of Gross Income}$$
+  Non-banks do not hold a banking license and are strictly prohibited from accepting public demand deposits or issuing cheques drawn on themselves. They act strictly as financial intermediaries and credit purveyors (deploying mobilized equity and borrowings without creating deposit money).
+
+> 🏢 **Real-World Example (Banks vs. NBFCs in Everyday Life):**  
+> * **Consumer Electronics at Point of Sale**: When purchasing a refrigerator or smartphone on zero-interest EMI at a retail mall, the underlying credit is almost universally disbursed by an NBFC (**Bajaj Finance**) rather than a commercial bank.
+> * **Specialized Sector Lending**: A trucker in rural Maharashtra seeking credit for a pre-owned commercial vehicle relies on **Shriram Finance**, whose field underwriting expertise in asset valuation exceeds traditional bank underwriting.
+> * **The Great Merger (2023)**: In July 2023, India's largest housing finance NBFC, **HDFC Ltd**, merged into its banking subsidiary, **HDFC Bank**, transferring an enormous mortgage book directly onto a commercial bank balance sheet.
 
 ---
 
@@ -137,13 +145,31 @@ The institutional spectrum of resource mobilization is divided into Banking Fina
 
 #### I. Commercial Banks
 * **Definition:** Conduits that accept CASA deposits and provide short-to-medium-term loans.
-* **Functions:** Accepting public savings, providing personal and commercial loans, running payment/settlement systems, and expanding the money supply through lending.
+* **Functions:** Accepting public savings, providing personal and commercial loans, running payment/settlement systems, and expanding the money supply through fractional reserve lending.
 * **Target Clientele:** General public, SMEs, and corporate business firms.
+
+> 🔢 **Faculty Worked Example (Credit Creation & Money Multiplier):**  
+> A customer deposits **₹1,000** into Bank A. Assuming a statutory reserve requirement of **10%**:  
+> 1. Bank A retains ₹100 as cash reserve and lends ₹900.  
+> 2. The borrower pays a supplier, who deposits the ₹900 in Bank B.  
+> 3. Bank B retains 10% (₹90) and lends ₹810, and the process repeats across the banking system.  
+> $$\text{Total Systemic Deposits Created} = \frac{\text{Initial Primary Deposit}}{\text{Reserve Ratio}} = \frac{₹1,000}{0.10} = \mathbf{₹10,000}$$  
+> *(Note: The theoretical multiplier is $\frac{1}{r} = 10$; in real economies, cash currency leakages reduce the practical multiplier).*
+
+> 🔢 **Faculty Worked Example (Bank Earnings via Net Interest Margin):**  
+> A commercial bank pays an average interest rate of **6%** on customer fixed deposits and deploys those funds into corporate loans at **9%**.  
+> * $\text{Net Interest Spread} = 9\% - 6\% = 3\%$.  
+> * On a mobilized loan asset book of **₹100 crore**, the bank generates an annual gross spread income of:  
+>   $$₹100\text{ crore} \times 3\% = \mathbf{₹3\text{ crore}}$$  
+> This gross spread must cover bank operating overheads, branch expenses, and loan-loss provisions for NPAs.
 
 #### II. Investment Banks
 * **Definition:** Financial market intermediaries specializing in corporate advisory, securities issuance, and underwriting.
 * **Functions:** Underwriting new debt/equity (IPOs/FPOs), guiding Mergers & Acquisitions (M&A) and restructurings, proprietary trading, and institutional portfolio management.
 * **Key Difference:** They focus entirely on capital markets and **never accept retail public deposits**.
+* 🏢 **Real-World Landmarks**:
+  * **Hyundai Motor India (2024)**: Investment bankers (including Kotak, Citi, Morgan Stanley, HSBC) structured and executed the **₹27,870 crore** IPO—the largest initial public offering in Indian history.
+  * **2008 Global Contagion**: The bankruptcy of US investment bank **Lehman Brothers** (September 2008) triggered the global financial crisis due to toxic mortgage-backed derivatives exposure.
 
 #### III. Central Bank (RBI in India)
 * **Definition:** The apex banking institution overseeing a country's monetary system.

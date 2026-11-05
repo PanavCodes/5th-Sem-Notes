@@ -138,10 +138,10 @@ The capital market is an organized market for trading long-term debt and equity 
 The money market is a wholesale, over-the-phone/electronic market for **short-term debt instruments** with maturities up to **one year**. It operates as an equilibrating mechanism for short-term liquidity surpluses and deficits.
 
 #### 4 Core Money Market Instruments
-1. **Treasury Bills (T-Bills)**: Issued by RBI on behalf of GoI at discount; maturities of 91, 182, and 364 days; minimum denomination of ₹25,000.
+1. **Treasury Bills (T-Bills)**: Issued by RBI on behalf of GoI at discount; maturities of 91, 182, and 364 days; minimum denomination of ₹25,000. Individuals can participate directly via the **RBI Retail Direct Scheme (2021)**.
 2. **Certificates of Deposit (CDs)**: Negotiable time-deposit instruments issued by scheduled commercial banks (tenure: 7 days to 1 year) and FIs (1 to 3 years); minimum denomination of ₹1 lakh.
-3. **Call & Notice Money**: Unsecured interbank market. Call money is overnight (1 day); Notice money is 2 to 14 days. Used by commercial banks to meet Cash Reserve Ratio (CRR) mandates.
-4. **Commercial Bills**: Short-term trade bills arising from commercial sale of goods, discounted with banks or in the bill market.
+3. **Call & Notice Money & Tri-Party Repo (TREPS)**: Unsecured interbank market (Call money overnight 1 day; Notice money 2 to 14 days). In collateralized borrowing, **TREPS (Tri-party Repo)** operates as an electronic repo platform managed by CCIL.
+4. **Commercial Bills & Commercial Papers (CPs)**: Short-term unsecured promissory notes issued by highly-rated corporate borrowers (maturity 7 days to 1 year).
 
 ---
 
@@ -240,6 +240,14 @@ The secondary market facilitates trading of existing securities. India's equity 
 - ⭐ **Must Remember**: Under SEBI ICDR regulations, the cap of a price band in a book-built IPO cannot exceed 120% of the floor price ($\text{Cap Price} \le 1.20 \times \text{Floor Price}$).
 - ⚠️ **Common Exam Pitfalls**: Confusing a Red Herring Prospectus (RHP) with a complete Prospectus. The RHP contains all disclosures except the final issue price or quantity of shares.
 
+> 🏢 **Real-World Landmarks in Indian IPOs:**  
+> * **Mega-Offerings**: **Hyundai Motor India (October 2024)** raised **₹27,870 crore**, surpassing **Life Insurance Corporation of India (LIC, May 2022)** at **₹20,557 crore** as the largest IPO in Indian history.
+> * **Listing Volatility**: While Zomato (2021) listed at a strong 66% premium, **Paytm (One97 Communications, 2021)** collapsed by roughly **27% on its debut listing day**, reminding investors that IPO listing gains are never guaranteed.
+
+#### Secondary Market Architecture & Cultural Dynamics
+* **The Bourses**: **Bombay Stock Exchange (BSE, est. 1875)** is Asia's oldest stock exchange, benchmarked by the **Sensex (30 large-cap stocks)**. The **National Stock Exchange (NSE, est. 1992)** is India's largest bourse by trading volume, benchmarked by the **Nifty 50**.
+* **Muhurat Trading**: Every Diwali, both NSE and BSE host a special 1-hour festive trading session (*Muhurat Trading*) marking the start of the traditional Hindu New Year (*Samvat*), where retail and institutional investors execute token investments for long-term prosperity.
+
 ---
 
 ## 6. Market Anomalies, Financial Bubbles & Crises
@@ -251,10 +259,14 @@ Market anomalies are persistent empirical price patterns that violate the **Effi
 1. **January Effect**: Tendency for small-cap stock prices to rise disproportionately in January due to year-end tax-loss selling reversal.
 2. **Weekend Effect (Monday Effect)**: Stock returns tend to be significantly lower on Mondays compared to preceding Fridays.
 3. **Size Effect**: Historically, small-cap stocks tend to outperform large-cap stocks on a risk-adjusted basis.
-4. **Value Effect**: Stocks with low Price-to-Book (P/B) or low P/E ratios outperform growth stocks over long horizons.
+4. **Value Effect**: Stocks with low Price-to-Book (P/B) or low P/E ratios outperform growth stocks over long horizons (advocated by Benjamin Graham and Warren Buffett).
+5. **Post-Earnings-Announcement Drift (PEAD)**: Share prices continue to drift in the direction of an earnings surprise for several weeks following the quarterly earnings release, rather than adjusting instantly as predicted by EMH.
+6. **Limits of Arbitrage**: Observed statistical anomalies rarely offer risk-free profits in practice once transaction fees, bid-ask spreads, securities transaction taxes (STT), liquidity constraints, and short-selling bans are accounted for.
 
-#### Financial Bubbles
-A financial bubble is an economic cycle characterized by rapid escalation of asset prices far above intrinsic fundamental values, driven by speculative market behavior, easy monetary policy, and financial innovation, terminating in a sudden crash.
+#### Financial Bubbles & Minsky's 5 Stages
+A financial bubble is an economic cycle where asset prices surge far above fundamental cash flow values, driven by speculative herd frenzy, cheap leverage, and cognitive bias. Economist **Hyman Minsky** identified 5 sequential stages of credit-driven asset bubbles:
+$$\text{Displacement} \longrightarrow \text{Boom} \longrightarrow \text{Euphoria} \longrightarrow \text{Profit-Taking} \longrightarrow \text{Panic / Crash}$$
+* **Historical Benchmarks**: Dot-com bubble (1995–2000), US Subprime Housing Crash (2007–2009), Harshad Mehta bubble (1992), and the **FTX Crypto Exchange Collapse (November 2022)**, where opaque leverage and unregulated speculative frenzy destroyed billions in market capitalization overnight.
 
 ---
 

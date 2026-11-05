@@ -430,7 +430,7 @@ The pricing of a forfaiting facility comprises four mathematical components:
 |    - Strategic M&A Buyout (Sale to corporate buyer).                                              |
 |    - Secondary Sale to late-stage Private Equity funds.                                           |
 | 4. Real-World Examples: Info Edge backing Zomato (2010 to 2021 IPO); Accel & Tiger Global        |
-|    funding Flipkart (2009 to \\\\\$16B Walmart buyout in 2018).                                        |
+|    funding Flipkart (2009 to \\\\\\\$16B Walmart buyout in 2018).                                        |
 +---------------------------------------------------------------------------------------------------+
 ```
 
@@ -867,7 +867,12 @@ To eliminate conflict of interest where advisors recommended high-commission fin
 ##### 3. Real-World Case Studies
 - ⭐ **Zerodha Discount Broking Disruption**: Founded in 2010 by Nithin and Nikhil Kamath, Zerodha disrupted traditional Indian full-service brokerages (e.g., ICICI Direct, Sharekhan) by introducing a **flat ₹20 or 0.03% fee per trade model** for intraday/F&O and **₹0 (free) for equity delivery investments**. Leveraged technology (Kite platform) and self-service onboarding. **Result**: Became India's largest stockbroker by active client base, generating massive fee revenue without charging percentage-based commissions or employing research teams.
 
-##### 4. Study Markers
+##### 4. Supporting Fee-Based Intermediaries: PMS & RTAs
+* **Portfolio Management Services (PMS)**: Specialized fee-based asset management for High-Net-Worth Individuals (HNIs). Unlike pooled mutual funds, in PMS each client holds securities in an individual demat account managed on a discretionary or non-discretionary basis. Under SEBI regulations, the **minimum investment ticket size is strictly mandated at ₹50 Lakh**.
+* **Registrars & Share Transfer Agents (RTAs)**: Act as the critical administrative backbone of primary and secondary markets, maintaining investor records, processing IPO bids and refunds, and handling corporate actions (dividends, bonus issues). Leading players: **KFin Technologies** and **MUFG Intime** (formerly Link Intime).
+* **Fund Management (AMCs) vs. Distribution**: The Asset Management Company (AMC) employs fund managers to analyze securities and manage the fund portfolio, whereas Mutual Fund Distributors (MFDs) earn regulated distribution commissions for client acquisition and servicing.
+
+##### 5. Study Markers
 - ⭐ **Must Remember**: SEBI IA Regulations 2013 strictly enforce the separation of fee-based advisory from commission-based distribution.
 - 🧠 **Must Understand**: Discount brokers lower transaction costs by stripping away research and advisory support, offering pure execution.
 - ⚠️ **Common Exam Pitfalls**: Assuming discount brokers earn no profits because equity delivery is free. They generate substantial fee revenue from F&O trading volumes, clearing charges, and interest on margin trade funding.

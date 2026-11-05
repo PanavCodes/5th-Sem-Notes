@@ -71,6 +71,29 @@ A full-service factor (historically termed an *Old Line Factor*) performs five d
 4. **Ledger Entry & Collection**: The factor enters the invoice into its sales ledger system, monitors credit maturity, and manages direct collection follow-ups with the customer.
 5. **Final Settlement & Reserve Release**: On the due date, the customer remits payment directly to the factor. The factor deducts its advance, interest charges (for the period cash was advanced), and service fees, releasing the remaining reserve balance to the client.
 
+> 🔢 **Faculty Worked Example (Factoring Cost & Reserve Settlement Calculation):**  
+> A corporate client sells goods worth **₹10,00,000** to a commercial customer on **60 days' credit** and enters into a factoring agreement.  
+> * **Advance Rate**: 80% of invoice value ($₹8,00,000$).  
+> * **Factoring Reserve**: 20% of invoice value ($₹2,00,000$) withheld until maturity.  
+> * **Service Fee (Commission)**: 1.5% on gross invoice value.  
+> * **Interest / Discount Rate**: 12% per annum charged on the cash advance for the 60-day credit tenor.  
+>  
+> **Step 1: Calculate Service Fee (Commission)**:  
+> $$\text{Service Fee} = 1.5\% \times ₹10,00,000 = \mathbf{₹15,000}$$  
+>  
+> **Step 2: Calculate Interest Charge on Advance**:  
+> $$\text{Interest} = \text{Advance} \times \text{Rate} \times \frac{\text{Days}}{365} = ₹8,00,000 \times 12\% \times \frac{60}{365} \approx \mathbf{₹15,781}$$  
+>  
+> **Step 3: Calculate Final Reserve Settlement Released on Due Date**:  
+> When the debtor pays ₹10,00,000 in full on Day 60, the factor releases the reserve net of service fee and interest charges:  
+> $$\text{Balance Released} = \text{Reserve} - \text{Service Fee} - \text{Interest} = ₹2,00,000 - ₹15,000 - ₹15,781 = \mathbf{₹1,69,219}$$  
+>  
+> **Step 4: Total Cash Realized and Total Factoring Cost**:  
+> * **Total Cash Received by Client**: $\text{Advance} + \text{Net Balance} = ₹8,00,000 + ₹1,69,219 = \mathbf{₹9,69,219}$.  
+> * **Total Cost of Factoring**: $\text{Service Fee} + \text{Interest} = ₹15,000 + ₹15,781 = \mathbf{₹30,781}$.  
+> * **Cost Proportion**: $\frac{₹30,781}{₹10,00,000} \approx \mathbf{3.08\% \approx 3.1\%}$ of the invoice value for 60 days.  
+> * **Effective Annualized Borrowing Rate**: $\frac{₹30,781}{₹8,00,000} \times \left(\frac{365}{60}\right) \approx \mathbf{23.4\%\text{ p.a.}}$
+
 #### 2. Comparison with Traditional Short-Term Credit Modes
 - **Factoring vs. Bills Discounting**: Bills discounting evaluates individual bills on a transactional basis and requires original bill acceptances with strict 3-day grace periods. Factoring is a bulk, whole-turnover facility against invoices, provides comprehensive ledger services, and offers off-balance sheet non-recourse options.
 - **Factoring vs. Cash Credit**: Cash Credit requires high margin retention (40–50%) and monthly drawing power calculations. Factoring retains lower margins (10–20%), provides immediate cash upon invoice submission, and includes active collection management.

@@ -133,6 +133,14 @@ Paying only the MAD satisfies contractual obligation to avoid late fees, but tri
 
 $$\text{Effective APR} = (1 + 0.035)^{12} - 1 = (1.035)^{12} - 1 \approx 51.1\% \text{ per annum}$$
 
+> 🔢 **Faculty Worked Example (Cost of Revolving Credit & The Compounding Trap):**  
+> A cardholder has an outstanding statement balance of **₹50,000** and pays only the Minimum Amount Due (MAD).  
+> * Quoted monthly finance charge: **3.5% per month** (approximately 42% nominal annual rate).  
+> * Monthly interest charge on ₹50,000: $₹50,000 \times 3.5\% = \mathbf{₹1,750\text{/month}}$.  
+> * Annualising with monthly compounding:  
+>   $$\text{Effective Annual Rate (APR)} = (1 + 0.035)^{12} - 1 = (1.035)^{12} - 1 \approx \mathbf{51.1\% \approx 51\%\text{ per annum}}$$  
+> * **Exam Implication**: At ~51% effective interest, revolving credit card debt is roughly 4 to 5 times more expensive than personal or bank loans. Credit cards should strictly be used for payment convenience (paying 100% in full by due date) rather than long-term borrowing.
+
 ```
 [ Statement Generated ] 
           |
@@ -161,6 +169,18 @@ $$\text{Effective APR} = (1 + 0.035)^{12} - 1 = (1.035)^{12} - 1 \approx 51.1\% 
     3.  When she spends another ₹20,000 on February 22nd, that new purchase incurs interest starting immediately on February 22nd.
     4.  Her March 1st statement reflects a revolving monthly interest rate of 3.5% (42% per annum) applied retroactively, resulting in interest charges exceeding ₹4,500—meaning her ₹5,000 MAD payment barely reduced her principal debt at all.
 *   **Lesson**: Paying only the Minimum Amount Due is a debt trap. It covers interest and minor fees while preserving the principal, allowing high APR compound interest to accumulate.
+
+#### 5. Regulatory Framework, Consumer Protection & RBI Directives
+
+The issuance and operation of credit cards in India are governed by the **RBI Master Direction – Credit Card and Debit Card (Issuance and Conduct) Directions, 2022** and subsequent amendments:
+1.  **Unsolicited Cards & Consent**: Lenders are strictly barred from issuing unsolicited cards or upgrading credit limits without the explicit written/digital consent of the customer.
+2.  **Key Fact Statement (KFS) & MITC**: Issuers must provide a standardized Key Fact Statement highlighting the Annual Percentage Rate (APR) and Most Important Terms and Conditions (MITC).
+3.  **Mandatory 30-Day Inactivity Rule**: If an issued credit card is not activated by the customer within 30 days of receipt, the issuer must seek OTP-based consent. If consent is not granted, the issuer must close the credit card account within **7 working days** at zero cost to the customer.
+4.  **Card Network Portability**: Under RBI guidelines, customers have the right to choose their preferred card network (Visa, Mastercard, RuPay, etc.) at issuance and renewal.
+5.  **RuPay on UPI Integration**: Enabling RuPay credit cards on UPI allows customers to link cards to UPI apps and pay merchants by scanning UPI QR codes on credit.
+6.  **RBI 2023 Risk-Weight Hike on Consumer Credit**: In November 2023, noticing excessive growth in unsecured consumer debt, RBI hiked risk weights on consumer credit and credit card receivables (from 100% to 125% for scheduled commercial banks, and from 125% to 150% for NBFCs), forcing lenders to hold higher regulatory capital buffers against retail defaults.
+7.  **Grievance Redressal**: Escalation moves from bank grievance cell → **RBI Integrated Ombudsman Scheme, 2021** (or Consumer Protection Act, 2019).
+8.  **Data Security & Fraud Protection**: Mandatory Two-Factor Authentication (2FA) for card-not-present transactions, Card-on-File Tokenisation (CoFT), and strict limited customer liability rules for promptly reported frauds.
 
 ⭐ **Must Remember**: Paying the Minimum Amount Due revokes the interest-free grace period on all existing outstanding balances AND all new transactions made until the total balance is cleared to zero.
 
@@ -223,18 +243,22 @@ A CUR exceeding 30% signals credit hunger and increases risk weightings.
 5.  **Recent Hard Inquiries (10% Weightage)**: Frequent loan or credit card applications trigger "hard inquiries" by lenders, temporarily lowering the score due to perceived credit distress.
 
 #### 2. Corporate Credit Rating Framework & Letter-Grade Scales
-Corporate debt instruments (bonds, commercial papers, debentures) are rated by SEBI-registered agencies (CRISIL, ICRA, CARE). Ratings evaluate an issuer's capacity to service timely interest and principal payments:
+In India, Credit Rating Agencies (CRAs) are regulated by SEBI under the **SEBI (Credit Rating Agencies) Regulations, 1999**. Key registered agencies include **CRISIL** (India's first credit rating agency, established in 1987), **ICRA**, **CARE Ratings**, **India Ratings and Research**, **Brickwork Ratings**, **Acuité**, and **Infomerics**.
+
+Ratings evaluate an issuer's capacity to service timely interest and principal payments across standardized letter-grade symbols:
 
 *   **Investment Grade**:
     *   `AAA`: Highest safety; lowest credit risk.
     *   `AA`: High safety; very low credit risk.
     *   `A`: Adequate safety; low credit risk, sensitive to adverse economic conditions.
-    *   `BBB`: Moderate safety; moderate credit risk.
+    *   `BBB`: Moderate safety; lowest "investment grade" threshold.
 *   **Speculative / Junk Grade**:
     *   `BB`: Inadequate safety; vulnerable to default risk.
     *   `B`: High credit risk; adverse conditions impair repayment capacity.
     *   `C`: Substantial risk; extremely vulnerable to non-payment.
     *   `D`: In default or expected to default shortly.
+
+> ⚠️ **Interpreting Credit Ratings**: Credit ratings represent an agency's professional opinion, not a guarantee or investment recommendation. Ratings can be placed on "Rating Watch" or downgraded rapidly when issuer financials deteriorate.
 
 #### 3. Impact of Credit Scoring on Cost of Debt & Risk-Based Pricing
 Under RBI's risk-based pricing guidelines, banks link retail loan interest rates directly to an applicant's CIBIL score:
@@ -250,6 +274,12 @@ Under RBI's risk-based pricing guidelines, banks link retail loan interest rates
     *   **Rahul**: Classified as Tier-1 Prime. Approved instantly at a preferential interest rate of 8.50% per annum with processing fee waivers.
     *   **Priya**: Classified as High Risk. Application initially flagged for rejection. Conditionally approved only after applying a risk surcharge interest rate of 12.00% per annum, requiring a 30% upfront cash down payment and a creditworthy co-guarantor.
 *   **Financial Impact**: Over the 5-year loan, Priya pays tens of thousands in additional interest charges due directly to her lower CIBIL score rating.
+
+#### 5. Real-World Case Study: Rating Agency Latency & The IL&FS Default (2018)
+*   **Background**: Infrastructure Leasing & Financial Services (IL&FS), a colossal infrastructure conglomerate, carried top-tier **AAA** and **AA+** ratings across its debentures and commercial paper right until autumn 2018.
+*   **The Abrupt Crash**: When IL&FS defaulted on a series of commercial paper and inter-corporate deposits in September 2018, rating agencies precipitously downgraded its ratings within days from **AAA directly to Default (D)**.
+*   **Systemic Shock**: The abrupt downgrade froze the Indian commercial paper market, triggered runs on NBFC debt mutual funds, and sparked severe liquidity distress across shadow banks (e.g., DHFL).
+*   **Regulatory Reforms**: The crisis exposed severe conflicts in the "issuer-pays" model. In response, SEBI overhauled CRA regulations—mandating standardized rating scales, probability of default disclosures, stringent tracking of debt repayment capacity, and immediate disclosure of liquidity indicators.
 
 ⭐ **Must Remember**: A CIBIL score of 750+ is the standard cutoff for prime retail lending in India. Corporate debt rated below `BBB-` is classified as speculative/junk grade, prohibiting institutional investment by provident funds and insurance companies.
 
@@ -383,8 +413,19 @@ $$\text{LTV} = \frac{\text{Sanctioned Mortgage Loan Amount}}{\text{Appraised Mar
 | **Repayment & Settlement** | Amortized repayment over loan tenure via monthly EMIs. | Amortized repayment over loan tenure via variable EMIs. | No repayment during borrower's lifetime; settled post-demise via property sale. |
 | **Collateral Ownership** | Borrower holds title; lender holds equitable mortgage charge. | Borrower holds title; lender holds equitable mortgage charge. | Borrower retains life interest & residence; title liquidated post-demise. |
 
-#### 2. Mortgage Market Architecture & Underwriting Pillars
-Mortgage underwriting relies on three risk metrics:
+#### 2. Mortgage Market Architecture, Legal Typologies & Underwriting Pillars
+
+##### Legal Framework & Statutory Mortgage Types in India
+In India, mortgages are formally governed under the **Transfer of Property Act, 1882** (Section 58). Indian law recognizes 6 distinct mortgage typologies:
+1.  **Simple Mortgage**: Mortgagor personally binds themselves to repay and agrees that in case of failure, the lender can cause the mortgaged property to be sold.
+2.  **Mortgage by Conditional Sale**: Ostensible sale of property that becomes absolute upon default, or void upon full repayment.
+3.  **Usufructuary Mortgage**: Possession is delivered to the mortgagee, who appropriates rents and profits in lieu of interest/principal.
+4.  **English Mortgage**: Mortgagor binds themselves to repay on a certain date and transfers property absolutely, subject to re-transfer upon full repayment.
+5.  **Equitable Mortgage (Mortgage by Deposit of Title Deeds)**: The borrower delivers documents of title to immovable property with intent to create a security thereon. **This is the most widely utilized mortgage structure in Indian commercial banking and housing finance** due to low documentation overhead and stamp duty efficiency.
+6.  **Anomalous Mortgage**: A composite mortgage that does not fall strictly into the previous five categories, governed by the terms of the contract.
+
+##### Core Underwriting Pillars & RBI Caps
+Mortgage underwriting relies on three fundamental risk controls:
 
 ```
                   [ Mortgage Underwriting ]
@@ -396,14 +437,43 @@ Mortgage underwriting relies on three risk metrics:
    (Asset Coverage)    (Income Coverage)     (Legal Safety)
 ```
 
-1.  **Loan-to-Value (LTV) Cap**: RBI mandates maximum LTV limits to ensure borrowers maintain skin in the game (equity margin):
-    *   Loans up to ₹30 Lakhs: Maximum LTV = 90%.
-    *   Loans ₹30 Lakhs to ₹75 Lakhs: Maximum LTV = 80%.
-    *   Loans above ₹75 Lakhs: Maximum LTV = 75%.
+1.  **Tiered Loan-to-Value (LTV) Caps**: The Reserve Bank of India enforces strict tiered LTV limits to protect lenders and ensure borrower equity margin:
+    *   **Loans up to ₹30 Lakh**: Maximum LTV = **90%** (minimum 10% borrower margin).
+    *   **Loans ₹30 Lakh to ₹75 Lakh**: Maximum LTV = **80%** (minimum 20% borrower margin).
+    *   **Loans above ₹75 Lakh**: Maximum LTV = **75%** (minimum 25% borrower margin).
 2.  **Debt-to-Income / FOIR Limit**: Total mortgage EMI plus existing liabilities must remain below 50% of net monthly income.
-3.  **Title Search & Independent Valuation**: Legal verification of clear, marketable title encumbrance and dual independent property appraisals.
+3.  **Title Search & Independent Valuation**: Verification of 30-year non-encumbrance certificate (EC) and dual independent engineer/architect valuations.
 
-#### 3. Mechanics of Reverse Mortgage Loans (RML) for Senior Citizens
+##### Mathematical Mechanics: Standard Amortization Formula & Worked Numerical
+
+The equated monthly instalment (EMI) for a housing loan is derived via annuity discounting:
+
+$$\text{EMI} = \frac{P \times r \times (1 + r)^n}{(1 + r)^n - 1}$$
+
+Where:
+*   $P$ = Loan principal amount.
+*   $r$ = Monthly interest rate ($\frac{\text{Annual Rate}}{12}$).
+*   $n$ = Total loan tenure in months.
+
+> 🔢 **Faculty Worked Example (Home Loan EMI & Lifetime Interest Cost Trap):**  
+> A borrower takes a housing loan of **₹50,00,000** at an annual interest rate of **8.5%** for a tenure of **20 years** ($n = 240$ months).  
+> * Monthly interest rate: $r = \frac{8.5\%}{12} = \frac{0.085}{12} \approx 0.0070833$.  
+> * Total number of monthly instalments: $n = 20 \times 12 = 240$.  
+>  
+> **Step 1: Compute Monthly EMI**:  
+> $$\text{EMI} = \frac{50,00,000 \times 0.0070833 \times (1 + 0.0070833)^{240}}{(1 + 0.0070833)^{240} - 1} \approx \mathbf{₹43,391\text{/month}}$$  
+>  
+> **Step 2: Total Repayment & Interest Incurred**:  
+> * Total cash repaid over 20 years = $₹43,391 \times 240 = \mathbf{₹1,04,13,840 \approx ₹1.04\text{ Crore}}$.  
+> * Total Interest Paid = $₹1,04,13,840 - ₹50,00,000 = \mathbf{₹54,13,840 \approx ₹54\text{ Lakh}}$.  
+> * **Key Insight**: Over a 20-year term, cumulative interest paid (**₹54 Lakh**) exceeds the original borrowed principal (**₹50 Lakh**)! Lenders collect predominantly interest in the early years. Prepaying just one extra EMI per year or making occasional lump-sum prepayments drastically curtails total interest and reduces loan tenure.
+
+#### 3. Real-World Institutional Cases & Market Dynamics
+*   **The HDFC Mega-Merger (2023)**: In July 2023, India's largest standalone housing finance company, **HDFC Ltd** (founded 1977), merged into **HDFC Bank**, creating an institutional banking colossus with a massive cross-selling engine for home loans and low-cost CASA deposits.
+*   **Repo Rate Transmission**: Following RBI's 250 bps repo rate hike cycle (2022–2023) from 4.00% to 6.50%, external benchmark linked home loans (EBLR) saw automatic interest increases, extending borrower loan tenures by several years or significantly inflating monthly EMIs.
+*   **Pradhan Mantri Awas Yojana (PMAY)**: The central government's Credit Linked Subsidy Scheme (CLSS) provided upfront interest subsidies (up to ₹2.67 lakh) directly credited to borrower loan accounts for EWS/LIG households, illustrating public policy integration with mortgage credit.
+
+#### 4. Mechanics of Reverse Mortgage Loans (RML) for Senior Citizens
 Designed to address income security among elderly homeowners, Reverse Mortgages operate through a specialized financial structure:
 
 ```
@@ -504,6 +574,10 @@ Private placements operate under strict statutory controls to prevent illegal pu
     3.  A mandatory **3-year lock-in period** was imposed on 75% of the newly allotted shares to prevent immediate market dumping.
 *   **Outcome**: The private placement raised ₹10,000 Crore in primary equity within days, restoring Yes Bank's capital adequacy ratios, normalizing depositor confidence, and preserving financial stability without relying on direct fiscal bailouts.
 
+#### 4. Corporate Bond Market & Reliance Jio Preferential Placement
+*   **Dominance in Indian Corporate Debt**: Over 90% of corporate bonds in India are issued through the private placement route directly to institutional investors (mutual funds, insurers, pension funds). This structural feature minimizes listing delays and allows large, highly-rated corporate issuers to tailor coupon tenors and yields to institutional demand.
+*   **Reliance Jio Platforms Mega-Placement (2020)**: In mid-2020, Reliance Industries raised over ₹1,52,000 Crore by selling a 32.9% equity stake in Jio Platforms through preferential private placements to 13 global tech giants and private equity titans—including **Facebook (Meta)** (₹43,574 Crore for 9.99%), **Google** (₹33,737 Crore for 7.73%), Silver Lake, Vista Equity, General Atlantic, and KKR. This allowed Reliance to achieve net-debt-zero status rapidly without issuing shares to the public.
+
 ⭐ **Must Remember**: Section 42 of the Companies Act limits private placements to a maximum of 200 persons per financial year (excluding QIBs). Allotment must be completed within 60 days of receiving funds, or funds must be refunded within 15 days at a 12% per annum interest rate.
 
 🧠 **Must Understand**: QIPs enable listed companies to raise growth capital or recapitalize rapidly from sophisticated institutional investors without inducing market volatility or incurring expensive public issue overheads.
@@ -593,6 +667,16 @@ A share buyback (or stock repurchase) is a corporate financial transaction where
 
 $$\text{EPS} = \frac{\text{Net Profit After Tax}}{\text{Total Number of Outstanding Equity Shares}}$$
 
+> 🔢 **Faculty Worked Example (Effect of Share Buyback on EPS Accretion):**  
+> A company earns a Net Profit After Tax of **₹100 Crore** with **10 Crore** outstanding equity shares.  
+> * **Pre-Buyback EPS**:  
+>   $$\text{EPS} = \frac{\text{Net Profit}}{\text{Number of Shares}} = \frac{₹100\text{ Crore}}{10\text{ Crore}} = \mathbf{₹10.00\text{/share}}$$  
+> * The company buys back and extinguishes **1 Crore shares** using accumulated surplus cash reserves.  
+> * Post-buyback outstanding shares: $10\text{ Crore} - 1\text{ Crore} = \mathbf{9\text{ Crore shares}}$.  
+> * **Post-Buyback EPS**:  
+>   $$\text{New EPS} = \frac{₹100\text{ Crore}}{9\text{ Crore}} \approx \mathbf{₹11.11\text{/share}}$$  
+> * **Key Takeaway**: EPS rises by **+11.1%** purely through capital restructuring without any underlying increase in corporate net earnings or operational sales.
+
 *   **Two Buyback Execution Routes**:
     1.  *Tender Offer Route*: Pro-rata repurchase directly from existing shareholders at a fixed premium price.
     2.  *Open Market Route*: Purchasing shares back over stock exchanges through book-building or order-matching platforms over an extended window.
@@ -640,18 +724,18 @@ $$\text{Post-Buyback Debt-to-Equity Ratio} = \frac{\text{Total Short-Term & Long
 | **Execution Window** | Compact timeframe (typically open for 5 to 10 working days). | Extended window (up to 6 months; SEBI phasing out open market route). |
 | **Promoter Participation** | Promoters can participate and tender their shares pro-rata. | Promoters are strictly barred from selling shares via open market buyback. |
 
-#### 4. Real-World Case Study: Infosys 2021 ₹9,200 Crore Share Buyback
-*   **Background**: In 2021, Indian IT services giant **Infosys** held significant cash reserves generated from high-margin digital transformation contracts, while lacking major capital expenditure requirements.
-*   **Buyback Structuring**:
-    *   Infosys announced an Open Market Share Buyback via Stock Exchanges valued at **₹9,200 Crore**.
-    *   The board approved a maximum buyback price of **₹1,750 per share**, representing a significant premium over its prevailing trading price of ~₹1,470.
-*   **Execution Mechanics**:
-    *   Infosys utilized its accrued free reserves to purchase equity shares directly off the BSE and NSE platforms over a 6-month window.
-    *   All repurchased shares were progressively canceled and extinguished from the company's capital base.
-*   **Financial Impact**:
-    1.  Extinguished over 60 million equity shares, permanently shrinking Infosys's equity base.
-    2.  Significantly boosted EPS in subsequent quarters, supporting higher Return on Equity (ROE).
-    3.  Successfully returned surplus capital to shareholders without creating long-term recurring dividend expectations.
+#### 4. Real-World Corporate Buyback Case Studies & Taxation Alerts
+
+##### Case Study A: Tata Consultancy Services (TCS) ₹18,000 Crore Mega-Buyback (2022)
+*   **Context**: Mumbai-headquartered IT titan **TCS** consistently generates massive operational free cash flows. 
+*   **Execution**: In January 2022, TCS approved an **₹18,000 Crore tender-offer buyback** at a fixed price of **₹4,500 per share** (a ~17% premium over prevailing market price of ~₹3,850). This followed previous ₹16,000 Crore buybacks in 2017, 2018, and 2020.
+*   **Significance**: Being a tender offer, small retail shareholders were allocated a statutory 15% reservation, allowing retail investors to tender shares at a guaranteed premium while expanding promoter and surviving institutional holding percentages.
+
+##### Case Study B: Infosys Share Buybacks (2021–2022 Open Market & September 2025 Tender Offer)
+*   **2021–2022 Open Market Route**: Infosys completed a **₹9,300 Crore open-market buyback** via stock exchanges (maximum price ₹1,850 per share), extinguishing over 60 million shares to boost EPS and Return on Equity (ROE).
+*   **September 2025 Tender-Offer Route**: In September 2025, Infosys approved a larger **₹18,000 Crore tender-offer buyback** at **₹1,800 per share**, utilizing accumulated surplus free reserves to reward long-term shareholders without locking the company into permanent dividend yields.
+
+> ⚠️ **Critical Statutory & Tax Notice on Buybacks**: The Indian tax regime on share buybacks has undergone frequent statutory revisions under recent Finance Acts (transitioning between corporate-level Buyback Distribution Tax under Section 115QA and dividend/capital gains taxation in the hands of shareholders). When writing exam responses, students must state the applicable assessment year and verify prevailing Income Tax Act provisions.
 
 ⭐ **Must Remember**: Under Section 68, the Debt-to-Equity ratio post-buyback must not exceed 2:1, and buybacks are capped at 25% of aggregate paid-up capital and free reserves. Repurchased shares must be physically extinguished within 7 days.
 
@@ -729,7 +813,7 @@ The SEBI (Delisting of Equity Shares) Regulations govern the voluntary delisting
     1.  Executed a classic Leveraged Buyout (LBO) valued at **\$24.4 Billion**.
     2.  Financed via \$15 Billion in debt provided by major investment banks, combined with equity roll-overs from Michael Dell and Silver Lake cash capital.
     3.  Bought out all public common shareholders at a cash premium price of \$13.75 per share.
-*   **Outcome**: Dell delisted its stock from NASDAQ, successfully executed a multi-year corporate transformation away from public market scrutiny, and subsequently re-listed as a far more profitable enterprise years later.
+*   **Outcome**: Dell delisted its stock from NASDAQ, successfully executed a multi-year corporate transformation away from public market scrutiny, and subsequently re-listed as a far more profitable enterprise years later. (Similarly, in 2022, **Twitter** was taken private and delisted from the NYSE by Elon Musk in a \$44 Billion transaction).
 
 ##### Case Study B: Vedanta Ltd. 2020 Failed Voluntary Delisting
 *   **Background**: In October 2020, natural resources conglomerate **Vedanta Ltd.** attempted a voluntary delisting from Indian stock exchanges (BSE/NSE) to simplify its corporate structure.
@@ -739,6 +823,21 @@ The SEBI (Delisting of Equity Shares) Regulations govern the voluntary delisting
     *   Institutional investors submitted bids demanding an exit price between ₹150 and ₹320 per share.
     *   Although sufficient total shares were tendered, the final discovered price required to cross the mandatory 90% threshold settled at a level the promoters deemed financially unviable.
 *   **Outcome**: The promoters rejected the discovered exit price. The delisting offer failed, all tendered shares were returned to shareholders within 10 days, and Vedanta Ltd. remained a publicly listed company on BSE and NSE.
+
+##### Case Study C: Hexaware Technologies 2021 Successful Private Equity Delisting
+*   **Background**: Mid-tier IT firm **Hexaware Technologies** was controlled by global private equity sponsor **Baring Private Equity Asia (Carlyle)**.
+*   **Execution**: To gain full strategic flexibility and avoid quarterly public disclosure requirements, the promoter initiated voluntary delisting under SEBI regulations. Public institutional and retail shareholders participated in Reverse Book Building.
+*   **Outcome**: The promoter accepted the discovered price (₹475 per share) as the final delisting price, tendered shares pushed promoter holding beyond the **90% threshold**, and Hexaware was successfully delisted from BSE and NSE in 2021 before being acquired by Carlyle.
+
+#### 4. Master Distinction: Share Buyback vs. Corporate Delisting
+
+| Distinguishing Dimension | Share Buyback | Corporate Delisting |
+| :--- | :--- | :--- |
+| **Primary Statutory Basis** | Section 68 of Companies Act, 2013 & SEBI Buyback Regs 2018 | SEBI (Delisting of Equity Shares) Regulations, 2021 |
+| **Effect on Listing Status** | Company **remains listed**; shares continue public trading | Company's securities are **permanently removed** from exchanges |
+| **Share Capital Impact** | Repurchased shares are **canceled and extinguished** (shrinking equity) | Public shares transfer to promoters (company equity remains, but private) |
+| **Statutory Quantitative Limit**| Strictly capped at **25%** of paid-up capital & free reserves | Requires promoter ownership to cross at least **90%** of total capital |
+| **Corporate Motive** | Return excess cash, boost EPS/ROE, optimize capital structure | Take company private, eliminate compliance overhead, restructure |
 
 ⭐ **Must Remember**: A voluntary delisting offer succeeds ONLY if promoter shareholding reaches a minimum of **90% of total equity capital**. Compulsorily delisted companies and their promoters face a **10-year ban** from accessing securities markets.
 

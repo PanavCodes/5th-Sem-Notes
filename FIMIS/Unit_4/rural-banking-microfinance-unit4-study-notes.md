@@ -185,9 +185,10 @@ The Indian microfinance sector evolved through five distinct historical eras [53
 ```
 
 1. **1970s–1980s (Foundations Era)**:
-   - Early experiments by voluntary NGOs such as Shri Mahila SEWA Sahakari Bank (1974) in Gujarat and Working Women's Forum in Tamil Nadu [316].
+   - Early experiments by voluntary NGOs such as Shri Mahila SEWA Sahakari Bank (1974) founded by **Ela Bhatt** in Gujarat and Mann Deshi Mahila Sahakari Bank in Mhaswad (Satara, Maharashtra).
    - MYRADA and PRADAN pioneer informal Self-Help Groups [317].
    - **NABARD established in 1982** as the apex rural development bank [71, 532].
+   - **Kisan Credit Card (KCC)** introduced to provide farmers with timely, hassle-free short-term crop credit.
 2. **1992 (SHG-Bank Linkage Launch)**:
    - NABARD launches the pilot **SHG-Bank Linkage Programme (SBLP)** linking 500 SHGs to formal bank credit with RBI support [330, 532].
 3. **1997–2000s (Commercialization & For-Profit MFIs)**:
@@ -196,14 +197,19 @@ The Indian microfinance sector evolved through five distinct historical eras [53
    - Commercial banks channel massive funds to MFIs under the **Priority Sector Lending (PSL)** mandate [319, 532].
 4. **2010–2012 (Andhra Pradesh Crisis & Regulatory Overhaul)**:
    - **The Trigger**: Rapid commercial scaling, multiple lending, excessive interest rates, and coercive collection practices led to client over-indebtedness and borrower suicides in Andhra Pradesh in late 2010 [348, 351, 456, 532].
-   - **State Intervention**: AP Government promulgates restrictive ordinance halting MFI loan recoveries [348].
+   - **State Intervention**: AP Government promulgates restrictive ordinance halting MFI loan recoveries [348]. SKS Microfinance subsequently transitioned into **Bharat Financial Inclusion Ltd. (BFIL)**, which eventually merged into **IndusInd Bank** in 2019.
    - **RBI Action (2011)**: RBI appoints the **Y. H. Malegam Committee**, creating a dedicated **NBFC-MFI regulatory category** in December 2011 with margin caps (10%–12%), interest rate ceilings, and qualifying asset rules [212, 348, 351, 532].
    - **MFI Bill 2012**: Micro Finance Institutions (Development and Regulation) Bill introduced in Parliament [343, 348, 532].
-5. **2014–2020s (Digital Era & Institutional Diversification)**:
+5. **2014–Present (Harmonized Regulatory Framework & Digital Era)**:
    - **PMJDY (2014)**: Universal account opening under Pradhan Mantri Jan Dhan Yojana [8, 123, 533].
    - **Banking Licences**: Bandhan Financial Services awarded a universal banking licence in 2014 (commenced 2015) [134, 349, 534].
    - **Small Finance Banks (2015)**: RBI grants SFB licences to 10 entities (9 of which were NBFC-MFIs, e.g., Ujjivan, Jana, Equitas) [68, 109, 348].
-   - **MUDRA (2015)**: Launch of Micro Units Development and Refinance Agency as a SIDBI subsidiary [64, 355].
+   - **Harmonized RBI Regulatory Framework (April 2022)**:
+     * Applies to **ALL regulated lenders** (Commercial banks, SFBs, NBFCs, NBFC-MFIs).
+     * Defines microfinance loan as a collateral-free loan to households with annual income **up to ₹3,00,000 (₹3 Lakh)**.
+     * Enforces a mandatory **50% FOIR cap**: Total monthly debt repayment obligations across all existing and proposed loans cannot exceed 50% of the household's monthly income.
+     * Prohibits pre-payment penalties and requires board-approved transparent pricing.
+     * Industry Self-Regulatory Organizations (SROs): **MFIN** and **Sa-Dhan**.
 
 ---
 
@@ -312,6 +318,14 @@ The establishment of a functional, bankable Self-Help Group follows a structured
 5. **Step 5: Internal Lending**: Members begin making regular weekly savings (e.g., ₹20–₹100/month) [258, 541]. The accumulated pool is used to issue small internal loans to members for emergencies or micro-enterprises at low interest rates decided by the group [5, 330, 541].
 6. **Step 6: Grading & External Bank Linkage**: After 6–12 months of consistent savings, regular meetings, and flawless internal repayment, the bank or promoter grades the SHG [541]. Groups that pass the grading process qualify for direct external bank credit under the SHG-Bank Linkage Programme [330, 541].
 
+> ⭐ **Must Remember: The "Panchasutra" Grading Framework**  
+> Under NABARD and bank-linkage guidelines, an SHG's creditworthiness is formally evaluated against the **Panchasutra (Five Cardinal Principles)**:  
+> 1. **Regular Meetings**: Consistent weekly or monthly meetings with high member attendance.  
+> 2. **Regular Savings**: Uninterrupted recurring member savings building the internal pool.  
+> 3. **Regular Internal Lending**: Continuous, transparent internal loans to meet member needs.  
+> 4. **Timely Repayment**: Punctual recovery of internal loan installments without default.  
+> 5. **Up-to-Date Books of Accounts**: Transparent maintenance of the minute book, savings ledger, loan ledger, and cash book.
+
 ---
 
 ### 3.4 The 6 Structural Criteria for SHG Membership
@@ -380,6 +394,10 @@ Over 85% of all SHGs linked to banks in India are formed exclusively by women [3
   2. *Area Development Societies (ADS)* at the ward level [547].
   3. *Community Development Societies (CDS)* at the Local Self-Government / Panchayat level [547].
 - **Impact**: Encompasses over 4.5 million women in Kerala, driving micro-enterprises, collective farming, community kitchens (Janakeeya Hotels), and local governance participation [547, 561].
+
+#### National Initiatives: Lakhpati Didi & Lijjat Papad
+- **Lakhpati Didi Initiative**: Operating under the National Rural Livelihoods Mission (DAY-NRLM), the initiative mobilizes rural women across SHGs to develop sustainable, diversified livelihoods (organic farming, agro-processing, livestock rearing, digital commerce), ensuring each beneficiary household achieves an annual income of at least **₹1,00,000 (₹1 Lakh)**.
+- **Lijjat Papad (1959)**: Founded in Mumbai by seven women with an initial borrowed capital of ₹80, *Shri Mahila Griha Udyog Lijjat Papad* demonstrated how women-led collective manufacturing creates nationwide economic self-reliance, serving as the cultural precursor to modern self-help groups.
 
 ---
 
