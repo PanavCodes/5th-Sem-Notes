@@ -42,6 +42,33 @@ Financial markets act as non-intermediary or intermediary-assisted channels of d
 - ⭐ **Must Remember**: Money market instruments carry maturities of $< 1\text{ year}$, while capital market instruments have maturities $\ge 1\text{ year}$ or perpetual life.
 - 🧠 **Must Understand**: The primary market expands total financial assets in the economy, whereas the secondary market rearranges ownership of existing financial assets without directly increasing net physical capital formation.
 
+```text
+                     ┌─────────────────────────────────────────┐
+                     │          INDIAN FINANCIAL MARKETS       │
+                     └────────────────────┬────────────────────┘
+                                          │
+            ┌─────────────────────────────┴─────────────────────────────┐
+            ▼                                                           ▼
+┌───────────────────────┐                                   ┌───────────────────────┐
+│     MONEY MARKET      │                                   │    CAPITAL MARKET     │
+│  (Tenor < 1 Year)     │                                   │   (Tenor >= 1 Year)   │
+└───────────┬───────────┘                                   └───────────┬───────────┘
+            │                                                           │
+   ┌────────┴────────┐                                         ┌────────┴────────┐
+   ▼                 ▼                                         ▼                 ▼
+┌─────────┐   ┌─────────────┐                           ┌─────────────┐   ┌─────────────┐
+│  Call   │   │  Treasury   │                           │   PRIMARY   │   │  SECONDARY  │
+│  Money  │   │ Bills & CPs │                           │   MARKET    │   │   MARKET    │
+└─────────┘   └─────────────┘                           └──────┬──────┘   └──────┬──────┘
+                                                               │                 │
+                                                   ┌───────────┴───────────┐     │ (BSE, NSE)
+                                                   ▼                       ▼     ▼
+                                            ┌─────────────┐         ┌─────────────┐
+                                            │ Public/IPO  │         │   Rights /  │
+                                            │   Issues    │         │  Placement  │
+                                            └─────────────┘         └─────────────┘
+```
+
 #### Deep-Dive into the 6 Core Functions
 1. **Capital Mobilization & Allocation Efficiency**: Financial markets aggregate tiny individual savings into macro-level investable resources. According to financial economic theory, efficient markets allocate scarce capital to projects where Marginal Efficiency of Capital (MEC) is highest.
 2. **Liquidity Creation & Asset Transformation**: Liquid secondary markets resolve the fundamental asset-maturity mismatch: investors require short-term liquidity, whereas productive capital projects require long-term, illiquid commitments. Secondary markets allow investors to exit at market value without disrupting the issuer's long-term capital base.

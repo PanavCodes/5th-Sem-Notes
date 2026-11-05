@@ -9,7 +9,7 @@ Analyze the subject materials and apply one of the following dynamic domain temp
 
 1. **TECHNICAL & SYSTEMS (e.g., OS, Software Engineering, Networks, Distributed Systems)**
    - *Answer Focus*: Architectural schemas, state machines, lifecycle phases, design patterns, protocols, structural tables, and pseudocode/logic flows.
-   - *Mark Calibration*: Enforce ASCII diagrams/flowcharts for 5-mark and 10-mark questions.
+   - *Diagram Policy*: Diagrams are NOT mandatory across the board. Include an ASCII architectural diagram/flowchart ONLY when inherently necessary (e.g., system architecture, process lifecycle, state transition) where visual sketches carry exam marks.
 
 2. **ALGORITHMIC, MATH & VISION (e.g., Digital Image Processing, AI/ML, Computer Vision)**
    - *Answer Focus*: Mathematical formulations, filter/kernel operations, step-by-step matrix transformations, algorithm traces, and complexity bounds.
@@ -35,7 +35,7 @@ The generated prompt must enforce these core rules inside NotebookLM:
   - **5 Marks**: Structured answer (Definition → 4–5 core technical points → Comparison table / ASCII diagram).
   - **10 Marks**: Comprehensive essay (Theory → Architecture/Workflow → Multi-variable comparison table → Real-world case study / Complete pipeline trace).
 - **Difference Questions**: Enforce Markdown comparison tables across explicit technical parameters.
-- **Mandatory Self-Contained Exam Diagrams**: For any question where a visual aid carries marks, insert:  
+- **Selective Self-Contained Diagram Policy**: Do NOT make diagrams mandatory for every question. Include an ASCII Box-and-Arrow diagram ONLY when inherently necessary for the concept (e.g., multi-party institutional workflows, system architectures, state transitions, pipelines, structural hierarchies, or liquidation priority orders where visual sketches are expected and carry exam marks). If a diagram is NOT necessary, do NOT add any diagram or placeholder tag. When a diagram IS necessary, add:  
   `📊 Diagram Required: YES | Type: [Architecture/State Flow/Pipeline] | Exam Sketch Target: [Concept Name]`  
   **CRITICAL**: Immediately beneath this tag, draw the **complete, self-contained ASCII Box-and-Arrow architectural diagram or Mermaid flowchart**. DO NOT tell the student to refer to a slide or textbook. The diagram must be directly sketchable on an exam paper in 60 seconds.
 
@@ -64,7 +64,7 @@ Create a comprehensive Markdown file `{subject-code}-{unit-id}-pyq-bank.md` cont
 - For EVERY question inside a group, list the exact original metadata:
   - *Exact Question String* | *Exam/Paper Name* | *Year* | *Q. Number* | *Marks*
 - Provide **ONE definitive, comprehensive answer** per group, scaled to the highest mark allocation within that group.
-- **Self-Contained Exam Diagram Requirement**: If a visual aid is required or awarded marks, add:  
+- **Selective Self-Contained Diagram Policy**: Diagrams are NOT mandatory for every question. Include an ASCII box-and-arrow diagram ONLY when inherently necessary (e.g., multi-party institutional workflows, system architectures, state transitions, or liquidation hierarchies where visual sketches carry exam marks). If not necessary, omit completely without any placeholder. When a diagram IS necessary, add:  
   `📊 Diagram Required: YES | Name: [...] | Exam Sketch Target: [Concept Name]`  
   **Mandatory**: Immediately beneath this tag, draw the **complete, self-contained ASCII box-and-arrow diagram or Mermaid flowchart**. Never leave the diagram as an external reference to slides or textbooks; provide the exact sketch to draw on the exam sheet.
 

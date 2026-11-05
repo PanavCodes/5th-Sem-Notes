@@ -223,6 +223,7 @@ Cover EVERY single concept, model, and slide thoroughly. Do not truncate, skip, 
 For EVERY core topic in this Unit, construct two distinct sections:
 - ✍️ **5-Mark Quick Shot (7-min write-up)**: Precise definition, 4–5 core technical bullets, and 1 compact summary artifact (3-column comparison table, ASCII workflow, or formula box).
 - 📚 **10-Mark Blueprint (15-min essay)**: Exhaustive theoretical mechanics, end-to-end procedural workflows, multi-variable comparison tables (5+ parameters), and complete real-world case study or numerical solution.
+- 📐 **Selective Self-Contained Diagram Policy**: Diagrams are NOT mandatory for every topic. Include an ASCII Box-and-Arrow diagram ONLY when inherently necessary (e.g., multi-party institutional workflows, system architectures, state transitions, or liquidation hierarchies where visual sketches carry exam marks). When a diagram IS necessary, draw the **complete, self-contained ASCII diagram right inside the note**. NEVER output a placeholder telling the student to refer to a slide or textbook.
 
 ### REVISION AUDIT & FORMULAS
 Conclude with:
@@ -253,7 +254,7 @@ Formatting: Strictly GitHub Markdown with standard LaTeX ($...$, $$...$$)."""
 - For EVERY question inside a group, list:
   * *Exact Question String* | *Exam/Paper Name* | *Year* | *Q. Number* | *Marks*
 - Provide **ONE definitive, comprehensive model answer** per group scaled to the highest mark allocation.
-- Tag & Draw Diagrams: `📊 Diagram Required: YES | Type: [...] | Exam Sketch Target: [...]`. Immediately beneath this tag, draw the **complete, self-contained ASCII box-and-arrow diagram or Mermaid flowchart** to sketch in the exam hall. Never leave it as an external reference.
+- **Selective Self-Contained Diagram Policy**: Diagrams are NOT mandatory for every question. Include an ASCII Box-and-Arrow diagram ONLY when inherently necessary (e.g., multi-party institutional workflows, system architectures, state transitions, or liquidation hierarchies where visual sketches carry exam marks). If not necessary, omit completely without any placeholder. When a diagram IS necessary, add: `📊 Diagram Required: YES | Type: [...] | Exam Sketch Target: [...]`. Immediately beneath this tag, draw the **complete, self-contained ASCII box-and-arrow diagram or Mermaid flowchart** to sketch in the exam hall. Never leave it as an external reference to slides or textbooks.
 
 ### 5. MARK-PROPORTIONAL ANSWER FORMATTING
 - **2 Marks**: Formal definition + 2 core bullet points.

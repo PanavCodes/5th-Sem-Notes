@@ -26,8 +26,9 @@ Silently analyze the uploaded file / syllabus and classify the subject into one 
 
 ### STEP 2: DUAL EXAM MARKING STANDARDS (MANDATORY IN GENERATED PROMPT)
 Ensure the output prompt instructs NotebookLM to format EVERY topic for both question lengths:
-- ✍️ **5-Mark Quick Shot (7-min write-up)**: High-density formal definition, 4–5 bullet points (principles/traits/steps), and 1 minimal micro-artifact (compact 3-column table, ASCII workflow, or formula box).
+- ✍️ **5-Mark Quick Shot (7-min write-up)**: High-density formal definition, 4–5 bullet points (principles/traits/steps), and 1 minimal micro-artifact (compact 3-column table or formula box).
 - 📚 **10-Mark Blueprint (15-min essay)**: Exhaustive theoretical framework, end-to-end process/architecture, deep comparative tables across 5+ parameters, and a dedicated case study or implementation pipeline.
+- 📐 **Selective Self-Contained Diagram Policy**: Do NOT make diagrams mandatory for every topic. Include an ASCII Box-and-Arrow diagram ONLY when inherently necessary (e.g., multi-party workflows, lifecycle stages, system architectures, or liquidation hierarchies where visual sketches carry exam marks). When a diagram IS necessary, draw the **complete, self-contained ASCII diagram right inside the note**. NEVER output a placeholder telling the student to refer to a slide or textbook.
 - Visual Study Markers: ⭐ **Must Remember**, 🧠 **Must Understand**, ⚠️ **Common Exam Pitfalls**.
 
 ---
@@ -49,6 +50,7 @@ Create a comprehensive study-notes Markdown file `{subject}-{unit}-notes.md` for
 For EVERY topic above, construct:
 - ✍️ **5-Mark Quick Shot**: Precise academic definition, 4–5 high-density structural bullets, and a compact comparison table/ASCII artifact.
 - 📚 **10-Mark Blueprint**: Full theoretical mechanics, end-to-end workflows/pipelines, comprehensive multi-parameter comparison tables, and full real-world case/architecture write-ups.
+- 📐 **Selective Self-Contained Diagram Policy**: Diagrams are NOT mandatory for every topic. Include an ASCII Box-and-Arrow diagram ONLY when inherently necessary (e.g., multi-party workflows, lifecycle stages, system architectures, or liquidation hierarchies where visual sketches carry exam marks). When a diagram IS necessary, draw the complete, self-contained ASCII diagram right inside the note. NEVER output a placeholder telling the student to refer to a slide or textbook.
 - Revision Markers: ⭐ **Must Remember**, 🧠 **Must Understand**, ⚠️ **Common Exam Pitfalls**.
 
 ### REVISION AUDIT

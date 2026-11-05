@@ -45,6 +45,26 @@ A full-service factor (historically termed an *Old Line Factor*) performs five d
 ### 📚 10-Mark Comprehensive Blueprint: Factoring Architecture & Mechanics
 
 #### 1. Detailed Legal & Operational Process Flow
+
+```text
+           ┌─────────────────────────────────────────┐
+           │             CLIENT (SELLER)             │
+           └────┬───────────────────────────────▲────┘
+                │ 1. Delivers Goods             │ 3. Prepayment Advance
+                │    & Signs Assignment Notice  │    (70% - 90% Cash)
+                ▼                               │
+           ┌────────────────────────┐           │
+           │    CUSTOMER (DEBTOR)   │           │
+           └────┬───────────────────┘           │
+                │                               │
+                │ 4. Full Settlement            │ 5. Balance Reserve Released
+                │    at Due Date                │    (Less Fees & Discount)
+                ▼                               │
+           ┌────────────────────────────────────┴────┐
+           │              FACTOR (NBFC)              │
+           └─────────────────────────────────────────┘
+```
+
 1. **Commercial Contract & Order Execution**: The client enters into a sales agreement with the customer, delivers goods or services, and issues an invoice specifying credit terms (e.g., 60 days).
 2. **Notice of Assignment**: The invoice contains a legal endorsement informing the customer that the debt has been assigned to the factor and must be paid directly to the factor's account.
 3. **Submission & Prepayment**: The client submits invoice copies, shipping challans, and assignment schedules to the factor. Upon verification, the factor disburses 70% to 90% of the invoice value as an advance.
@@ -126,6 +146,21 @@ Factoring arrangements vary based on default risk distribution, geographical bou
 ### 📚 10-Mark Comprehensive Blueprint: FCI International Factoring Mechanism
 
 #### Step-by-Step Cross-Border Trade Flow (FCI 2-Factor System)
+
+```text
+┌─────────────────┐       1. Ships Goods / Invoices       ┌─────────────────┐
+│ EXPORTER (INDIA)│ ────────────────────────────────────> │ IMPORTER (BUYER)│
+└────────┬────────┘                                       └────────▲────────┘
+         │                                                         │
+2. Assign│ 3. Pays Advance                         5. Full Payment │ 1a. Credit
+   Receiv│    (up to 90%)                             at Maturity  │     Approval
+         ▼                                                         │
+┌─────────────────┐       4. Inter-Factor Agreement       ┌────────┴────────┐
+│  EXPORT FACTOR  │ <───────────────────────────────────> │  IMPORT FACTOR  │
+│ (SBI Global/FCI)│       6. Remits Collected Funds       │ (Buyer Country) │
+└─────────────────┘                                       └─────────────────┘
+```
+
 1. **Credit Limit Application**: The Indian exporter requests its Export Factor to establish a credit line for a target foreign buyer.
 2. **Import Factor Credit Assessment**: The Export Factor routes the request through the FCI network to a local Import Factor in the buyer's country. The Import Factor evaluates the buyer's creditworthiness and approves a credit limit.
 3. **Contract & Shipment**: The exporter ships goods on open-account credit terms (e.g., 60 days) and sends invoice copies to the Export Factor.
@@ -233,6 +268,20 @@ Forfaiting transfers four major categories of trade risks from the exporter to t
 ## 5. Forfaiting Ecosystem, Operational Workflow & Pricing Dynamics
 
 ### 10-Step Operational Workflow of a Forfaiting Transaction
+
+```text
+┌─────────────────────────┐       1. Ships Capital Equipment       ┌─────────────────────────┐
+│     EXPORTER (SELLER)   │ ─────────────────────────────────────> │     IMPORTER (BUYER)    │
+└────────────┬────────────┘                                        └────────────┬────────────┘
+             │                                                                  │
+3. Delivers  │ 4. Pays 100% Cash                                  2. Obtains    │ Delivers
+   Avalised  │    Discounted                                         "Per Aval" │ Avalised Notes
+   Paper     ▼    Proceeds (Non-Recourse)                            Endorsement▼
+┌─────────────────────────┐                                        ┌─────────────────────────┐
+│        FORFAITER        │ <═════════════════════════════════════ │      AVALIZING BANK     │
+│   (EXIM Bank / Dealer)  │     5. Presents Paper for Payment      │     (Importer's Bank)   │
+└─────────────────────────┘        at Maturity (e.g. 1-5 Years)    └─────────────────────────┘
+```
 
 1. **Commercial Contract Negotiation**: Exporter and importer agree on sale of goods with deferred payment terms over 1 to 5 years.
 2. **Forfaiting Commitment Application**: Exporter approaches a Forfaiter (or EXIM Bank / Authorized Dealer) for a firm commitment to discount the prospective paper.
