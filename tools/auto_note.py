@@ -167,22 +167,37 @@ def get_notebook_id(subject_code: str) -> str:
 
     try:
         res = subprocess.run(
-            ["notebooklm", "list"],
+            ["notebooklm", "list", "--json"],
             capture_output=True,
             text=True,
             encoding="utf-8",
             check=True
         )
-        lines = res.stdout.splitlines()
-        for line in lines:
-            if "|" in line:
-                parts = [p.strip() for p in line.split("|")]
-                if len(parts) >= 4:
-                    nb_id, title = parts[1], parts[2]
-                    if match_term in title.lower() or subject_code.lower() in title.lower():
-                        return nb_id
+        data = json.loads(res.stdout)
+        for nb in data.get("notebooks", []):
+            title = nb.get("title", "").lower()
+            if match_term in title or subject_code.lower() in title:
+                return nb.get("id")
     except Exception as e:
-        print(f"Error querying notebook list: {e}")
+        # Fallback to plain text list
+        try:
+            res = subprocess.run(
+                ["notebooklm", "list"],
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                check=True
+            )
+            for line in res.stdout.splitlines():
+                if "│" in line or "|" in line:
+                    delim = "│" if "│" in line else "|"
+                    parts = [p.strip() for p in line.split(delim)]
+                    if len(parts) >= 3:
+                        nb_id, title = parts[1], parts[2]
+                        if match_term in title.lower() or subject_code.lower() in title.lower():
+                            return nb_id.replace("…", "").strip()
+        except Exception as inner_e:
+            print(f"Error querying notebook list: {inner_e}")
 
     return None
 
