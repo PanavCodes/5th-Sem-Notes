@@ -42,7 +42,7 @@ The Term End Examination (TEE) carries **50 Marks** (50% course weightage) with 
 | [`/OS`](./OS/) | **Operating Systems** | 1, 2, 3, 4, 5 | CPU Scheduling (Round Robin, SRTF Gantt charts), Banker's Deadlock Algorithm, Page Replacement (FIFO, LRU, Optimal), Disk Scheduling (SCAN, C-LOOK) |
 | [`/SE`](./SE/) | **Software Engineering** | 1, 2, 3, 4, 5 | SDLC Models (Agile, Scrum vs Waterfall), COCOMO estimation, Cyclomatic Complexity & Control Flow Graphs, White-box vs. Black-box testing |
 | [`/5G`](./5G/) | **5G for Everyone** | 1, 2, 3, 4 | Service-Based Architecture (SBA: AMF, SMF, UPF), Network Slicing, Massive MIMO, Beamforming principles, Indian Spectrum bands |
-| [`/FIMIS`](./FIMIS/) | **Financial Inst., Markets & Services** | 1, 2, 3, 4 | Indian Financial System structure, Regulators (RBI, SEBI, IRDAI, PFRDA), Money & Capital Market instruments (T-Bills, CPs), Microfinance credit models |
+| [`/FIMIS`](./FIMIS/) | **Financial Inst., Markets & Services** | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 | Indian Financial System structure, Regulators (RBI, SEBI, IRDAI, PFRDA), Money & Capital Market instruments (T-Bills, CPs), Microfinance credit models |
 | [`/IFS`](./IFS/) | **Introduction to Forensic Science** | 1, 2, 3, 5 | Locard's Exchange Principle, Crime Scene Management & Chain of Custody, Fingerprint Classification, Forensic Ballistics, Toxicology analysis |
 | [`/ARVR`](./ARVR/) | **Augmented & Virtual Reality** | 1 to 6 *(In Progress)* | Sensor tracking (6-DoF), Displays & Optics (HMDs), Immersion principles, Spatial Audio, AR/VR interaction techniques |
 
