@@ -87,15 +87,25 @@ $$
 $$
 In Unity C#, transform conversions are performed using built-in utility 
 methods:
-```csharp
-// Local space to World space transformation
-Vector3 worldPos = transform.TransformPoint(localPos);
-Vector3 worldDir = transform.TransformDirection(localDir);
-
-// World space to Local space transformation
-Vector3 localPos = transform.InverseTransformPoint(worldPos);
-Vector3 localDir = transform.InverseTransformDirection(worldDir);
 ```
++────────────────────────────────────────────────────────────────────────────+
+|                 LOCAL VS. WORLD SPACE TRANSFORMATION MECHANICS             |
++────────────────────────────────────────────────────────────────────────────+
+
+  LOCAL COORDINATES (Model / Bone Space)       WORLD COORDINATES (Scene Space)
+  [ Position Vector: (x, y, z) ] ──────────►   [ Multiplied by Transform Matrix ]
+                                               P_world = M_parent * P_local
+                                               (Translates, Rotates, Scales)
+
+  [ Direction Vector: (dx, dy, dz) ] ──────►   [ Multiplied by Rotation Submatrix ]
+                                               D_world = R_parent * D_local
+                                               (Rotates only; ignores Translation)
+```
+
+* **Mathematical Transformation Rules**:
+  * **Point Transformation**: $\mathbf{P}_{	ext{world}} = \mathbf{T} \cdot \mathbf{R} \cdot \mathbf{S} \cdot \mathbf{P}_{	ext{local}}$, where points undergo scale, rotation, and translation.
+  * **Direction Transformation**: $\mathbf{D}_{	ext{world}} = \mathbf{R} \cdot \mathbf{D}_{	ext{local}}$, preserving vector magnitude and orientation independent of scene origin translation.
+  * **Inverse Transformations**: $\mathbf{P}_{	ext{local}} = \mathbf{M}^{-1} \cdot \mathbf{P}_{	ext{world}}$, projecting arbitrary world points back into the object's local reference frame (vital for bounding box testing).
 
 ### 2.3 Vector Operations in 3D
 A 3D position or direction vector is defined as $\vec{v} = (x, y, z)^T \in 
@@ -140,16 +150,21 @@ rotation angle $\theta$ around unit axis $\hat{u} = (u_x, u_y, u_z)$.
 3. Memory efficient (4 float values).
 
 **Unity Quaternion Methods**:
-```csharp
-// Construct rotation from Euler angles
-Quaternion rot = Quaternion.Euler(pitch, yaw, roll);
+```
++────────────────────────────────────────────────────────────────────────────+
+|                    QUATERNION MATHEMATICAL ROTATION PIPELINE               |
++────────────────────────────────────────────────────────────────────────────+
 
-// Smooth spherical interpolation between orientations
-Quaternion targetRot = Quaternion.Slerp(currentRot, desiredRot, Time.deltaTime 
-* speed);
+  1. AXIS-ANGLE ENCODING:
+     q = [cos(theta/2), u * sin(theta/2)]  where u is a normalized unit axis
 
-// Rotate position vector by Quaternion
-Vector3 rotatedOffset = rot * originalOffset;
+  2. SPHERICAL LINEAR INTERPOLATION (SLERP):
+     SLERP(q1, q2, t) = [sin((1-t)*Omega)/sin(Omega)]*q1 + [sin(t*Omega)/sin(Omega)]*q2
+     (Guarantees constant-velocity rotational progression without angular distortion)
+
+  3. VECTOR ROTATION (SANDWICH PRODUCT):
+     v' = q * v * q^(-1)
+     (Rotates vector v around quaternion axis by angle theta in 3D space)
 ```
 
 ---
@@ -246,52 +261,53 @@ Coroutines allow execution to be paused across multiple frames without blocking
 the main rendering thread. Implemented using C# `IEnumerator` iterators and 
 `yield` control statements.
 
-```csharp
-using System.Collections;
-using UnityEngine;
-
-public class DelayActionExample : MonoBehaviour
-{
-    private void Start()
-    {
-        StartCoroutine(ExecuteDelayedTask(2.5f));
-    }
-
-    private IEnumerator ExecuteDelayedTask(float delaySeconds)
-    {
-        Debug.Log("Task initiated at time: " + Time.time);
-        
-        // Pause execution without freezing frame rendering
-        yield return new WaitForSeconds(delaySeconds);
-        
-        Debug.Log("Task completed at time: " + Time.time);
-    }
-}
 ```
++────────────────────────────────────────────────────────────────────────────+
+|                  XR ASYNCHRONOUS COROUTINE EXECUTION CYCLE                 |
++────────────────────────────────────────────────────────────────────────────+
+
+  Frame 1: Coroutine Invoked (StartCoroutine)
+           │
+           ▼
+  Executes Initial Logic ──► Reaches "yield return WaitForSeconds(2.5f)"
+                                   │
+                                   ▼
+  Execution State Paused & Cached in Memory (Zero Main-Thread Blocking)
+                                   │
+  [ Frames 2 to N: Engine continues rendering at locked 90 FPS ]
+                                   │
+  Timer Elapses (2.5s reached) ────┘
+           │
+           ▼
+  Execution Resumes at exact next statement ──► Completes Operation
+```
+
+* **Significance in XR**: Unlike standard blocking `Thread.Sleep()`, which freezes the entire CPU rendering thread and violently drops frame rate, coroutines utilize cooperative multitasking. They yield control back to the engine every frame, enabling asynchronous sequences (camera fade-ins, haptic vibration pulses, network polling) with **zero dropped frames**.
 
 ### 4.3 Events and Delegates
 Events decouple publishers from subscribers, enabling clean modular software 
 architecture.
 
-```csharp
-using System;
-using UnityEngine;
-
-public class GestureEventManager : MonoBehaviour
-{
-    // C# Delegate definition
-    public delegate void PinchGestureHandler(Vector3 pinchPosition);
-    
-    // C# Event based on delegate
-    public static event PinchGestureHandler OnPinchDetected;
-
-    public void TriggerPinch(Vector3 pos)
-    {
-        // Safe null-conditional invocation
-        OnPinchDetected?.Invoke(pos);
-    }
-}
 ```
++────────────────────────────────────────────────────────────────────────────+
+|             OBSERVER PATTERN & EVENT-DRIVEN GESTURE ARCHITECTURE           |
++────────────────────────────────────────────────────────────────────────────+
+
+  [ Gesture Classifier Engine ] (Publisher)
+                │
+                ▼
+  Detects Hand State Change (e.g., Pinch Closed, Swipe Right)
+                │
+                ▼
+  Dispatches Event: "OnPinchDetected(Vector3 pinchPosition)"
+                │
+        ┌───────┴───────────────────────────────┐
+        ▼                                       ▼
+  [ Spatial UI Subsystem ]              [ Physics Interaction Manager ]
+  (Subscriber 1: Closes Menu)           (Subscriber 2: Grabs Target Object)
+```
+
+* **Architectural Advantage**: Fully decouples optical computer-vision tracking from gameplay systems. The tracking module does not require hard references to scene objects; it simply broadcasts events that any subscribed listener can handle independently.
 
 ---
 
@@ -326,33 +342,26 @@ $$
 \text{Ray}(\vec{o}, \vec{d}) = \vec{o} + t\vec{d}, \quad t \ge 0
 $$
 
-```csharp
-using UnityEngine;
+```
++────────────────────────────────────────────────────────────────────────────+
+|                    PHYSICS RAYCASTING INTERACTION PIPELINE                 |
++────────────────────────────────────────────────────────────────────────────+
 
-public class VRRaycastPointer : MonoBehaviour
-{
-    [SerializeField] private Transform rayOrigin;
-    [SerializeField] private float maxDistance = 10f;
-    [SerializeField] private LayerMask interactableLayer;
-
-    private void Update()
-    {
-        Ray ray = new Ray(rayOrigin.position, rayOrigin.forward);
-        
-        if (Physics.Raycast(ray, out RaycastHit hitInfo, maxDistance, 
-interactableLayer))
-        {
-            Debug.Log($"Ray intersected object: {hitInfo.collider.name} at 
-point {hitInfo.point}");
-            Debug.DrawLine(rayOrigin.position, hitInfo.point, Color.green);
-        }
-        else
-        {
-            Debug.DrawRay(rayOrigin.position, rayOrigin.forward * maxDistance, 
-Color.red);
-        }
-    }
-}
+  [ Controller / Hand Transform ]
+  • Origin Vector: P_origin = (X, Y, Z)
+  • Direction Vector: V_forward = Transform.Forward
+                 │
+                 ▼
+  [ Physics Scene Spatial Query ]
+  • Mathematical Ray: R(t) = P_origin + t * V_forward, for t in [0, D_max]
+  • LayerMask Filter: Bitwise filter ignores environment; tests only "Interactable"
+                 │
+                 ▼
+  [ RaycastHit Struct Output ]
+  ├─► Hit Point (X, Y, Z metric world position for laser pointer termination)
+  ├─► Hit Collider (Reference to target interactable GameObject)
+  ├─► Surface Normal (Perpendicular vector for orienting holographic menus)
+  └─► Distance (d = ||P_hit - P_origin||)
 ```
 
 ### 5.4 Continuous Collision Detection (CCD)
@@ -553,300 +562,82 @@ visual sphere mesh).
 
 #### Part 2: UDP Socket Receiver Script (`UDPDataReceiver.cs`) [5 Marks]
 
-```csharp
-using System;
-using System.Net;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading;
-using UnityEngine;
-
-/// <summary>
-/// Asynchronous UDP Socket Receiver streaming MediaPipe hand landmarks into 
-Unity.
-/// </summary>
-public class UDPDataReceiver : MonoBehaviour
-{
-    [Header("Network Settings")]
-    [SerializeField] private int port = 5005;
-
-    private Thread receiveThread;
-    private UdpClient udpClient;
-    private string latestReceivedData = string.Empty;
-    private readonly object lockObject = new object();
-
-    public string LatestData
-    {
-        get
-        {
-            lock (lockObject)
-            {
-                return latestReceivedData;
-            }
-        }
-    }
-
-    private void Start()
-    {
-        receiveThread = new Thread(ReceiveDataThread)
-        {
-            IsBackground = true
-        };
-        receiveThread.Start();
-        Debug.Log($"UDP Receiver initialized on port {port}");
-    }
-
-    private void ReceiveDataThread()
-    {
-        try
-        {
-            udpClient = new UdpClient(port);
-            IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Any, port);
-
-            while (true)
-            {
-                byte[] data = udpClient.Receive(ref remoteEndPoint);
-                string text = Encoding.UTF8.GetString(data);
-
-                lock (lockObject)
-                {
-                    latestReceivedData = text;
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError($"UDP Thread Error: {ex.Message}");
-        }
-    }
-
-    private void OnDisable()
-    {
-        CloseSockets();
-    }
-
-    private void OnApplicationQuit()
-    {
-        CloseSockets();
-    }
-
-    private void CloseSockets()
-    {
-        if (receiveThread != null && receiveThread.IsAlive)
-        {
-            receiveThread.Abort();
-        }
-        if (udpClient != null)
-        {
-            udpClient.Close();
-        }
-    }
-}
 ```
++────────────────────────────────────────────────────────────────────────────+
+|                 HIGH-SPEED UDP SOCKET COMMUNICATIONS PIPELINE              |
++────────────────────────────────────────────────────────────────────────────+
+
+  [ Python MediaPipe Process ]
+  • Extracts 21 3D Landmarks at 60 FPS
+  • Serializes to CSV / JSON Datagrams: "indexX,indexY,thumbX,thumbY"
+  • Transmits via UDP Socket Datagrams (Port 5005)
+                 │
+                 ▼
+  [ Background Network Thread (C#) ]
+  • Non-blocking Socket Listener bound to 127.0.0.1:5005
+  • Continuously awaits UDP datagrams without blocking Unity game loop
+  • Decodes UTF-8 byte arrays into text packets
+                 │
+                 ▼
+  [ Thread-Safe Double Buffer (Mutex Lock Object) ]
+  • Enforces mutual exclusion to prevent race conditions
+  • Overwrites stale packets, preserving only the freshest landmark frame
+                 │
+                 ▼
+  [ Main Game Loop (Update Phase) ]
+  • Dequeues newest landmark frame at start of each visual frame
+  • Deserializes coordinates into typed vector structs
+```
+
+* **Why UDP is Mandated over TCP in XR Tracking**:
+  * **Zero Retransmission Latency**: TCP's handshake, acknowledgement packets, and automatic retransmission cause catastrophic queuing latency (lag spikes) if a packet drops.
+  * **Head-of-Line Blocking Prevention**: In XR hand tracking, old joint positions are completely useless. Dropping a lost packet and instantly reading the newest frame ensures latency stays $<5	ext{ ms}$.
 
 ---
 
 #### Part 3: Hand Coordinate Mapping & Physics Manipulation 
 (`MediaPipeHandController.cs`) [5 Marks]
 
-```csharp
-using System;
-using UnityEngine;
-
-/// <summary>
-/// Controls spatial hand anchoring, gesture classification, and raycast object
-manipulation.
-/// </summary>
-public class MediaPipeHandController : MonoBehaviour
-{
-    [Header("Dependencies")]
-    [SerializeField] private UDPDataReceiver udpReceiver;
-    [SerializeField] private Camera mainCamera;
-
-    [Header("Interaction Settings")]
-    [SerializeField] private float depthDistance = 2.0f;
-    [SerializeField] private float pinchThreshold = 0.08f;
-    [SerializeField] private float lerpSpeed = 15.0f;
-    [SerializeField] private LayerMask interactableLayer;
-
-    [Header("Visual Feedback")]
-    [SerializeField] private Transform handVisualMarker;
-    [SerializeField] private LineRenderer boundingBoxRenderer;
-
-    private Vector3 rawHandWorldPos;
-    private Vector3 smoothedHandWorldPos;
-    private bool isPinching = false;
-    private GameObject grabbedObject = null;
-    private Rigidbody grabbedRigidbody = null;
-
-    private void Start()
-    {
-        if (mainCamera == null) mainCamera = Camera.main;
-        SetupBoundingBoxRenderer();
-    }
-
-    private void Update()
-    {
-        ParseImageData(udpReceiver.LatestData);
-        SmoothLandmarks();
-        UpdateHandMarkerPosition();
-        ProcessGestureInteraction();
-    }
-
-    private void ParseImageData(string data)
-    {
-        if (string.IsNullOrEmpty(data)) return;
-
-        try
-        {
-            // Expected CSV Payload format: "indexX,indexY,thumbX,thumbY" 
-(Normalized 0.0 to 1.0)
-            string[] tokens = data.Split(',');
-            if (tokens.Length >= 4)
-            {
-                float indexX = float.Parse(tokens);
-                float indexY = float.Parse(tokens);
-                float thumbX = float.Parse(tokens);
-                float thumbY = float.Parse(tokens);
-
-                // Compute Hand Centroid in Normalized Screen Space
-                float avgX = (indexX + thumbX) * 0.5f;
-                float avgY = (indexY + thumbY) * 0.5f;
-
-                // Convert Screen Coordinates (Y Inverted) to Viewport Point
-                Vector3 viewportPoint = new Vector3(avgX, 1.0f - avgY, 
-depthDistance);
-                rawHandWorldPos = 
-mainCamera.ViewportToWorldPoint(viewportPoint);
-
-                // Compute Pinch Distance in Viewport Space
-                float dist = Vector2.Distance(new Vector2(indexX, indexY), new 
-Vector2(thumbX, thumbY));
-                isPinching = dist < pinchThreshold;
-            }
-        }
-        catch (Exception)
-        {
-            // Transient thread frame parsing failure isolation
-        }
-    }
-
-    private void SmoothLandmarks()
-    {
-        // Exponential Moving Average (Lerp Filter)
-        smoothedHandWorldPos = Vector3.Lerp(smoothedHandWorldPos, 
-rawHandWorldPos, Time.deltaTime * lerpSpeed);
-    }
-
-    private void UpdateHandMarkerPosition()
-    {
-        if (handVisualMarker != null)
-        {
-            handVisualMarker.position = smoothedHandWorldPos;
-        }
-    }
-
-    private void ProcessGestureInteraction()
-    {
-        if (isPinching)
-        {
-            if (grabbedObject == null)
-            {
-                TryGrabObject();
-            }
-            else
-            {
-                HoldObject();
-            }
-        }
-        else
-        {
-            if (grabbedObject != null)
-            {
-                ReleaseObject();
-            }
-        }
-    }
-
-    private void TryGrabObject()
-    {
-        Ray ray = new Ray(mainCamera.transform.position, (smoothedHandWorldPos 
-- mainCamera.transform.position).normalized);
-        if (Physics.Raycast(ray, out RaycastHit hit, 15.0f, interactableLayer))
-        {
-            grabbedObject = hit.collider.gameObject;
-            grabbedRigidbody = grabbedObject.GetComponent<Rigidbody>();
-
-            if (grabbedRigidbody != null)
-            {
-                grabbedRigidbody.isKinematic = true;
-            }
-            grabbedObject.transform.SetParent(this.transform);
-            DrawBoundingBox(grabbedObject, true);
-        }
-    }
-
-    private void HoldObject()
-    {
-        if (grabbedObject != null)
-        {
-            grabbedObject.transform.position = smoothedHandWorldPos;
-        }
-    }
-
-    private void ReleaseObject()
-    {
-        if (grabbedObject != null)
-        {
-            grabbedObject.transform.SetParent(null);
-            if (grabbedRigidbody != null)
-            {
-                grabbedRigidbody.isKinematic = false;
-            }
-            DrawBoundingBox(grabbedObject, false);
-            grabbedObject = null;
-            grabbedRigidbody = null;
-        }
-    }
-
-    private void SetupBoundingBoxRenderer()
-    {
-        if (boundingBoxRenderer != null)
-        {
-            boundingBoxRenderer.positionCount = 5;
-            boundingBoxRenderer.enabled = false;
-        }
-    }
-
-    private void DrawBoundingBox(GameObject target, bool show)
-    {
-        if (boundingBoxRenderer == null || target == null) return;
-
-        if (!show)
-        {
-            boundingBoxRenderer.enabled = false;
-            return;
-        }
-
-        Collider col = target.GetComponent<Collider>();
-        if (col != null)
-        {
-            Bounds b = col.bounds;
-            boundingBoxRenderer.enabled = true;
-            boundingBoxRenderer.SetPosition(0, new Vector3(b.min.x, b.min.y, 
-b.min.z));
-            boundingBoxRenderer.SetPosition(1, new Vector3(b.max.x, b.min.y, 
-b.min.z));
-            boundingBoxRenderer.SetPosition(2, new Vector3(b.max.x, b.max.y, 
-b.min.z));
-            boundingBoxRenderer.SetPosition(3, new Vector3(b.min.x, b.max.y, 
-b.min.z));
-            boundingBoxRenderer.SetPosition(4, new Vector3(b.min.x, b.min.y, 
-b.min.z));
-        }
-    }
-}
 ```
++────────────────────────────────────────────────────────────────────────────+
+|        SPATIAL HAND RIGGING, GESTURE CLASSIFICATION & OBJECT MANIPULATION  |
++────────────────────────────────────────────────────────────────────────────+
+
+  [ 21 Raw Normalized Landmarks ]
+                 │
+                 ▼
+  [ Coordinate Calibration & Handedness Inversion ]
+  • X_unity = (X_mediapipe - 0.5) * Scale_x
+  • Y_unity = -(Y_mediapipe - 0.5) * Scale_y  (Inverts Y image raster coordinate)
+  • Z_unity = -Z_mediapipe * Scale_z          (Inverts Right-to-Left Handedness)
+                 │
+                 ▼
+  [ Jitter Reduction Filter (Exponential Moving Average / EMA) ]
+  • P_smooth(t) = Lerp(P_current, P_target, dt * SmoothFactor)
+                 │
+                 ▼
+  [ Palm Orientation Quaternion Resolver ]
+  • Vector V_index = Joint[9] - Joint[0]   (Wrist to Middle Knuckle)
+  • Vector V_across = Joint[17] - Joint[5] (Index MCP to Pinky MCP)
+  • Palm Normal N = Cross(V_index, V_across).Normalized
+  • Hand Orientation = Quaternion.LookRotation(V_index, N)
+                 │
+                 ▼
+  [ Gesture State Machine: Distance(ThumbTip[4], IndexTip[8]) ]
+  ├─► Distance < PinchThreshold: STATE = PINCHING
+  │     ├─► If object intersected via Camera Raycast: Set Rigidbody.IsKinematic = True
+  │     ├─► Parent object transform to Hand Anchor / Viewport Point
+  │     └─► Draw 3D Bounding Box visualizer around collider bounds
+  └─► Distance >= PinchThreshold: STATE = RELEASED
+        ├─► Re-enable Rigidbody physics (IsKinematic = False)
+        ├─► Unparent object transform back to scene root
+        └─► Impart throwing release velocity vector
+```
+
+* **Core Subsystem Architecture**:
+  1. **Spatial Kinematic Chain**: Joint nodes are structured hierarchically starting from Joint 0 (Wrist root). Each finger bone updates relative to its parent joint, preserving anatomical finger length even under perspective distortion.
+  2. **Pinch Precision Logic**: Continuous Euclidean distance calculation between Index Tip ($\mathbf{L}_8$) and Thumb Tip ($\mathbf{L}_4$). Hysteresis thresholds ($D_{	ext{pinch}} < 3.5	ext{ cm}$ to engage; $D > 5.0	ext{ cm}$ to disengage) prevent edge-flicker during prolonged object holding.
+  3. **Kinematic Object Dragging**: When pinched, target objects follow a virtual spring constraint toward the hand anchor, avoiding physical clipping into static geometry.
 
 ---
 

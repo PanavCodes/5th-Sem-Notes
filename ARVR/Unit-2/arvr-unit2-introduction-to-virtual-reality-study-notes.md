@@ -155,17 +155,20 @@ framework built on top of Three.js and WebGL.
 *   **Technical Advantage**: Cross-platform portability across mobile devices, 
 desktop browsers, and standalone HMDs.
 
-```xml
-<!-- Example: Basic WebXR Scene Structure using A-Frame -->
-<a-scene>
-  <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-  <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-  <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" 
-color="#FFC65D"></a-cylinder>
-  <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" 
-color="#7BC8A4"></a-plane>
-  <a-sky color="#ECECEC"></a-sky>
-</a-scene>
+```
++────────────────────────────────────────────────────────────────────────────+
+|                    WEBXR SCENE ENTITY-COMPONENT ARCHITECTURE               |
++────────────────────────────────────────────────────────────────────────────+
+
+  [ <a-scene> Root Engine Context ]
+         │
+         ├─► [ Camera Rig Node ]: Positional Tracking + Stereoscopic Eye Sinks
+         ├─► [ Light Entities ]: Directional Photon Emitter + Ambient Illumination
+         ├─► [ Spatial Entities ]:
+         │     • 3D Geometric Primitives: Mesh Geometry (Box, Sphere, Cylinder)
+         │     • PBR Material Components: Diffuse Color, Roughness, Normal Mapping
+         │     • World Transform Matrices: Cartesian Position (X,Y,Z), Rotation (Roll,Pitch,Yaw)
+         └─► [ Environment Skybox ]: 360-degree Equirectangular Panoramic Backdrop
 ```
 
 ---
@@ -599,106 +602,60 @@ space using a `CharacterController`.
 45-degree instant snaps) on thumbstick horizontal displacement to eliminate 
 smooth rotational motion blur that triggers nausea.
 
-```csharp
-// Unity C# Script: Locomotion & Snap Turn Manager
-using UnityEngine;
-using Unity.XR.CoreUtils;
+```
++────────────────────────────────────────────────────────────────────────────+
+|                 VR LOCOMOTION & SNAP TURN EXECUTION PIPELINE               |
++────────────────────────────────────────────────────────────────────────────+
 
-public class VRLocomotionManager : MonoBehaviour
-{
-    public XROrigin xrOrigin;
-    public CharacterController characterController;
-    public float moveSpeed = 2.0f;
-    public float snapTurnAngle = 45.0f;
-
-    void Update()
-    {
-        // Continuous Movement Logic
-        Vector2 primaryStick = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
-        Vector3 moveDirection = 
-xrOrigin.Camera.transform.TransformDirection(new Vector3(primaryStick.x, 0, 
-primaryStick.y));
-        moveDirection.y = 0; // Lock vertical movement
-        characterController.Move(moveDirection * moveSpeed * Time.deltaTime);
-
-        // Snap Turn Logic
-        if (OVRInput.GetDown(OVRInput.Button.SecondaryThumbstickLeft))
-        {
-            xrOrigin.RotateAroundCameraUsingOriginUp(-snapTurnAngle);
-        }
-        else if (OVRInput.GetDown(OVRInput.Button.SecondaryThumbstickRight))
-        {
-            xrOrigin.RotateAroundCameraUsingOriginUp(snapTurnAngle);
-        }
-    }
-}
+  [ Thumbstick Primary Axis (X, Y) ]
+                  │
+                  ▼
+  [ Vector Projection & Direction Alignment ]
+  • Extract Camera Forward Vector: V_fwd = Normalize(Camera.Forward - Y_axis)
+  • Compute Translational Vector: V_move = (V_fwd * Axis.y + Camera.Right * Axis.x) * Speed * dt
+                  │
+                  ▼
+  [ Character Controller Collision Sweep ] ──► Updates Player Metric Origin
+                  │
+                  ▼
+  [ Secondary Thumbstick Horizontal Flick ]
+  ├─► Left Flick (< -Threshold): Rotate Origin by -45 degrees around Camera Up
+  └─► Right Flick (> +Threshold): Rotate Origin by +45 degrees around Camera Up
+  (Instantaneous Angular Snap eliminates continuous optical motion blur & nausea)
 ```
 
 #### Component 3: Input Mapping & Object Interaction (5 Marks)
-In a VR lab simulator, users must pick up lab equipment (beakers, tools) using 
-Meta Quest Touch controllers:
-*   **Trigger (Index Finger)**: Mapped to secondary object actions (e.g., 
-pouring liquid, activating a heat source).
-*   **Grip Button (Middle Finger / Palm)**: Mapped to physical grabbing 
-(`OVRGrabber` / `XR Direct Interactor`). Pressing the grip button attaches 
-nearby colliders containing an `OVRGrabbable` / `XR Grab Interactable` script 
-to the hand anchor transform.
+In a VR lab simulator, users must pick up lab equipment (beakers, tools) using Meta Quest Touch controllers:
+*   **Trigger (Index Finger)**: Mapped to secondary object actions (e.g., pouring liquid, activating a heat source).
+*   **Grip Button (Middle Finger / Palm)**: Mapped to physical grabbing (`OVRGrabber` / `XR Direct Interactor`). Pressing the grip button attaches nearby colliders containing an `OVRGrabbable` / `XR Grab Interactable` component to the hand anchor transform.
 
-```csharp
-// Unity C# Script: Lab Equipment Interaction via Meta XR SDK
-using UnityEngine;
+```
++────────────────────────────────────────────────────────────────────────────+
+|            LAB EQUIPMENT GRAB & VELOCITY TRANSFER STATE MACHINE            |
++────────────────────────────────────────────────────────────────────────────+
 
-public class VRLabEquipmentGrabber : MonoBehaviour
-{
-    public OVRInput.Controller controllerHand = OVRInput.Controller.RTouch;
-    public float grabRadius = 0.15f;
-    public LayerMask labEquipmentLayer;
-    
-    private GameObject grabbedObject = null;
-
-    void Update()
-    {
-        // Detect Grip Trigger Press
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger, 
-controllerHand))
-        {
-            TryGrabObject();
-        }
-        // Detect Grip Trigger Release
-        else if (OVRInput.GetUp(OVRInput.Button.PrimaryHandTrigger, 
-controllerHand))
-        {
-            ReleaseObject();
-        }
-    }
-
-    void TryGrabObject()
-    {
-        Collider[] hits = Physics.OverlapSphere(transform.position, grabRadius,
-labEquipmentLayer);
-        if (hits.Length > 0)
-        {
-            grabbedObject = hits.gameObject;
-            grabbedObject.GetComponent<Rigidbody>().isKinematic = true;
-            grabbedObject.transform.SetParent(this.transform);
-        }
-    }
-
-    void ReleaseObject()
-    {
-        if (grabbedObject != null)
-        {
-            grabbedObject.transform.SetParent(null);
-            Rigidbody rb = grabbedObject.GetComponent<Rigidbody>();
-            rb.isKinematic = false;
-            // Transfer controller velocity for realistic physical movement
-            rb.velocity = OVRInput.GetLocalControllerVelocity(controllerHand);
-            rb.angularVelocity = 
-OVRInput.GetLocalControllerAngularVelocity(controllerHand);
-            grabbedObject = null;
-        }
-    }
-}
+  [ Controller Grip Trigger Squeezed ]
+                  │
+                  ▼
+  [ Spatial Sphere-Overlap Query ]
+  • Query Physics.OverlapSphere around Hand Anchor (Radius = 0.15m)
+  • Filter collisions using bitwise LayerMask: "LabEquipment"
+                  │
+                  ▼
+  [ Object Attachment (Near Interaction) ]
+  • Target Rigidbody switched to IsKinematic = True (Suppresses Gravity)
+  • Child Transform parented to Hand Anchor Node
+                  │
+                  ▼
+  [ Controller Grip Trigger Released ]
+                  │
+                  ▼
+  [ Physical Decoupling & Momentum Transfer ]
+  • Transform unparented (returns to World Root)
+  • Rigidbody switched to IsKinematic = False
+  • Linear & Angular Velocities sampled from IMU buffer and injected into Rigidbody:
+      V_linear = OVRInput.GetLocalControllerVelocity()
+      W_angular = OVRInput.GetLocalControllerAngularVelocity()
 ```
 
 #### Component 4: Frame Rate Optimization Techniques for Meta Quest (5 Marks)

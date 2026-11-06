@@ -486,80 +486,46 @@ alignment.
 block.
    * When `ARTrackedImageManager` detects the engine marker, it instantiates 
 the Maintenance UI Anchor at the exact 3D spatial pose.
-2. **Step-by-Step C# Script Implementation (`VehicleMaintenanceManager.cs`):**
+2. **Procedural Overlay Logic & Finite State Machine (FSM) Architecture:**
 
-```csharp
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.XR.ARFoundation;
-using UnityEngine.XR.ARSubsystems;
-using TMPro;
-
-public class VehicleMaintenanceManager : MonoBehaviour
-{
-    [Header("AR Foundation Components")]
-    [SerializeField] private ARTrackedImageManager trackedImageManager;
-    
-    [Header("UI & Spatial Overlays")]
-    [SerializeField] private GameObject step1EngineOilOverlay;
-    [SerializeField] private GameObject step2BatteryOverlay;
-    [SerializeField] private TextMeshProUGUI instructionText;
-
-    private int currentStep = 0;
-
-    private void OnEnable()
-    {
-        trackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
-    }
-
-    private void OnDisable()
-    {
-        trackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
-    }
-
-    private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs 
-eventArgs)
-    {
-        foreach (var trackedImage in eventArgs.added)
-        {
-            if (trackedImage.referenceImage.name == "EngineBlockMarker")
-            {
-                // Align UI origin to physical engine anchor
-                transform.position = trackedImage.transform.position;
-                transform.rotation = trackedImage.transform.rotation;
-                ShowStep(0);
-            }
-        }
-    }
-
-    public void AdvanceNextStep()
-    {
-        currentStep++;
-        ShowStep(currentStep);
-    }
-
-    private void ShowStep(int stepIndex)
-    {
-        step1EngineOilOverlay.SetActive(stepIndex == 0);
-        step2BatteryOverlay.SetActive(stepIndex == 1);
-
-        switch (stepIndex)
-        {
-            case 0:
-                instructionText.text = "Step 1: Unscrew Oil Cap & Check 
-Dipstick Level.";
-                break;
-            case 1:
-                instructionText.text = "Step 2: Disconnect Negative Battery 
-Terminal First.";
-                break;
-            default:
-                instructionText.text = "Maintenance Check Complete!";
-                break;
-        }
-    }
-}
 ```
++────────────────────────────────────────────────────────────────────────────+
+|            VEHICLE MAINTENANCE OVERLAY LOGIC & RECOGNITION FLOW            |
++────────────────────────────────────────────────────────────────────────────+
+
+  [ Physical Engine Bay ] ──► [ ARTrackedImageManager / Edge ML ]
+                                            │ (Identifies Marker / Geometry)
+                                            ▼
+                    [ Spatial Transform Alignment ]
+                    • Calculate World Coordinates: T_overlay = T_marker * T_offset
+                    • Establish Metric Scale (1:1 CAD Alignment)
+                                            │
+                                            ▼
+                    [ Maintenance Sequencer State Machine ]
+                    ├─► STATE 0: Oil Inspection (Pulsing Arrow, Level Gradients)
+                    ├─► STATE 1: Battery Disconnection (Terminal Safety Warning)
+                    └─► STATE 2: Completion & Diagnostics Clearance
+                                            │
+                                            ▼
+                    [ World-Space Canvas & Occlusion Renderer ]
+                    • Depth Testing: Hide sub-surface arrows behind engine block
+                    • Dynamic Text Billboarding facing user eye level
+```
+
+* **Step-by-Step Procedural Execution Pipeline:**
+  * **Phase 1: Marker Acquisition & Pose Registration:** The visual tracking engine detects the physical engine identification plate (e.g., VIN plate or QR reference target). It extracts the rigid transform matrix $(\mathbf{P}_{\text{marker}}, \mathbf{R}_{\text{marker}})$.
+  * **Phase 2: Metric Offset Transformation:** Each vehicle maintenance target (oil filler neck, dipstick handle, negative battery terminal) is located at a known relative offset vector $(\Delta \mathbf{p}_i, \Delta \mathbf{q}_i)$ derived from manufacturer 3D CAD data. The engine calculates the spatial pose of each maintenance overlay:
+    $$\mathbf{T}_{\text{component}_i} = \mathbf{T}_{\text{marker}} \times \mathbf{T}_{\text{CAD\_offset}_i}$$
+  * **Phase 3: State-Driven Dynamic Occlusion & Guidance:** A deterministic Finite State Machine (FSM) cycles through maintenance checkpoints, enabling only the active step's 3D spatial callouts while suppressing background clutter.
+
+* **Maintenance State Machine Transition Matrix:**
+
+| State ID | Component Target | Visual Overlay Elements | Sensor Verification / Advance Condition |
+| :--- | :--- | :--- | :--- |
+| **State 0 (Initial)** | Engine Oil Reservoir | Pulsing 3D yellow arrow, fluid level scale, unscrewing rotation vector | User confirms inspection via touchscreen tap or voice command |
+| **State 1 (Electrical)** | 12V Battery Terminals | Flashing red safety boundary around positive lead; green arrow to negative terminal | Optical verification of detached terminal cable |
+| **State 2 (Coolant)** | Radiator Expansion Tank | Maximum/minimum cold-fill level guide, thermal hazard warning overlay | Fluid level passes minimum laser-etched mark |
+| **State 3 (Complete)** | Whole Engine Bay | Green wireframe holographic completion badge, diagnostic summary table | System writes log timestamp to fleet database |
 
 3. **Visual Feedback & AR Guidance Overlays:**
    * **3D Animated Arrows:** Superimpose pulsing 3D directional arrows pointing

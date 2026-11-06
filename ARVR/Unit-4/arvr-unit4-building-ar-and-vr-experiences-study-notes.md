@@ -89,126 +89,40 @@ The following production C# script programmatically initializes the
 `ARSession`, `XROrigin`, and configures plane detection and raycasting 
 interfaces.
 
-```csharp
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.XR.ARFoundation;
-using UnityEngine.XR.ARSubsystems;
-
-/// <summary>
-/// Programmatically initializes and configures the core AR Foundation 
-architecture.
-/// </summary>
-public class ARFoundationSetup : MonoBehaviour
-{
-    [Header("AR Core References")]
-    private ARSession arSession;
-    private XROrigin xrOrigin;
-    private ARCameraBackground arCameraBackground;
-
-    [Header("Configuration Settings")]
-    [SerializeField] private bool enableAutoFocus = true;
-    [SerializeField] private LightEstimation featureLightEstimation = 
-LightEstimation.AmbientIntensity;
-
-    private void Awake()
-    {
-        // 1. Ensure ARSession exists in the scene
-        arSession = FindObjectOfType<ARSession>();
-        if (arSession == null)
-        {
-            GameObject sessionObj = new GameObject("AR Session");
-            arSession = sessionObj.AddComponent<ARSession>();
-            sessionObj.AddComponent<ARInputManager>();
-        }
-
-        // 2. Ensure XR Origin and AR Camera exist
-        xrOrigin = FindObjectOfType<XROrigin>();
-        if (xrOrigin == null)
-        {
-            GameObject originObj = new GameObject("XR Origin");
-            xrOrigin = originObj.AddComponent<XROrigin>();
-
-            GameObject cameraObj = new GameObject("AR Camera");
-            cameraObj.transform.SetParent(originObj.transform);
-            
-            Camera cam = cameraObj.AddComponent<Camera>();
-            cam.clearFlags = CameraClearFlags.SolidColor;
-            cam.backgroundColor = Color.black;
-
-            arCameraBackground = cameraObj.AddComponent<ARCameraBackground>();
-            ARCameraManager cameraManager = 
-cameraObj.AddComponent<ARCameraManager>();
-            
-            // Link Camera to XR Origin
-            xrOrigin.Camera = cam;
-        }
-
-        StartCoroutine(CheckARSupportRoutine());
-    }
-
-    private IEnumerator CheckARSupportRoutine()
-    {
-        // Check hardware support state
-        if (ARSession.state == ARSessionState.CheckingAvailability)
-        {
-            yield return ARSession.CheckAvailability();
-        }
-
-        if (ARSession.state == ARSessionState.Unsupported)
-        {
-            Debug.LogError("AR Foundation: Current device does not support 
-hardware AR tracking.");
-        }
-        else
-        {
-            Debug.Log("AR Foundation: Hardware tracking validated. Starting AR 
-Session.");
-            arSession.enabled = true;
-            ConfigureCameraSubsystem();
-        }
-    }
-
-    private void ConfigureCameraSubsystem()
-    {
-        ARCameraManager camManager = 
-xrOrigin.Camera.GetComponent<ARCameraManager>();
-        if (camManager != null)
-        {
-            // Configure auto-focus mode
-            camManager.requestedAutoFocusMode = enableAutoFocus ? 
-                AutoFocusMode.Fixed : AutoFocusMode.Fixed;
-
-            // Subscribe to frame updates for light estimation
-            camManager.frameReceived += OnCameraFrameReceived;
-        }
-    }
-
-    private void OnCameraFrameReceived(ARCameraFrameEventArgs eventArgs)
-    {
-        // Process estimated brightness for realistic scene lighting
-        if (eventArgs.lightEstimation.averageBrightness.HasValue)
-        {
-            RenderSettings.ambientLight = Color.white * 
-eventArgs.lightEstimation.averageBrightness.Value;
-        }
-    }
-
-    private void OnDestroy()
-    {
-        if (xrOrigin != null && xrOrigin.Camera != null)
-        {
-            ARCameraManager camManager = 
-xrOrigin.Camera.GetComponent<ARCameraManager>();
-            if (camManager != null)
-            {
-                camManager.frameReceived -= OnCameraFrameReceived;
-            }
-        }
-    }
-}
 ```
++────────────────────────────────────────────────────────────────────────────+
+|                 AR FOUNDATION INITIALIZATION & SUBSYSTEM PIPELINE          |
++────────────────────────────────────────────────────────────────────────────+
+
+  [ Application Startup ]
+             │
+             ▼
+  [ ARSession Lifecycle Check ]
+  • Checks device hardware support (ARCore / ARKit compatibility)
+  • Requests Camera & Motion Sensor OS permissions
+  • States: CheckingAvailability -> NeedsInstall -> Ready -> SessionTracking
+             │
+             ▼
+  [ Hardware Sensor Fusion (VIO Core) ]
+  • Camera Video Buffer (60 FPS RGB) + 6DoF High-Frequency IMU
+  • Extracts sparse 3D point cloud & camera pose matrix
+             │
+             ▼
+  [ XR Origin Spatial Coordinate Synchronization ]
+  • Maps physical metric space (1.0 Unity Unit = 1.0 Real-World Meter)
+  • Updates Tracked Camera local transform to physical device movement
+             │
+             ▼
+  [ Subsystem Managers Dispatched ]
+  ├─► ARPlaneManager: Detects horizontal & vertical physical surfaces
+  ├─► ARRaycastManager: Casts rays against detected physical geometry
+  └─► ARAnchorManager: Glues virtual entities to physical world coordinates
+```
+
+* **Core Subsystem Architecture & Responsibilities**:
+  1. **ARSession Orchestrator**: Acts as the master controller for the AR experience. If tracking is lost (e.g., rapid movement or covered camera), it enters `ARSessionState.SessionPaused` and attempts relocalization.
+  2. **ARCameraBackground**: Renders the device's real-time optical video feed directly into the background of the scene before 3D virtual geometry is drawn, using camera-projection matrices provided by native AR drivers.
+  3. **TrackedPoseDriver**: Subscribes to hardware IMU and VIO updates, directly binding physical device rotation and position into Unity camera transforms with zero input polling delay.
 
 ---
 
@@ -281,113 +195,43 @@ The following complete C# script detects horizontal/vertical real-world planes,
 performs spatial raycasting upon user screen touch, and instantiates anchored 
 3D virtual objects.
 
-```csharp
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.XR.ARFoundation;
-using UnityEngine.XR.ARSubsystems;
-
-/// <summary>
-/// Manages real-world plane detection, spatial raycasting, and anchor 
-persistence.
-/// </summary>
-[RequireComponent(typeof(ARRaycastManager))]
-[RequireComponent(typeof(ARPlaneManager))]
-[RequireComponent(typeof(ARAnchorManager))]
-public class ARSpatialMappingController : MonoBehaviour
-{
-    [Header("Placement Configuration")]
-    [SerializeField] private GameObject objectToSpawnPrefab;
-    
-    private ARRaycastManager raycastManager;
-    private ARPlaneManager planeManager;
-    private ARAnchorManager anchorManager;
-
-    private static List<ARRaycastHit> hits = new List<ARRaycastHit>();
-    private List<ARAnchor> spawnedAnchors = new List<ARAnchor>();
-
-    private void Awake()
-    {
-        raycastManager = GetComponent<ARRaycastManager>();
-        planeManager = GetComponent<ARPlaneManager>();
-        anchorManager = GetComponent<ARAnchorManager>();
-
-        // Enable horizontal and vertical plane detection
-        planeManager.requestedDetectionMode = PlaneDetectionMode.Horizontal | 
-PlaneDetectionMode.Vertical;
-    }
-
-    private void Update()
-    {
-        // Handle user touch input
-        if (Input.touchCount == 0) return;
-
-        Touch touch = Input.GetTouch(0);
-        if (touch.phase != TouchPhase.Began) return;
-
-        // Perform AR Raycast against detected polygon planes
-        if (raycastManager.Raycast(touch.position, hits, 
-TrackableType.PlaneWithinPolygon))
-        {
-            Pose hitPose = hits.pose;
-            TrackableId planeId = hits.trackableId;
-
-            ARPlane targetPlane = planeManager.GetPlane(planeId);
-            if (targetPlane != null)
-            {
-                SpawnAndAnchorObject(hitPose, targetPlane);
-            }
-        }
-    }
-
-    private void SpawnAndAnchorObject(Pose pose, ARPlane plane)
-    {
-        // 1. Instantiate virtual object at hit position and rotation
-        GameObject spawnedObject = Instantiate(objectToSpawnPrefab, 
-pose.position, pose.rotation);
-
-        // 2. Attach an ARAnchor component to lock the object to physical 
-spatial geometry
-        ARAnchor anchor = spawnedObject.AddComponent<ARAnchor>();
-
-        if (anchor == null)
-        {
-            // Alternative: Attach anchor via ARAnchorManager attached to plane
-            anchor = anchorManager.AttachAnchor(plane, pose);
-            if (anchor != null)
-            {
-                spawnedObject.transform.SetParent(anchor.transform);
-            }
-        }
-
-        if (anchor != null)
-        {
-            spawnedAnchors.Add(anchor);
-            Debug.Log($"Successfully anchored object {spawnedObject.name} to 
-Physical Plane ID: {plane.trackableId}");
-        }
-        else
-        {
-            Debug.LogWarning("Failed to create native AR Anchor. Object may 
-suffer from visual drift.");
-        }
-    }
-
-    /// <summary>
-    /// Toggle visualization of plane surfaces for debugging or performance 
-cleanup.
-    /// </summary>
-    public void SetPlanesActive(bool active)
-    {
-        planeManager.enabled = active;
-        foreach (var plane in planeManager.trackables)
-        {
-            plane.gameObject.SetActive(active);
-        }
-    }
-}
 ```
++────────────────────────────────────────────────────────────────────────────+
+|           PLANE DETECTION, SPATIAL RAYCASTING & ANCHORING PIPELINE         |
++────────────────────────────────────────────────────────────────────────────+
+
+  [ Physical Floor / Tabletop ] ──► [ Feature Point Optical Flow ]
+                                                  │
+                                                  ▼
+                        [ RANSAC Coplanar Mathematical Filter ]
+                        • Plane Equation: Ax + By + Cz + D = 0
+                        • Identifies horizontal upward (floor) or vertical (wall)
+                                                  │
+                                                  ▼
+                        [ ARPlane Polygon Mesh Construction ]
+                        • Computes Convex Hull boundary perimeter
+                        • Attaches 2D/3D collision mesh to surface
+                                                  │
+                                                  ▼
+  [ User Screen Touch ] ──────► [ Spatial AR Raycast ]
+                                • Casts ray from 2D pixel coordinates (x, y)
+                                • Tests intersection against TrackableType.Planes
+                                                  │
+                                                  ▼
+                        [ Hit Pose Identification & Normal Alignment ]
+                        • Obtains 3D metric coordinate & surface normal vector
+                                                  │
+                                                  ▼
+                        [ Persistent ARAnchor Instantiation ]
+                        • Attaches ARAnchor component to instantiated GameObject
+                        • Relocalizes transform as ARCore/ARKit refines room map
+```
+
+* **Mathematical Ray-Plane Intersection**:
+  Given a touch point converted to camera ray $\mathbf{R}(t) = \mathbf{P}_{	ext{cam}} + t\mathbf{D}$, and a detected physical plane with normal $\mathbf{N}$ and point on plane $\mathbf{P}_0$:
+  $$t = 
+rac{(\mathbf{P}_0 - \mathbf{P}_{	ext{cam}}) \cdot \mathbf{N}}{\mathbf{D} \cdot \mathbf{N}}$$
+  If $t > 0$, the spatial intersection $\mathbf{P}_{	ext{hit}} = \mathbf{R}(t)$ provides the exact physical point for anchoring virtual assets.
 
 ---
 
@@ -530,118 +374,44 @@ restrictions ($\le 1.0\text{ m/s}$) and FOV tunneling for player comfort.
 The following C# script implements continuous glide locomotion with integrated 
 dynamic FOV vignetting (tunneling) and snap turning.
 
-```csharp
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.XR;
-
-/// <summary>
-/// Handles smooth VR glide locomotion, snap turning, and FOV vignetting for 
-motion comfort.
-/// </summary>
-[RequireComponent(typeof(CharacterController))]
-public class VRLocomotionManager : MonoBehaviour
-{
-    [Header("Locomotion Settings")]
-    [SerializeField] private float moveSpeed = 1.2f;
-    [SerializeField] private float snapTurnAngle = 45.0f;
-    [SerializeField] private float snapTurnCooldown = 0.3f;
-
-    [Header("Comfort / Vignette Settings")]
-    [SerializeField] private CanvasGroup vignetteCanvasGroup;
-    [SerializeField] private float maxVignetteAlpha = 0.8f;
-    [SerializeField] private float vignetteFadeSpeed = 4.0f;
-
-    [Header("Hardware References")]
-    [SerializeField] private Transform cameraHead;
-
-    private CharacterController characterController;
-    private Vector2 leftJoystickInput;
-    private Vector2 rightJoystickInput;
-    private bool canSnapTurn = true;
-
-    private void Awake()
-    {
-        characterController = GetComponent<CharacterController>();
-    }
-
-    private void Update()
-    {
-        GatherInput();
-        HandleContinuousMovement();
-        HandleSnapTurn();
-        UpdateVignetteComfort();
-    }
-
-    private void GatherInput()
-    {
-        // Fetch input axes from XR Input Devices (Left = Move, Right = Turn)
-        InputDevice leftHand = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
-        InputDevice rightHand = 
-InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
-
-        leftHand.TryGetFeatureValue(CommonUsages.primary2DAxis, out 
-leftJoystickInput);
-        rightHand.TryGetFeatureValue(CommonUsages.primary2DAxis, out 
-rightJoystickInput);
-    }
-
-    private void HandleContinuousMovement()
-    {
-        if (leftJoystickInput.magnitude < 0.1f) return;
-
-        // Calculate direction relative to head orientation
-        Vector3 headForward = Vector3.ProjectOnPlane(cameraHead.forward, 
-Vector3.up).normalized;
-        Vector3 headRight = Vector3.ProjectOnPlane(cameraHead.right, 
-Vector3.up).normalized;
-
-        Vector3 moveDirection = (headForward * leftJoystickInput.y + headRight 
-* leftJoystickInput.x) * moveSpeed;
-
-        // Apply gravity and movement via CharacterController
-        characterController.SimpleMove(moveDirection);
-    }
-
-    private void HandleSnapTurn()
-    {
-        if (Mathf.Abs(rightJoystickInput.x) > 0.7f && canSnapTurn)
-        {
-            float turnAmount = rightJoystickInput.x > 0 ? snapTurnAngle : 
--snapTurnAngle;
-            transform.RotateAround(cameraHead.position, Vector3.up, 
-turnAmount);
-
-            StartCoroutine(SnapTurnCooldownRoutine());
-        }
-    }
-
-    private IEnumerator SnapTurnCooldownRoutine()
-    {
-        canSnapTurn = false;
-        yield return new WaitForSeconds(snapTurnCooldown);
-        canSnapTurn = true;
-    }
-
-    private void UpdateVignetteComfort()
-    {
-        if (vignetteCanvasGroup == null) return;
-
-        // Calculate current linear speed
-        float currentSpeed = characterController.velocity.magnitude;
-
-        // Target alpha proportional to movement speed
-        float targetAlpha = currentSpeed > 0.1f ? Mathf.Clamp01(currentSpeed / 
-moveSpeed) * maxVignetteAlpha : 0.0f;
-
-        // Lerp alpha for smooth transition
-        vignetteCanvasGroup.alpha = 
-Mathf.MoveTowards(vignetteCanvasGroup.alpha, targetAlpha, Time.deltaTime * 
-vignetteFadeSpeed);
-    }
-}
 ```
++────────────────────────────────────────────────────────────────────────────+
+|          VR LOCOMOTION, SNAP TURNING & COMFORT VIGNETTING PIPELINE         |
++────────────────────────────────────────────────────────────────────────────+
+
+  [ Primary Thumbstick (X, Y) ]              [ Headset 6DoF Forward Gaze ]
+                 │                                         │
+                 └───────────────────┬─────────────────────┘
+                                     │
+                                     ▼
+  [ Planar Directional Vector Calculation ]
+  • V_forward = Normalize(Vector3(Camera.Forward.x, 0, Camera.Forward.z))
+  • V_right = Normalize(Vector3(Camera.Right.x, 0, Camera.Right.z))
+  • V_move = (V_forward * Stick.y + V_right * Stick.x) * MoveSpeed * dt
+                                     │
+                                     ▼
+  [ CharacterController Collision Step ] ──► Translates XR Origin
+                                     │
+                                     ▼
+  [ Motion Velocity Evaluator ]
+  ├─► Speed > Threshold: Expand Dynamic FOV Vignette Mask (Darken outer 40% vision)
+  └─► Speed <= Threshold: Contract Vignette Mask to full transparent aperture
+                                     │
+                                     ▼
+  [ Secondary Thumbstick Horizontal Flick ]
+  • Left/Right snap trigger (> 0.7 axis displacement)
+  • Instantly rotates XR Origin by 45 degrees around Camera Up Vector
+  (Instantaneous snap eliminates continuous retinal optic flow, preventing cybersickness)
+```
+
+* **Comfort & Ergonomics Parameter Matrix**:
+
+| Locomotion Parameter | Default Configuration | Physiological Function |
+| :--- | :--- | :--- |
+| **Translation Speed** | $1.5	ext{ to } 2.5	ext{ m/s}$ (Brisk human walk) | Prevents unnatural optical acceleration |
+| **Snap Angle** | $30^\circ 	ext{ or } 45^\circ$ instantaneous steps | Bypasses vestibulo-ocular reflex rotational strain |
+| **Vignette Aperture** | $0.4	ext{ to } 0.6$ normalized screen radius | Suppresses peripheral retinal optic flow |
+| **Vignette Feathering** | Soft cosine gradient falloff | Prevents sudden visual clipping distractions |
 
 ---
 
@@ -836,108 +606,36 @@ X-axis.
 
 ##### Production C# Script: Gesture Player Motion Controller
 
-```csharp
-using UnityEngine;
-
-/// <summary>
-/// Maps MediaPipe tracking gesture states to VR player movement and 
-CharacterController physics.
-/// </summary>
-
-public enum HandGestureState { Neutral, DodgeLeft, DodgeRight, Duck, Jump }
-
-[RequireComponent(typeof(CharacterController))]
-public class VRGesturePlayerController : MonoBehaviour
-{
-    [Header("Movement Calibration")]
-    [SerializeField] private float laneWidth = 2.0f;
-    [SerializeField] private float dodgeSpeed = 8.0f;
-    [SerializeField] private float jumpForce = 5.0f;
-    [SerializeField] private float gravity = -9.81f;
-
-    [Header("Gesture Sensitivity Thresholds")]
-    [SerializeField] private float dodgeThresholdX = 0.35f;
-    [SerializeField] private float duckThresholdY = 0.6f;
-    [SerializeField] private float jumpThresholdY = 1.9f;
-
-    private CharacterController controller;
-    private Vector3 velocity;
-    private float targetLaneX = 0.0f;
-    private float defaultHeight;
-    private bool isGrounded;
-
-    private void Awake()
-    {
-        controller = GetComponent<CharacterController>();
-        defaultHeight = controller.height;
-    }
-
-    /// <summary>
-    /// Invoked every frame by the MediaPipe Tracking Ingestion Bridge
-    /// </summary>
-    public void ProcessGestureInput(Vector3 leftHandPos, Vector3 rightHandPos)
-    {
-        isGrounded = controller.isGrounded;
-        if (isGrounded && velocity.y < 0)
-        {
-            velocity.y = -2.0f; // Reset ground stickiness
-        }
-
-        // Calculate average hands position
-        Vector3 avgHandPos = (leftHandPos + rightHandPos) * 0.5f;
-
-        // 1. Evaluate Gesture Classification
-        HandGestureState currentGesture = ClassifyGesture(avgHandPos);
-
-        // 2. Execute Movement Mapping
-        switch (currentGesture)
-        {
-            case HandGestureState.DodgeLeft:
-                targetLaneX = -laneWidth;
-                break;
-            case HandGestureState.DodgeRight:
-                targetLaneX = laneWidth;
-                break;
-            case HandGestureState.Neutral:
-                targetLaneX = 0.0f;
-                controller.height = Mathf.Lerp(controller.height, 
-defaultHeight, Time.deltaTime * 10f);
-                break;
-            case HandGestureState.Duck:
-                controller.height = Mathf.Lerp(controller.height, defaultHeight
-* 0.5f, Time.deltaTime * 10f);
-                break;
-            case HandGestureState.Jump:
-                if (isGrounded)
-                {
-                    velocity.y = Mathf.Sqrt(jumpForce * -2.0f * gravity);
-                }
-                break;
-        }
-
-        // Smooth X-axis lane interpolation
-        float newX = Mathf.Lerp(transform.position.x, targetLaneX, 
-Time.deltaTime * dodgeSpeed);
-        Vector3 moveVector = new Vector3(newX - transform.position.x, 0, 0);
-
-        // Apply Gravity
-        velocity.y += gravity * Time.deltaTime;
-        moveVector.y = velocity.y * Time.deltaTime;
-
-        controller.Move(moveVector);
-    }
-
-    private HandGestureState ClassifyGesture(Vector3 handPos)
-    {
-        if (handPos.y > jumpThresholdY) return HandGestureState.Jump;
-        if (handPos.y < duckThresholdY) return HandGestureState.Duck;
-        if (handPos.x < -dodgeThresholdX) return HandGestureState.DodgeLeft;
-        if (handPos.x > dodgeThresholdX) return HandGestureState.DodgeRight;
-
-        return HandGestureState.Neutral;
-    }
-}
 ```
++────────────────────────────────────────────────────────────────────────────+
+|          GESTURE PLAYER MOTION & OBSTACLE GAME LOOP ARCHITECTURE           |
++────────────────────────────────────────────────────────────────────────────+
+
+  [ MediaPipe Hand Landmarks Stream ]
+                 │
+                 ▼
+  [ Kinematic Motion Mapping ]
+  • Dual-Hand Tilt Angle (theta = arctan(dY / dX)) ──► Horizontal Steering Velocity
+  • Vertical Hand Height (H = Y_head - Y_hands) ─────► Ducking / Crouch Collider Flattening
+  • Sudden Upward Acceleration (d^2Y / dt^2) ────────► Vertical Jump Impulse
+                 │
+                 ▼
+  [ Continuous Physics Collision Sweep (CCD) ]
+  • Swept Volume Capsules test incoming obstacles at 90 FPS
+  • Obstacles recycled from pre-allocated memory Object Pool (50 instances)
+                 │
+                 ├─► Safe Passage (Near Miss < 0.5m) ──► Increment Combo Multiplier (1x -> 4x)
+                 │                                       Play directional HRTF audio chime
+                 │
+                 └─► Collision Impact Triggered ───────► Deplete Player Shield / Health
+                                                         Flash red visual damage vignette
+                                                         Trigger 0.1s camera trauma shake
+```
+
+* **Core Subsystem Responsibilities**:
+  1. **Dual-Wrist Steering Resolver**: Computes the slope angle between the left and right wrists in camera space, translating rotational arm tilt into linear horizontal velocity on the track.
+  2. **Obstacle Object Pooler**: Spawns and recycles tunnel segments and kinetic hazards ahead of the player, completely avoiding runtime memory allocations and garbage-collection frame drops.
+  3. **Multisensory Feedback Controller**: Drives diegetic cockpit instrumentation, spatial sound synthesis, and peripheral FOV pulses upon impact.
 
 ---
 
